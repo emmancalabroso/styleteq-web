@@ -1,0 +1,17 @@
+.tabs-panel {
+	.callout {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.tabs-title {
+	> a {
+		font-size: 1rem;
+		&:focus, &[aria-selected='true'] {
+			color: rgba($white, $W-text);
+			background-color: $primary-color;
+		}
+	}
+}

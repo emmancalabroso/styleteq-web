@@ -1,0 +1,13 @@
+.button {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+	&.link {
+		border: none;
+		background-color: transparent;
+		color: $primary-color;
+		&.white {
+			color: $white;
+		}
+	}
+}

@@ -1,0 +1,98 @@
+#loginForm, #registerForm {
+	padding: 5rem 0;
+	h3 {
+		margin-bottom: 3rem;
+	}
+}
+
+form {
+	.button.submit, button[type="submit"] {
+		margin-top: 1rem;
+	}
+	.form-text {
+		margin-top: 1rem;
+		color: rgba($black, 0.54);
+	}
+	.label-text {
+		color: rgba($black, $B-hinttext);
+		&.red {
+			color: $alert-color; 
+		}
+	}
+}
+
+label {
+	color: rgba($black, $B-subtext);
+	line-height: 2rem;
+	&.has-error {
+		color: $alert-color;
+		[type='text'], 
+		[type='password'], 
+		[type='date'], 
+		[type='datetime'], 
+		[type='datetime-local'], 
+		[type='month'], 
+		[type='week'], 
+		[type='email'], 
+		[type='number'], 
+		[type='search'], 
+		[type='tel'], 
+		[type='time'], 
+		[type='url'], 
+		[type='color'], 
+		textarea {
+			border-color: $alert-color;
+		}
+		select {
+			border-color: $alert-color;
+		}
+		+ .help-text {
+			color: $alert-color;
+		}
+	}
+}
+
+legend {
+	font-size: 0.875rem;
+	color: rgba($black, $B-subtext);
+}
+
+[type='checkbox'], 
+[type='radio'] {
+	+ label {
+		font-size: 1rem;
+		color: rgba($black, $B-text);
+		&.sublabel {
+			font-size: 0.875rem;
+		}
+	}
+}
+
+[type='text'], 
+[type='password'], 
+[type='date'], 
+[type='datetime'], 
+[type='datetime-local'], 
+[type='month'], 
+[type='week'], 
+[type='email'], 
+[type='number'], 
+[type='search'], 
+[type='tel'], 
+[type='time'], 
+[type='url'], 
+[type='color'], 
+textarea {
+	height: 3rem;
+	padding: 1rem 0.8rem;
+}
+
+select {
+	height: 3rem;
+	padding: 0.8rem;
+}
+
+[type='file'] {
+	padding: 1rem 0.8rem;
+	border: 1px solid rgba($black, $B-dividers);
+}

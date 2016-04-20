@@ -1,0 +1,231 @@
+body {
+	text-rendering: optimizeLegibility;
+}
+
+.row {
+	display: block;
+}
+
+.mt-1 {
+	margin-top: 1rem;
+}
+
+.mt-2 {
+	margin-top: 2rem;
+}
+
+.mb-1 {
+	margin-bottom: 1rem;
+}
+
+.mb-2 {
+	margin-bottom: 2rem;
+}
+
+.flexed {
+	display: table;
+	.flexed-item {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+section {
+	padding: 3rem 0;
+	&.section-cta {
+		padding: 8rem 0;
+		background: rgba($light-gray, $B-disabled) url('../img/white_wall_hash.png') repeat center center;
+		border-top: 1px solid rgba($black, $B-dividers);
+		border-bottom: 1px solid rgba($black, $B-dividers);
+	}
+	.section-heading {
+		margin-bottom: 3rem;
+	}
+}
+
+.jumbotron {
+	padding: 0;
+	background-color: $primary-color;
+	background-image: url('../img/stylist-tools.jpg');
+	background-size: cover;
+	background-position: center center;
+	.cta {
+		padding: 5rem 0;
+		.callout {
+			padding: 2rem;
+			background-color: transparent;
+			border: none;
+		}
+		img {
+			// box-shadow: 2rem 2rem 1rem rgba($black, 0.12);
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5 {
+			color: $white;
+		}
+		h1 {
+			line-height: 1.2em;
+		}
+		.subheader {
+			color: rgba($white, 0.45);
+		}
+		ul.menu {
+			margin-top: 2rem;
+			display: inline-block;
+			border: 1px solid $white;
+			border-radius: 2px;
+			li {
+				color: $white;
+				a.button {
+					background-color: transparent;
+					text-transform: none;
+					padding: 1rem;
+					&:hover {
+						background-color: $primary-color;
+					}
+				}
+			}
+		}
+	}
+}
+
+.scene-screen {
+	position: relative;
+	.screen {
+		position: absolute;
+		top: 17%;
+		left: 15.5%;
+		width: 70%;
+		height: auto;
+	}
+}
+
+.scene {
+	margin-top: 3rem;
+	margin-bottom: -3rem;
+	img {
+		max-width: 70%;
+	}
+}
+
+.dashboard-main {
+	.top-bar {
+		background-color: rgba($black, $B-dividers);
+		.top-bar-right {
+			padding: 0;
+		}
+	}
+}
+
+.dashboard-menu {
+    background: $secondary-color;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    > li {
+    	&.active {
+    		a {
+    			color: rgba($white, $W-text);
+    			background-color: $primary-color;
+    		}
+    	}
+    	&.footer {
+    		width: 100%;
+    		position: absolute;
+    		bottom: 0;
+    		> a {
+    			border-top: 1px solid rgba($white, $W-dividers);
+    		}
+    	}
+    	> a {
+	    	color: rgba($white, $W-subtext);
+	    	font-size: 1rem;
+	    	font-weight: bold;
+	    	padding: 1rem !important;
+	    	transition: all ease-in 0.2s;
+	    	&:hover {
+	    		color: rgba($white, $B-text);
+	    		background-color: $primary-color;
+	    	}
+	    }
+    }
+}
+
+.dashboard-menu-text {
+	margin: 0 0 0.7rem;
+	padding: 0 1rem;
+	color: rgba($white, $W-subtext);
+	.logo {
+		img {
+			width: 50%;
+		}
+	}
+}
+
+.dashboard-menu-title {
+	text-transform: uppercase;
+    font-size: 0.75rem;
+    color: rgba($white, $W-subtext);
+    font-weight: bold;
+    line-height: 1;
+    padding-left: 0.9rem;
+    margin-bottom: 0.5rem;
+    border-top: 1px solid rgba($white, $W-dividers);
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+}
+
+.user-profile {
+	position: relative;
+	border-bottom: 1px solid rgba($black, $B-dividers);
+	margin-top: 1rem;
+	.thumbnail {
+		overflow: hidden;
+		width: 10rem;
+		height: 10rem;
+		margin-bottom: 0;
+		border: 1px solid rgba($black, $B-dividers);
+		&.circle {
+			border-radius: 50%;
+		}
+		> img {
+			width: 150px;
+			height: auto;
+		}
+	}
+	.button {
+		display: block;
+		margin-top: 1rem;
+		margin-bottom: 2rem;
+	}
+	.menu {
+		margin-top: 2rem;
+	}
+	.empty {
+		font-style: italic;
+	}
+}
+
+.upload-image {
+	.img-wrapper {
+		border-radius: 50%;
+		overflow: hidden;
+		width: 100px;
+		height: 100px;
+		float: left;
+		margin-right: 1rem;
+		border: 1px solid rgba($black, $B-dividers);
+		> img {
+			width: 100px;
+			height: auto;
+		}
+	}
+	.menu {
+		margin-top: 1rem;
+		li {
+			padding-right: 1rem;
+		}
+	}
+}
