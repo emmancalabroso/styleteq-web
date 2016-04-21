@@ -5,7 +5,7 @@
 	&.link {
 		border: none;
 		background-color: transparent;
-		color: $primary-color;
+		color: inherit;
 		&.white {
 			color: $white;
 		}

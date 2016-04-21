@@ -16,12 +16,14 @@
                 <!-- off-canvas left menu -->
                 <div class="off-canvas reveal-for-medium position-left" id="offCanvasLeft" data-off-canvas>
                     <ul class="vertical dropdown menu dashboard-menu" data-dropdown-menu>
-                        <p class="dashboard-menu-text">
+                        <p class="dashboard-menu-text text-center">
                             <span class="logo"><img src="img/styleteq-logo-white.png"></span>
                         </p>
+                        <p class="dashboard-menu-title">MAIN MENU</p>
                         <li class="active"><a href="dashboard.html"><i class="fa fa-user fa-fw"></i> John Doe</a></li>
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a></li>
-                        <li class="footer"><a href="register-stylist.html"><i class="fa fa-certificate fa-fw"></i> Become A Stylist</a></li>
+                        <p class="dashboard-menu-title">MORE</p>
+                        <li><a href="register-stylist.html"><i class="fa fa-certificate fa-fw"></i> Become A Stylist</a></li>
                     </ul>
                 </div>
 
@@ -51,147 +53,150 @@
                     <div class="row">
                         <div class="medium-12 columns">
                             <h1 class="page-lead">Edit Profile</h1>
-                            <p class="lead subheader">Update your name, avatar, etc.</p>
                             <hr>
-                            <ul class="tabs" data-tabs id="example-tabs">
+                            <ul class="tabs" data-tabs id="section-tabs">
                                 <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">User Profile</a></li>
                                 <li class="tabs-title"><a href="#panel2">Password</a></li>
                             </ul>
-                            <div class="tabs-content" data-tabs-content="example-tabs">
-                            <div class="tabs-panel is-active" id="panel1">
-                                <div class="upload-image callout">
-                                    <div class="img-wrapper">
-                                        <img id="thumb" width="100px" height="100px" src="img/pancho.jpg">
+                            <div class="tabs-content" data-tabs-content="section-tabs">
+                                <div class="tabs-panel is-active" id="panel1">
+                                    <div class="upload-image callout">
+                                        <div class="img-wrapper">
+                                            <img id="thumb" width="100px" height="100px" src="img/pancho.jpg">
+                                        </div>
+                                        <form action="" method="POST">
+                                            <label><b>Upload Photo</b></label>
+                                            <label>Photo should be at least 300 x 300 jpg/png file.</label>
+                                            <ul class="menu">
+                                                <li><input type="file" id="imageUpload"></li>
+                                                <li><a class="button small">Save Image</a></li>
+                                            </ul>
+                                        </form>
                                     </div>
-                                    <form action="" method="POST">
-                                        <label><b>Upload Photo</b></label>
-                                        <label>Photo should be at least 300 x 300 jpg/png file.</label>
-                                        <ul class="menu">
-                                            <li><input type="file" id="imageUpload"></li>
-                                            <li><a class="button small">Save Image</a></li>
-                                        </ul>
+                                    <form>
+                                        <div class="row">
+                                            <div class="medium-6 columns">
+                                                <label>Email Address
+                                                    <span class="red label-text">*</span>
+                                                    <input type="text" placeholder="" value="john.doe@domain.com">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="medium-6 columns">
+                                                <label>Username
+                                                    <input type="text" placeholder="" value="@johndoe">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="medium-3 columns">
+                                                <label>First Name
+                                                    <input type="text" placeholder="" value="John">
+                                                </label>
+                                            </div>
+                                            <div class="medium-3 columns end">
+                                                <label>Last Name
+                                                    <input type="text" placeholder="" value="Doe">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <fieldset class="medium-6 columns">
+                                                <legend>Gender</legend>
+                                                <input type="radio" name="gender"><label for="">Male</label>
+                                                <input type="radio" name="gender" id=""><label for="">Female</label>
+                                            </fieldset>
+                                        </div>
+                                        <div class="row">
+                                            <div class="medium-6 columns">
+                                                <label>Short Bio / Background
+                                                    <textarea rows="3"></textarea>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="medium-12 columns">
+                                                <h5 class="mt-1">Geographic Information</h5>
+                                                <hr>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="medium-6 columns">
+                                                <label>Street Address
+                                                    <input type="text" placeholder="" value="">
+                                                    <input type="text" placeholder="" value="">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="medium-3 columns">
+                                                <label>State
+                                                    <select>
+                                                        <option>Illinois</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                            <div class="medium-3 columns">
+                                                <label>City
+                                                    <select>
+                                                        <option>Chicago</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                            <div class="medium-3 columns end">
+                                                <label>Zip Code
+                                                    <input type="text" placeholder="" value="">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="medium-6 columns">
+                                                <div class="button-group mt-1">
+                                                    <button type="submit" class="button primary">Save Changes</button>
+                                                    <a href="dashboard.html" class="button link">Cancel</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </form>
                                 </div>
-                                <form>
-                                    <div class="row">
-                                        <div class="medium-6 columns">
-                                            <label>Email Address
-                                                <span class="red label-text">*</span>
-                                                <input type="text" placeholder="" value="john.doe@domain.com">
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="medium-6 columns">
-                                            <label>Username
-                                                <input type="text" placeholder="" value="@johndoe">
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="medium-3 columns">
-                                            <label>First Name
-                                                <input type="text" placeholder="" value="John">
-                                            </label>
-                                        </div>
-                                        <div class="medium-3 columns end">
-                                            <label>Last Name
-                                                <input type="text" placeholder="" value="Doe">
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <fieldset class="medium-6 columns">
-                                            <legend>Gender</legend>
-                                            <input type="radio" name="gender"><label for="">Male</label>
-                                            <input type="radio" name="gender" id=""><label for="">Female</label>
-                                        </fieldset>
-                                    </div>
-                                    <div class="row">
-                                        <div class="medium-6 columns">
-                                            <label>Short Bio / Background
-                                                <textarea></textarea>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="medium-12 columns">
-                                            <h5 class="mt-1">Geographic Information</h5>
-                                            <p class="subheader">Maecenas faucibus mollis interdum.</p>
-                                            <hr>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="medium-6 columns">
-                                            <label>Street Address
-                                                <input type="text" placeholder="" value="">
-                                                <input type="text" placeholder="" value="">
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="medium-3 columns">
-                                            <label>State
-                                                <select>
-                                                    <option>Illinois</option>
-                                                </select>
-                                            </label>
-                                        </div>
-                                        <div class="medium-3 columns end">
-                                            <label>City
-                                                <select>
-                                                    <option>Chicago</option>
-                                                </select>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="medium-6 columns">
-                                            <div class="button-group mt-1">
-                                                <button type="submit" class="button primary">Save Changes</button>
-                                                <a href="dashboard.html" class="button link">Cancel</a>
+                                <div class="tabs-panel" id="panel2">
+                                    <!-- <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p> -->
+                                    <form>
+                                        <div class="row">
+                                            <div class="medium-6 columns">
+                                                <label>Current Password
+                                                    <span class="red label-text">*</span>
+                                                    <input type="password" placeholder="" value="">
+                                                </label>
                                             </div>
                                         </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="tabs-panel" id="panel2">
-                                <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
-                                <form>
-                                    <div class="row">
-                                        <div class="medium-6 columns">
-                                            <label>Current Password
-                                                <span class="red label-text">*</span>
-                                                <input type="password" placeholder="" value="">
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="medium-6 columns">
-                                            <label>New Password
-                                                <span class="red label-text">*</span>
-                                                <input type="password" placeholder="" value="">
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="medium-6 columns">
-                                            <label>Confirm Password
-                                                <span class="red label-text">*</span>
-                                                <input type="password" placeholder="" value="">
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="medium-6 columns">
-                                            <div class="button-group mt-1">
-                                                <button type="submit" class="button primary">Submit Changes</button>
-                                                <a href="dashboard.html" class="button link">Cancel</a>
+                                        <div class="row">
+                                            <div class="medium-6 columns">
+                                                <label>New Password
+                                                    <span class="red label-text">*</span>
+                                                    <input type="password" placeholder="" value="">
+                                                </label>
                                             </div>
                                         </div>
-                                    </div>
-                                </form>
-                            </div>
+                                        <div class="row">
+                                            <div class="medium-6 columns">
+                                                <label>Confirm Password
+                                                    <span class="red label-text">*</span>
+                                                    <input type="password" placeholder="" value="">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="medium-6 columns">
+                                                <div class="button-group mt-1">
+                                                    <button type="submit" class="button primary">Submit Changes</button>
+                                                    <a href="dashboard.html" class="button link">Cancel</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>                        
                     </div>

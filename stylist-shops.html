@@ -1,0 +1,138 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>StyleTeq - Dashboard</title>
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body>
+        
+
+        <div class="off-canvas-wrapper">
+            <div id="mainDashboard" class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+                <!-- off-canvas left menu -->
+                <div class="off-canvas reveal-for-medium position-left" id="offCanvasLeft" data-off-canvas>
+                    <ul class="vertical dropdown menu dashboard-menu" data-dropdown-menu>
+                        <p class="dashboard-menu-text text-center">
+                            <span class="logo"><img src="img/styleteq-logo-white.png"></span>
+                        </p>
+                        <p class="dashboard-menu-title">MAIN MENU</p>
+                        <li><a href="dashboard.html"><i class="fa fa-user fa-fw"></i> John Doe</a></li>
+                        <li class="active"><a href="stylist-shops.html"><i class="fa fa-institution fa-fw"></i> My Shops</a></li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a></li>
+                        <!-- <p class="dashboard-menu-title">MORE</p>
+                        <li><a href="register-stylist.html"><i class="fa fa-certificate fa-fw"></i> Become A Stylist</a></li> -->
+                    </ul>
+                </div>
+
+                <!-- original content goes in this container -->
+                <div class="off-canvas-content dashboard-main" data-off-canvas-content>
+
+                    <!-- off-canvas title bar for 'small' screen -->
+                    <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
+                        <div class="title-bar-left">
+                            <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
+                        </div>
+                        <div class="title-bar-right">
+                            <!-- <a href="register-stylist.html" class="button primary small"><i class="fa fa-certificate fa-fw"></i> Become A Stylist</a> -->
+                            <a href="login.html" class="button link small white"><i class="fa fa-sign-out fa-fw"></i> Sign Out</a>
+                        </div>
+                    </div>
+
+                    <!-- "wider" top-bar menu for 'medium' and up -->
+                    <div id="widemenu" class="top-bar">
+                        <div class="top-bar-right">
+                            <ul class="menu">
+                                <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Sign Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="medium-12 columns">
+                            <h1 class="page-lead">My Shops</h1>
+                            <a href="create-shops.html" class="page-lead-button pull-right button secondary"><i class="fa fa-plus-square-o fa-lg fa-fw"></i>Create New Shop</a>
+                            <hr>
+
+                            <div class="callout">
+                                <ul class="list-stacked list-block">
+                                    <li>
+                                        <div class="shop-entry media-object">
+                                            <div class="media-object-section">
+                                                <div class="circle thumbnail">
+                                                    <img src= "img/pancho.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="media-object-section main-section">
+                                                <h4>John Doe's Shop</h4>
+                                                <p class="subheader">143 Mango Street, MA</p>
+                                            </div>
+                                            <div class="options pull-right">
+                                                <ul class="menu">
+                                                    <li>
+                                                        <a href="#" class="button secondary link"><i class="fa fa-edit"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="button alert link"><i class="fa fa-trash"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="shop-entry media-object">
+                                            <div class="media-object-section">
+                                                <div class="circle thumbnail">
+                                                    <img src= "img/pancho.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="media-object-section main-section">
+                                                <h4>Kame Hame Super Haber Dashery</h4>
+                                                <p class="subheader">143 Mango Street, MA</p>
+                                            </div>
+                                            <div class="options pull-right">
+                                                <ul class="menu">
+                                                    <li>
+                                                        <a href="#" class="button secondary link"><i class="fa fa-edit"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="button alert link"><i class="fa fa-trash"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- close wrapper, no more content after this -->
+
+            </div>
+        </div>
+        
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/what-input/what-input.js"></script>
+        <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+        <script src="js/app.js"></script>
+
+        <script type="text/javascript">
+            $(function () {
+                var timer;
+
+                $(window).resize(function() {
+                    clearTimeout(timer);
+                    timer = setTimeout(function() {
+                      $('.dashboard-menu').css("height", $(window).height());
+                    }, 40); 
+                }).resize();
+            });
+        </script>
+    </body>
+</html>

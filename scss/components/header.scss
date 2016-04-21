@@ -6,6 +6,7 @@
 	.menu {
 		li {
 			a {
+				color: rgba($black, $B-text);
 				text-transform: uppercase;
 			}
 			&.bordered {

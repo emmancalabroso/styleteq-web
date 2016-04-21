@@ -1,5 +1,10 @@
 body {
+	background-color: $faint-gray;
 	text-rendering: optimizeLegibility;
+}
+
+.off-canvas-content, .off-canvas-content {
+	background-color: $faint-gray;
 }
 
 .row {
@@ -27,6 +32,15 @@ body {
 	.flexed-item {
 		display: table-cell;
 		vertical-align: middle;
+	}
+}
+
+.thumbnail {
+	&.circle {
+		border-radius: 50%;
+	}
+	&:hover {
+		box-shadow: none;
 	}
 }
 
@@ -113,7 +127,8 @@ section {
 
 .dashboard-main {
 	.top-bar {
-		background-color: rgba($black, $B-dividers);
+		background-color: $white;
+		border-bottom: 1px solid rgba($black, $B-dividers);
 		.top-bar-right {
 			padding: 0;
 		}
@@ -121,14 +136,12 @@ section {
 }
 
 .dashboard-menu {
-    background: $secondary-color;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    background-color: $secondary-color;
     > li {
     	&.active {
     		a {
     			color: rgba($white, $W-text);
-    			background-color: $primary-color;
+    			background-color: rgba($primary-color, $B-subtext);
     		}
     	}
     	&.footer {
@@ -140,23 +153,20 @@ section {
     		}
     	}
     	> a {
-	    	color: rgba($white, $W-subtext);
+    		color: rgba($white, $W-text);
 	    	font-size: 1rem;
-	    	font-weight: bold;
-	    	padding: 1rem !important;
+	    	padding: 0.875rem !important;
 	    	transition: all ease-in 0.2s;
-	    	&:hover {
-	    		color: rgba($white, $B-text);
-	    		background-color: $primary-color;
-	    	}
 	    }
     }
 }
 
 .dashboard-menu-text {
-	margin: 0 0 0.7rem;
-	padding: 0 1rem;
+	margin: 0;
+	padding: 1.5rem 1rem;
+	line-height: 1;
 	color: rgba($white, $W-subtext);
+	background-color: $primary-color;
 	.logo {
 		img {
 			width: 50%;
@@ -172,14 +182,15 @@ section {
     line-height: 1;
     padding-left: 0.9rem;
     margin-bottom: 0.5rem;
-    border-top: 1px solid rgba($white, $W-dividers);
     margin-top: 1rem;
     padding-top: 1.5rem;
 }
 
 .user-profile {
 	position: relative;
-	border-bottom: 1px solid rgba($black, $B-dividers);
+	border-radius: 2px;
+	border: 1px solid rgba($black, $B-dividers);
+	background-color: $white;
 	margin-top: 1rem;
 	.thumbnail {
 		overflow: hidden;
@@ -187,9 +198,6 @@ section {
 		height: 10rem;
 		margin-bottom: 0;
 		border: 1px solid rgba($black, $B-dividers);
-		&.circle {
-			border-radius: 50%;
-		}
 		> img {
 			width: 150px;
 			height: auto;
@@ -198,13 +206,15 @@ section {
 	.button {
 		display: block;
 		margin-top: 1rem;
-		margin-bottom: 2rem;
 	}
 	.menu {
 		margin-top: 2rem;
 	}
 	.empty {
 		font-style: italic;
+	}
+	.media-object-section {
+		padding: 2rem;
 	}
 }
 
@@ -226,6 +236,41 @@ section {
 		margin-top: 1rem;
 		li {
 			padding-right: 1rem;
+		}
+	}
+}
+
+.shop-entry {
+	margin: 0;
+	position: relative;
+	background-color: $faint-gray;
+	.media-object-section {
+		vertical-align: middle;
+	}
+	.options {
+		visibility: hidden;
+		position: absolute;
+		padding: 2.5rem 1rem;
+		height: 100%;
+		top: 0;
+		right: 0;
+		transition: all ease-in 0.2s;
+	}
+	.thumbnail {
+	    overflow: hidden;
+		width: 5rem;
+		height: 5rem;
+		margin-bottom: 0;
+		border: 1px solid rgba(42, 42, 42, 0.12);
+		img {
+			width: 5rem;
+			height: auto;
+		}
+	}
+	&:hover {
+		background-color: $white;
+		.options {
+			visibility: visible;
 		}
 	}
 }
