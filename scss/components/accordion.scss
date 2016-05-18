@@ -1,0 +1,16 @@
+.accordion-title {
+	padding: 1rem;
+	font-size: 1rem;
+	line-height: 0.8;
+	color: rgba($base-body-font-color, $B-subtext);
+	font-family: $header-font-family;
+	&:hover {
+		color: rgba($base-body-font-color, $B-subtext);
+		background-color: rgba($medium-gray, $B-dividers);
+	}
+}
+
+.accordion-content {
+	border-top: 1px solid rgba($black, $B-dividers);
+	padding: 1rem;
+}

@@ -1,13 +1,27 @@
 .button {
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	margin-bottom: 0;
 	&.link {
 		border: none;
 		background-color: transparent;
 		color: inherit;
 		&.white {
 			color: $white;
+		}
+		&:hover {
+			color: $white;
+			i {
+				color: $white;
+			}
+		}
+	}
+	&.white {
+		color: $primary-color;
+		background-color: $white;
+		&.hollow {
+			color: $white;
+			background: transparent;
+			border-color: $white;
 		}
 	}
 }

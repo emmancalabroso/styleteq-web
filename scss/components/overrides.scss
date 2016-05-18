@@ -1,5 +1,55 @@
 .callout {
 	padding: 1.5rem;
+	&.hi-padded {
+		padding: 3rem;
+	}
+	&.graded {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5a1657+0,751d71+100 */
+		background: rgb(90,22,87); /* Old browsers */
+        background: -moz-linear-gradient(45deg,  rgba(90,22,87,1) 0%, rgba(117,29,113,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg,  rgba(90,22,87,1) 0%,rgba(117,29,113,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg,  rgba(90,22,87,1) 0%,rgba(117,29,113,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a1657', endColorstr='#751d71',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        > * {
+        	color: $white !important;
+        	.subheader {
+        		color: rgba($white, $W-subtext);
+        	}
+        }
+	}
+	&.white {
+		border: 1px solid $white;
+	}
+}
+
+.card {
+	border: 1px solid rgba(42, 42, 42, 0.25);
+	border-radius: 2px;
+	margin-bottom: 1rem;
+	> .callout {
+		margin: 0;
+		border: none;
+	}
+	&.clients, &.professionals, &.owners {
+		transition: all ease-in 0.2s;
+		&:hover {
+			border-color: $primary-color;
+			.button {
+				color: $white;
+				background-color: $primary-color;
+			}
+		}
+	}
+}
+
+.menu {
+	&.white {
+		> li {
+			> a {
+				color: $white;
+			}
+		}
+	}
 }
 
 .menu > li > a > img, .menu > li > a > i {
@@ -8,14 +58,6 @@
 
 .media-object-section {
 	padding: 1rem;
-}
-
-.callout {
-	&.transparent {
-		border: none;
-		background-color: transparent;
-		margin-bottom: 0;
-	}
 }
 
 .thumbnail {

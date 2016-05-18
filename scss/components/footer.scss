@@ -1,6 +1,60 @@
 footer {
-	padding: 2rem 0;
 	background-color: $secondary-color;
+	.upper.row {
+		padding: 3rem 0;
+		border-bottom: 1px solid rgba($white, $W-dividers);
+		.logo {
+			display: block;
+			margin-bottom: 0.25rem;
+			img {
+				width: 180px;
+				height: auto;
+			}
+		}
+		.contact-card {
+			h4 {
+				margin-bottom: 2rem;
+			}
+			ul {
+				list-style: none;
+				margin: 0;
+				li {
+					margin-bottom: 1rem;
+					span {
+						text-decoration: underline;
+					}
+					.subheader {
+						text-decoration: none;
+						font-weight: bold;
+						margin-right: 1rem;
+					}
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+			table {
+				margin-bottom: 0;
+				td {
+					span {
+						text-decoration: underline;
+					}
+					.subheader {
+						text-decoration: none;
+						font-weight: bold;
+					}
+				}
+			}
+			tbody {
+				th, td {
+					padding: 0.5rem 0.625rem 0.625rem 0;
+				}
+			}
+		}
+	}
+	.lower.row {
+		padding: 2rem 0;
+	}
 	.footer-text {
 		padding: 0.5rem 1rem;
 	}

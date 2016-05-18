@@ -5,12 +5,13 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>StyleTeq</title>
+        <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/app.css">
     </head>
     <body>
         
-        <section class="jumbotron">
-            <header class="white top-bar">
+        <section class="jumbotron" data-stellar-background-ratio="0.5">
+            <header class="top-bar">
                 <div class="row">
                     <div class="top-bar-title">
                         <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
@@ -21,14 +22,17 @@
                     <div id="responsive-menu">
                         <div class="top-bar-right">
                             <ul class="menu">
-                                <li class="bordered">
-                                    <a class="button hollow" href="register-stylist.html">Become A Stylist</a>
+                                <!-- <li class="bordered">
+                                    <a class="button hollow" href="register-stylist.html">Be A Professional</a>
+                                </li> -->
+                                <li>
+                                    <a href="login.html">Blog</a>
                                 </li>
                                 <li>
                                     <a href="login.html">Log In</a>
                                 </li>
-                                <li>
-                                    <a href="register.html">Sign Up</a>
+                                <li class="bordered">
+                                    <a class="button hollow white" href="register.html">Sign Up</a>
                                 </li>
                             </ul>
                         </div>
@@ -36,25 +40,25 @@
                 </div>
             </header>
 
-            <div class="cta">
+            <div id="animation-1" class="cta">
                 <div class="row" data-equalizer>
-                    <div class="medium-3 medium-offset-1 small-12 columns text-center" data-equalizer-watch>
-                        <div class="scene-screen">
-                            <img class="screen-wrapper" src="img/iPhone-5S.png">
+                    <div class="medium-4 small-12 columns text-center" data-equalizer-watch>
+                        <div class="animated scene-screen">
+                            <img class="screen-wrapper" src="img/iPhone-5S-black.png">
                             <img class="screen" src="img/screen-scene.gif">
                         </div>
                     </div>
-                    <div class="medium-7 small-12 columns end flexed" data-equalizer-watch>
+                    <div class="medium-6 small-12 columns end flexed" data-equalizer-watch>
                         <div class="callout flexed-item">
-                            <h1>Connect to your new and current clients.</h1>
-                            <h5>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</h5>
+                            <h1>Never lose a client and stay booked daily.</h1>
+                            <h4 class="subheader mt-2">Eliminate trial and error by browsing the work of professionals before setting an appointment.</h4>
                             <ul class="menu">
                                 <li class="menu-text">Get it here.</li>
                                 <li>
                                      <a class="button" href="#"><i class="fa fa-apple fa-fw"></i> iOS</a>
                                 </li>
                                 <li>
-                                    <a class="button" href="#"><i class="fa fa-android fa-fw"></i> Android</a>
+                                    <a class="button" href="#"><i class="fa fa-android fa-fw"></i> ANDROID</a>
                                 </li>
                             </ul>
                         </div>
@@ -63,96 +67,175 @@
             </div>
         </section>
 
-        <section>
+        <section id="users-section">
             <div class="section-heading row">
-                <div class="medium-12 columns">
-                    <h3 class="text-center">Maecenas faucibus mollis interdum.</h3>
-                    <h5 class="text-center subheader">Maecenas sed diam eget risus varius blandit sit amet non magna.</h5>
+                <div class="medium-8 medium-offset-2 columns text-center">
+                    <h2 class="text-center mb-2">We connect professionals and clients.</h2>
+                    <p class="h4 text-center subheader">Styleteq is a promotional tool that connects clients to professionals and professionals to shop owners through photosharing. Never lose a client again by posting your new whereabouts to your followers with the click of a button. If you're new professional to a city, find your booth to rent right away and get walk-ins you've never met by showing off your portfolio locally.</p>
                 </div>
             </div>
+
             <div class="row">
-                <div class="medium-4 columns">
-                    <div class="callout transparent">
-                        <img class="thumbnail" src="img/clients-44.png"></img>
-                        <h4 class="mb-2">Clients</h4>
-                        <p class="subheader">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                <ul class="tabs expanded" data-tabs id="users-tabs">
+                    <li class="tabs-title is-active">
+                        <a href="#panel1" aria-selected="true">
+                            <div class="img-wrapper circle">
+                                <img src="img/client.png"></img>
+                            </div>
+                            <h4>Clients</h4>
+                            <p class="subheader">Know the limitations and specialties of a professional instead just going by of word of mouth.</p>
+                        </a>
+                    </li>
+                    <li class="tabs-title">
+                        <a href="#panel2">
+                            <div class="img-wrapper circle">
+                                <img src="img/woman-hair-stylist.png"></img>
+                            </div>
+                            <h4>Professionals</h4>
+                            <p class="subheader">Create new walk-in clients by uploading examples of your work to the app. Gain clientele from local clients to people in town on business for a few days.</p>
+                        </a>
+                    </li>
+                    <li class="tabs-title">
+                        <a href="#panel3">
+                            <div class="img-wrapper circle">
+                                <img src="img/salon-owner.png"></img>
+                            </div>
+                            <h4>Shop Owners</h4>
+                            <p class="subheader">Market your booth for rent to professionals seeking a space by uploading pictures, your booth rent price, contact information, and atmosphere.</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tabs-content" data-tabs-content="users-tabs" data-equalizer>
+                    <div class="tabs-panel is-active" id="panel1">
+                        <div class="row">
+                            <div class="medium-7 columns flexed" data-equalizer-watch>
+                                <div class="flexed-item">
+                                    <h2><b>Simplify your search and choices.</b></h2>
+                                    <ul class="list">
+                                        <li>Instead of asking your stylist to perform a certain style, go to the person that posted the example that you love to begin with.</li>
+                                        <li>
+                                            Message and get booked by that professional directly.
+                                        </li>
+                                        <li>
+                                           Browse specials when you may catch a deal on a slow day. 
+                                        </li>
+                                        <li>
+                                            Browse different examples of a style you want using keywords and filters.
+                                        </li>
+                                    </ul>
+                                    <p>
+                                         <a href="register.html" class="button hollow">Download The App <i class="fa fa-angle-right"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="medium-4 medium-offset-1 columns" data-equalizer-watch>
+                                <img id="clients-phone" class="animated" src="img/iphone-for-clients.png">
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="medium-4 columns">
-                    <div class="callout transparent">
-                    <img class="thumbnail" src="img/professionals-44.png"></img>
-                        <h4 class="mb-2">Professionals</h4>
-                        <p class="subheader">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+                    <div class="tabs-panel" id="panel2">
+                        <div class="row">
+                            <div class="medium-7 columns flexed" data-equalizer-watch>
+                                <div class="flexed-item">
+                                    <h2><b>Never have a slow day again.</b></h2>
+                                    <ul class="list">
+                                        <li>Keep new and established clients by promoting your work by uploading and tagging pictures.</li>
+                                        <li>
+                                            Upload examples of your range of work, talents and specials to followers.
+                                        </li>
+                                        <li>
+                                           Display your portfolio allowing new and established clients/followers to browse for your best work online.
+                                        </li>
+                                        <li>
+                                            Never lose a client again by moving as Styleteq will send them an alert by you changing address.
+                                        </li>
+                                    </ul>
+                                    <p>
+                                         <a href="register.html" class="button hollow">Be A Professional Now <i class="fa fa-angle-right"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="medium-4 medium-offset-1 columns" data-equalizer-watch>
+                                <img id="prof-phone" class="animated" src="img/iphone-for-prof.png">
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="medium-4 columns">
-                    <div class="callout transparent">
-                    <img class="thumbnail" src="img/wanted-44.png"></img>
-                        <h4 class="mb-2">Shop Owners</h4>
-                        <p class="subheader">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.</p>
+
+                    <div class="tabs-panel" id="panel3">
+                        <div class="row">
+                            <div class="medium-7 columns flexed" data-equalizer-watch>
+                                <div class="flexed-item">
+                                    <h2><b>We fill empty station space.</b></h2>
+                                    <ul class="list">
+                                        <li>List and advertise your booth for rent.</li>
+                                        <li>List a station with our Booth Renter and hire professionals that have the credentials and clientele you're looking.</li>
+                                        <li>The application handles your booth in such a way that it is easy to see and contact you, the owner.</li>
+                                    </ul>
+                                    <p>
+                                         <a href="register.html" class="button hollow">Create Your Shop Now <i class="fa fa-angle-right"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="medium-4 medium-offset-1 columns" data-equalizer-watch>
+                                <img id="owner-phone" class="animated" src="img/iphone-for-owner.png">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         
-        <section class="section-cta">
-            <div class="row" data-equalizer>
-                <div class="medium-8 columns" data-equalizer-watch>
-                    <h3>Lorem ipsum. Dolor sit amet.</h3>
-                    <h5 class="subheader">Aenean lacinia bibendum nulla sed consectetur.</h5>
-                </div>
-                <div class="medium-4 columns flexed" data-equalizer-watch>
-                    <div class="flexed-item text-center">
-                        <a href="#" class="button primary">Sign Up Now</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section>
+        <section id="features-section" class="borderless">
             <div class="section-heading row">
-                <div class="medium-12 columns">
-                    <h3 class="text-center">Nullam quis risus eget urna mollis.</h3>
-                    <h5 class="text-center subheader">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</h5>
+                <div class="medium-8 medium-offset-2 columns">
+                    <h2 class="text-center mb-2">Market yourself, build, and maintain your client base.</h2>
+                    <p class="h4 text-center subheader">Connect with new and current clients with a few clicks of your smartphone.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="medium-4 columns">
-                    <div class="callout transparent">
-                        <h4 class="text-center">Feature 1</h4>
-                        <p class="text-center subheader">Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                    <div class="callout transparent borderless">
+                        <div class="img-wrapper borderless text-center mb-1"><img src="img/search-feat-64" alt="Search"></div>
+                        <h4 class="text-center">Search</h4>
+                        <p class="text-center subheader">Search and compare the same styles or cuts performed by different professionals searching by keyword.</p>
                     </div>
                 </div>
                 <div class="medium-4 columns">
-                    <div class="callout transparent">
-                        <h4 class="text-center">Feature 2</h4>
-                        <p class="text-center subheader">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                    <div class="callout transparent borderless">
+                        <div class="img-wrapper borderless text-center mb-1"><img src="img/marketing-feat-64" alt="Marketing"></div>
+                        <h4 class="text-center">Marketing</h4>
+                        <p class="text-center subheader">Market yourself by uploading images of your range of talent to show potential clients all the things you can do. Upload and label your portfolio electronically.</p>
                     </div>
                 </div>
                 <div class="medium-4 columns">
-                    <div class="callout transparent">
-                        <h4 class="text-center">Feature 3</h4>
-                        <p class="text-center subheader">Duis mollis, est non commodo luctus, nisi erat porttito.</p>
+                    <div class="callout transparent borderless">
+                        <div class="img-wrapper borderless text-center mb-1"><img src="img/gain-clients-feat-64" alt="Gain Clients"></div>
+                        <h4 class="text-center">Gain Clients</h4>
+                        <p class="text-center subheader">Have the potential to get more walk-ins by registering the location of your place of business and communicating with potential clients directly.</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="medium-4 columns">
-                    <div class="callout transparent">
-                        <h4 class="text-center">Feature 4</h4>
-                        <p class="text-center subheader">Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                    <div class="callout transparent borderless">
+                    <div class="img-wrapper borderless text-center mb-1"><img src="img/booth-for-rent-feat-64" alt="Booth For Rent"></div>
+                        <h4 class="text-center">Booth for Rent</h4>
+                        <p class="text-center subheader">Owners, post your empty chair and stay filled to make sure you never miss booth rent again.</p>
                     </div>
                 </div>
                 <div class="medium-4 columns">
-                    <div class="callout transparent">
-                        <h4 class="text-center">Feature 5</h4>
-                        <p class="text-center subheader">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                    <div class="callout transparent borderless">
+                        <div class="img-wrapper borderless text-center mb-1"><img src="img/business-feat-64" alt="Business"></div>
+                        <h4 class="text-center">Business</h4>
+                        <p class="text-center subheader">Want to know the popular place to go in your area?  Browse trending local shops in your area to view décor and atmosphere.</p>
                     </div>
                 </div>
                 <div class="medium-4 columns">
-                    <div class="callout transparent">
-                        <h4 class="text-center">Feature 6</h4>
-                        <p class="text-center subheader">Duis mollis, est non commodo luctus, nisi erat porttito.</p>
+                    <div class="callout transparent borderless">
+                        <div class="img-wrapper borderless text-center mb-1"><img src="img/specials-feat-64" alt="Specials"></div>
+                        <h4 class="text-center">Specials</h4>
+                        <p class="text-center subheader">Offer specials to followers so that you’ll never have another slow day.</p>
                     </div>
                 </div>
             </div>
@@ -165,31 +248,74 @@
             </div>
         </section>
 
-        <section class="section-cta">
-            <div class="row" data-equalizer>
-                <div class="medium-8 columns" data-equalizer-watch>
-                    <h3>Lorem ipsum. Dolor sit amet.</h3>
-                    <h5 class="subheader">Aenean lacinia bibendum nulla sed consectetur.</h5>
-                </div>
-                <div class="medium-4 columns flexed" data-equalizer-watch>
-                    <div class="flexed-item text-center">
-                        <a href="#" class="button primary">Sign Up Now</a>
+        <section class="section-cta borderless">
+            <div class="row">
+                <div class="medium-12 columns">
+                    <div class="hi-padded transparent white callout mb-5">
+                        <div class="row" data-equalizer>
+                            <div class="medium-8 columns flexed" data-equalizer-watch>
+                                <h4 class="marginless type-normal flexed-item"><b>Start using Styleteq</b>.<span class="subheader ml-half">Download and create a profile today for FREE.</span></h4>
+                            </div>
+                            <div class="medium-4 columns flexed" data-equalizer-watch>
+                                <div class="flexed-item">
+                                    <a href="#" class="button white pull-right">Sign Up For Free</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="medium-8 medium-offset-2 columns">
+                    <h3 class="text-center">Tell your friends about us.</h3>
+                    <p class="text-center subheader">Spread the word and share your experience with others.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="medium-4 medium-offset-4 columns">
+                    <ul class="menu expanded mt-2">
+                        <li class="text-center"><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+                        <li class="text-center"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+                        <li class="text-center"><a href="#"><i class="fa fa-google-plus fa-2x"></i></a></li>
+                        <li class="text-center"><a href="#"><i class="fa fa-pinterest fa-2x"></i></a></li>
+                        <li class="text-center"><a href="#"><i class="fa fa-youtube fa-2x"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-
         <footer>
-            <div class="row">
-                <div class="medium-6 columns">
-                    <ul class="social-media menu">
-                        <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
-                    </ul>
+            <div class="upper row" data-equalizer>
+                <div class="medium-4 columns flexed" data-equalizer-watch>
+                    <div class="flexed-item">
+                         <span class="logo"><img src="img/styleteq-logo-white.png"></span>
+                         <p class="white">Our mission is to connect clients to professionals and professionals to shop owners.</p>
+                    </div>
                 </div>
-                <div class="medium-6 columns flexed">
-                    <ul class="menu align-right">
+                <div class="medium-4 medium-offset-4 columns" data-equalizer-watch>
+                    <div class="contact-card">
+                        <h4 class="text-upper white">Questions? Contact Us.</h4>
+                        <table class="white transparent">
+                            <tr>
+                                <td><span class="subheader">General Inquiries:</span></td>
+                                <td><span>info@styleteq.com</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="subheader">Advertising Inquiries:</span></td>
+                                <td><span>advertise@styleteq.com</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="subheader">Technical Difficulties:</span></td>
+                                <td><span>support@styleteq.com</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="lower row">
+                <div class="medium-8 columns flexed">
+                    <h6 class="white mt-half">Copyright © Styleteq. 2005-2016.</h6>
+                    <!-- <ul class="menu">
                         <li>
                             <a href="#">Contact</a>
                         </li>
@@ -202,6 +328,12 @@
                         <li>
                             <a href="#">Advertise</a>
                         </li>
+                    </ul> -->
+                </div>
+                <div class="medium-4 columns">
+                    <ul class="social-media menu align-right">
+                        <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -210,6 +342,25 @@
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/what-input/what-input.js"></script>
         <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+        <script src="js/noframework.waypoints.min.js"></script>
+        <script src="js/jquery.stellar.min.js"></script>
         <script src="js/app.js"></script>
+
+        <script type="text/javascript">
+
+            $(window).stellar();
+
+            $(document).ready(function(){
+               $('.scene-screen').addClass('fadeInLeft');
+            });
+
+            var waypoint = new Waypoint({
+                element: document.getElementById('users-section'),
+                handler: function() {
+                    $('#clients-phone, #prof-phone, #owner-phone').addClass('fadeInRight');
+                }
+            })
+
+        </script>
     </body>
 </html>

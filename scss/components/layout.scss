@@ -11,6 +11,14 @@ body {
 	display: block;
 }
 
+.marginless {
+	margin: 0 !important;
+}
+
+.mt-half {
+	margin-top: 0.5rem;
+}
+
 .mt-1 {
 	margin-top: 1rem;
 }
@@ -19,12 +27,28 @@ body {
 	margin-top: 2rem;
 }
 
+.ml-half {
+	margin-left: 0.5rem;
+}
+
+.ml-1 {
+	margin-left: 1rem;
+}
+
+.ml-2 {
+	margin-left: 2rem;
+}
+
 .mb-1 {
 	margin-bottom: 1rem;
 }
 
 .mb-2 {
 	margin-bottom: 2rem;
+}
+
+.mb-5 {
+	margin-bottom: 5rem;
 }
 
 .flexed {
@@ -44,13 +68,84 @@ body {
 	}
 }
 
+.transparent {
+	background: transparent !important;
+}
+
+.borderless {
+	border: none !important;
+}
+
+.border-top {
+	border-top: 1px solid rgba($black, $B-dividers);
+}
+
+.white {
+	color: $white;
+	.subheader {
+		color: rgba($white, $W-hinttext);
+	}
+}
+
 section {
-	padding: 3rem 0;
+	padding: 5rem 0;
+    border-bottom: 1px solid rgba($black, $B-dividers);
+	&#features-section {
+		background: $white url('../img/wave-transp.png') no-repeat center center;
+		background-size: cover;
+		.callout {
+			h1,
+			h2,
+			h3,
+			h4,
+			h5 {
+				font-weight: normal;
+			}
+		}
+	}
 	&.section-cta {
-		padding: 8rem 0;
-		background: rgba($light-gray, $B-disabled) url('../img/white_wall_hash.png') repeat center center;
-		border-top: 1px solid rgba($black, $B-dividers);
-		border-bottom: 1px solid rgba($black, $B-dividers);
+		padding: 5rem 0;
+		// background: transparent;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5a1657+0,751d71+100 */
+		background: rgb(90,22,87); /* Old browsers */
+        background: -moz-linear-gradient(45deg,  rgba(90,22,87,1) 0%, rgba(117,29,113,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg,  rgba(90,22,87,1) 0%,rgba(117,29,113,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg,  rgba(90,22,87,1) 0%,rgba(117,29,113,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a1657', endColorstr='#751d71',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        > * {
+        	color: $white;
+        }
+        .subheader {
+        	color: $white;
+        }
+		&.image-bg {
+			position: relative;
+			overflow: hidden;
+			z-index: 1;
+			color: $white;
+			background: rgba($light-gray, $B-disabled) url('../img/stylist-tools-closeup.jpg') no-repeat center center;
+			background-size: cover;
+			&:before {
+				content: '';
+    			bottom: 0;
+    			left: 0;
+    			right: 0;
+    			top: 0;
+    			z-index: -1;
+    			position: absolute;
+                background: -moz-linear-gradient(left, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.06) 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(left, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.06) 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to right, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.06) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+               filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ffffff', endColorstr='#0fffffff',GradientType=1 ); /* IE6-9 */
+			}
+		}
+		.menu {
+			> li {
+				> a {
+					color: $white;
+				}
+			}
+		}
 	}
 	.section-heading {
 		margin-bottom: 3rem;
@@ -58,11 +153,15 @@ section {
 }
 
 .jumbotron {
+	min-height: 900px;
 	padding: 0;
-	background-color: $primary-color;
-	background-image: url('../img/stylist-tools.jpg');
+	background-color: -moz-linear-gradient(left, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.06) 100%); /* FF3.6-15 */
+	background-color: -webkit-linear-gradient(left, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.06) 100%); /* Chrome10-25,Safari5.1-6 */
+	background-color: linear-gradient(to right, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.06) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ffffff', endColorstr='#0fffffff',GradientType=1 ); /* IE6-9 */
+	background: $primary-color url('../img/stylist-tools-cropped-left-bw.png') center center no-repeat;
 	background-size: cover;
-	background-position: center center;
+	background-attachment: fixed;
 	.cta {
 		padding: 5rem 0;
 		.callout {
@@ -81,24 +180,30 @@ section {
 			color: $white;
 		}
 		h1 {
+			
+			font-size: 4.1875rem;
 			line-height: 1.2em;
 		}
 		.subheader {
-			color: rgba($white, 0.45);
+			color: rgba($white, $B-subtext);
 		}
 		ul.menu {
 			margin-top: 2rem;
 			display: inline-block;
-			border: 1px solid $white;
+			border: 2px solid $white;
 			border-radius: 2px;
 			li {
 				color: $white;
 				a.button {
+					color: $white;
 					background-color: transparent;
 					text-transform: none;
 					padding: 1rem;
+					font-weight: bold;
+					border-radius: 0;
 					&:hover {
-						background-color: $primary-color;
+						color: $primary-color;
+						background-color: $white;
 					}
 				}
 			}
@@ -119,7 +224,7 @@ section {
 
 .scene {
 	margin-top: 3rem;
-	margin-bottom: -3rem;
+	margin-bottom: -5rem;
 	img {
 		max-width: 70%;
 	}
@@ -127,7 +232,7 @@ section {
 
 .dashboard-main {
 	.top-bar {
-		background-color: $white;
+		color: $white;
 		border-bottom: 1px solid rgba($black, $B-dividers);
 		.top-bar-right {
 			padding: 0;
@@ -163,13 +268,13 @@ section {
 
 .dashboard-menu-text {
 	margin: 0;
-	padding: 1.5rem 1rem;
+	padding: 1rem;
 	line-height: 1;
 	color: rgba($white, $W-subtext);
 	background-color: $primary-color;
 	.logo {
 		img {
-			width: 50%;
+			width: 40%;
 		}
 	}
 }
@@ -186,20 +291,25 @@ section {
     padding-top: 1.5rem;
 }
 
+.img-wrapper {
+	overflow: hidden;
+	border: 1px solid rgba($black, $B-dividers);
+	&.circle {
+		border-radius: 50%;
+	}
+}
+
 .user-profile {
 	position: relative;
 	border-radius: 2px;
 	border: 1px solid rgba($black, $B-dividers);
 	background-color: $white;
 	margin-top: 1rem;
-	.thumbnail {
-		overflow: hidden;
+	.img-wrapper {
 		width: 10rem;
 		height: 10rem;
-		margin-bottom: 0;
-		border: 1px solid rgba($black, $B-dividers);
 		> img {
-			width: 150px;
+			width: 10rem;
 			height: auto;
 		}
 	}
@@ -220,13 +330,10 @@ section {
 
 .upload-image {
 	.img-wrapper {
-		border-radius: 50%;
-		overflow: hidden;
 		width: 100px;
 		height: 100px;
 		float: left;
 		margin-right: 1rem;
-		border: 1px solid rgba($black, $B-dividers);
 		> img {
 			width: 100px;
 			height: auto;
@@ -247,6 +354,15 @@ section {
 	.media-object-section {
 		vertical-align: middle;
 	}
+	.main-section {
+		h1,
+		h2,
+		h3,
+		h4,
+		h5 {
+			font-weight: normal;
+		}
+	}
 	.options {
 		visibility: hidden;
 		position: absolute;
@@ -256,13 +372,10 @@ section {
 		right: 0;
 		transition: all ease-in 0.2s;
 	}
-	.thumbnail {
-	    overflow: hidden;
+	.img-wrapper {
 		width: 5rem;
 		height: 5rem;
-		margin-bottom: 0;
-		border: 1px solid rgba(42, 42, 42, 0.12);
-		img {
+		> img {
 			width: 5rem;
 			height: auto;
 		}

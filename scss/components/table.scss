@@ -1,0 +1,72 @@
+table {
+	width: 100%;
+	table-layout: fixed;
+	&.transparent {
+		background: transparent;
+		border: none;
+		thead, tbody, tfoot {
+			background: transparent;
+			border: none;
+			tr {
+				background: transparent;
+			}
+		}
+	}
+	&.white {
+		color: $white;
+	}
+	&.single-line {
+		tbody {
+			th, td {
+				> a, i {
+					color: rgba($base-body-font-color, $B-text);
+					// truncate
+					display: block;
+					width: 100%;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+				> a {
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
+
+tbody {
+	th, td {
+		padding: 0.625rem 1rem 0.625rem;
+		&.halves {
+			width: 50%;
+		}
+		&.thirds {
+			width: 33.33%;
+		}
+		&.quarters {
+			width: 25%;
+		}
+		&.eighths {
+			width: 12.5%;
+		}
+		.menu {
+			visibility: hidden;
+			transition: all ease-in 0.2s;
+		}
+	}
+	tr {
+		&:hover {
+			th, td {
+				.menu {
+					visibility: visible;
+				}
+			}
+		}
+	}
+	tr:nth-child(2n) {
+		background-color: rgba($medium-gray, $B-dividers);
+	}
+}

@@ -8,6 +8,9 @@
 form {
 	.button.submit, button[type="submit"] {
 		margin-top: 1rem;
+		+ * {
+			margin-top: 1rem;
+		}
 	}
 	.form-text {
 		margin-top: 1rem;
@@ -84,7 +87,6 @@ legend {
 [type='color'], 
 textarea {
 	height: 3rem;
-	padding: 1rem 0.8rem;
 }
 
 select {
