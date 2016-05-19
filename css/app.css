@@ -6018,7 +6018,7 @@ section {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ffffff', endColorstr='#0fffffff',GradientType=1 );
   /* IE6-9 */
-  background: #5A1657 url("../img/stylist-tools-cropped-left-bw.png") center center no-repeat;
+  background: #5A1657 url("../img/stylist-tools-cropped-left.jpg") 0 -230px no-repeat;
   background-size: cover;
   background-attachment: fixed; }
   .jumbotron .cta {
@@ -6060,9 +6060,9 @@ section {
   position: relative; }
   .scene-screen .screen {
     position: absolute;
-    top: 17%;
-    left: 15.5%;
-    width: 70%;
+    top: 16.6%;
+    left: 10%;
+    width: 79.7%;
     height: auto; }
 
 .scene {
