@@ -54,6 +54,12 @@ footer {
 	}
 	.lower.row {
 		padding: 2rem 0;
+		h6 {
+			display: inline-block;
+			vertical-align: top;
+			margin-top: 0.7rem;
+			margin-bottom: 0.7rem;
+		}
 	}
 	.footer-text {
 		padding: 0.5rem 1rem;
@@ -62,6 +68,16 @@ footer {
 		li {
 			a {
 				color: $white;
+			}
+		}
+		&.terms {
+			display: inline-block;
+			margin-left: 2rem;
+			li {
+				a {
+					font-weight: bold;
+					font-size: 0.75rem;
+				}
 			}
 		}
 		&.social-media {
