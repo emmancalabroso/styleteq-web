@@ -1,0 +1,23 @@
+.report-section-title{
+	padding: 1rem 1rem 2rem 0rem;
+	// margin-bottom:1rem;
+	font-size: 1rem;
+	line-height: 0.8;
+	color: rgba($base-body-font-color, $B-subtext);
+	font-family: $header-font-family;
+	}
+
+.searchuser{
+	width: 20rem;
+	height:2rem;
+}
+
+.ratings{
+	padding-right:1rem;
+	visibility:visible !important;
+	color:#5A1657;
+	li i{
+		padding: 0 .25rem;
+		color:#5A1657 !important;
+	}
+}
