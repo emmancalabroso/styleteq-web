@@ -6264,10 +6264,21 @@ footer {
       padding: 0.5rem 0.625rem 0.625rem 0; }
   footer .lower.row {
     padding: 2rem 0; }
+    footer .lower.row h6 {
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 0.7rem;
+      margin-bottom: 0.7rem; }
   footer .footer-text {
     padding: 0.5rem 1rem; }
   footer .menu li a {
     color: #fefefe; }
+  footer .menu.terms {
+    display: inline-block;
+    margin-left: 2rem; }
+    footer .menu.terms li a {
+      font-weight: bold;
+      font-size: 0.75rem; }
   footer .menu.social-media li {
     padding: 0 0.5rem; }
     footer .menu.social-media li a {

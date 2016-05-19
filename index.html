@@ -314,21 +314,15 @@
             </div>
             <div class="lower row">
                 <div class="medium-8 columns flexed">
-                    <h6 class="white mt-half">Copyright © Styleteq. 2005-2016.</h6>
-                    <!-- <ul class="menu">
+                    <h6 class="white">Copyright © Styleteq. 2005-2016.</h6>
+                    <ul class="terms menu">
                         <li>
-                            <a href="#">Contact</a>
+                            <a href="#">Privacy Policy</a>
                         </li>
                         <li>
-                            <a href="#">Legal</a>
+                            <a href="#">Terms of Use</a>
                         </li>
-                        <li>
-                            <a href="#">Support</a>
-                        </li>
-                        <li>
-                            <a href="#">Advertise</a>
-                        </li>
-                    </ul> -->
+                    </ul>
                 </div>
                 <div class="medium-4 columns">
                     <ul class="social-media menu align-right">
@@ -350,16 +344,16 @@
 
             $(window).stellar();
 
-            // $(document).ready(function(){
-            //    $('.scene-screen').addClass('fadeInLeft');
-            // });
+            $(document).ready(function(){
+               $('.scene-screen').addClass('fadeInLeft');
+            });
 
-            // var waypoint = new Waypoint({
-            //     element: document.getElementById('users-section'),
-            //     handler: function() {
-            //         $('#clients-phone, #prof-phone, #owner-phone').addClass('fadeInRight');
-            //     }
-            // })
+            var waypoint = new Waypoint({
+                element: document.getElementById('users-section'),
+                handler: function() {
+                    $('#clients-phone, #prof-phone, #owner-phone').addClass('fadeInRight');
+                }
+            })
 
         </script>
     </body>
