@@ -20,9 +20,9 @@
                         </p>
                         <p class="dashboard-menu-title">MAIN MENU</p>
                         <li><a href="admin-home.html"><i class="fa fa-user fa-fw"></i> Dashboard</a></li>
-                        <li><a href="#"><i class="fa fa-pie-chart fa-fw"></i> Reports</a></li>
+                        <li class="active"><a href="#"><i class="fa fa-pie-chart fa-fw"></i> Reports</a></li>
                         <li><a href="users.html"><i class="fa fa-user fa-fw"></i> Users</a></li>
-                        <li class="active"><a href="shops.html"><i class="fa fa-tag fa-fw"></i> Shops</a></li>
+                        <li><a href="shops.html"><i class="fa fa-tag fa-fw"></i> Shops</a></li>
                         <li><a href="booths.html"><i class="fa fa-tags fa-fw"></i> Booths</a></li>
                         <p class="dashboard-menu-title">Settings</p>
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Account</a></li>
@@ -55,16 +55,13 @@
                     </div>
                     
                     <div class="row">
-                        <div class="medium-12 columns">
                         <!-- ---------- -->
-                        <ul class="tabs mt-1" data-tabs id="reports">
-                            <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Pending</a></li>
-                            <li class="tabs-title"><a href="#panel2">Resolved</a></li>
-                        </ul>
-                        <div class="tabs-content" data-tabs-content="reports">
-                            <div class="tabs-panel is-active" id="panel1">
-                                    <!-- <a href="#" class="accordion-title">Pending Reports</a> -->
-                                    <!-- <span class="report-section-title">Pending Reports</span> -->
+                            <ul class="tabs mt-1" data-tabs id="reports">
+                                <li class="tabs-title is-active"><a href="#panel1b" aria-selected="true">Pending</a></li>
+                                <li class="tabs-title"><a href="#panel2b">Resolved</a></li>
+                            </ul>
+                            <div class="tabs-content" data-tabs-content="reports">
+                                <div class="tabs-panel is-active" id="panel1b">
                                     <div>
                                         <div class="row">
                                             <div class="medium-6 columns">
@@ -75,114 +72,250 @@
                                             </div>
                                         </div>
 
-                                        <table class="single-line marginless">
-                                            <tr>
-                                                <td class="thirds"><a href="#">From: Archie Baldwin</a></td>
-                                                <td class="thirds"><a href="#"><b>Fraudalent:</b> Harry Potter's Haberdashery</a></td>
-                                                <td class=""><i>2 minutes ago</i></td>
-                                                <td class="">
-                                                    <ul class="menu pull-right">
-                                                        <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                        <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                        <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#">From: Connie Constantia</a></td>
-                                                <td class=""><a href="#"><b>Fraudalent:</b> 12 Booths For Rent</a></td>
-                                                <td class=""><i>2 hours ago</i></td>
-                                                <td class="">
-                                                    <ul class="menu pull-right">
-                                                        <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                        <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                        <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#">From: Freddie Aguilar</a></td>
-                                                <td class=""><a href="#"><b>Fraudalent:</b> Amy Schumer</a></td>
-                                                <td class=""><i>11/23/2015</i></td>
-                                                <td class="">
-                                                    <ul class="menu pull-right">
-                                                        <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                        <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                        <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                            </div>
-                            <div class="tabs-panel" id="panel2">
-                                    <!-- <a href="#" class="accordion-title">Resolved Reports</a> -->
-                                    <!-- <span class="report-section-title">Resolved Reports</span> -->
-                                        <div class="row">
-                                            <div class="medium-6 columns">
-                                                <p class="mt-half">Reports resolved: <b>6</b></p>
-                                            </div>
-                                            <div class="medium-6 columns">
-                                                <a href="#" class="button hollow small pull-right mb-1">See All Reports</a>
-                                            </div>
-                                        </div>
+                                        <ul class="accordion mt-1" data-accordion data-allow-all-closed="true">
+                                            <li class="accordion-item" data-accordion-item>
+                                                <a href="#" class="accordion-title">
+                                                    <div class="row">
+                                                        <div class="columns medium-4">From: Archie Baldwin</div>
+                                                        <div class="columns medium-5"><b>Fraudalent:</b> Harry Potter's Haberdashery</div>
+                                                        <div class="columns medium-3">2 minutes ago</div>
+                                                    </div>
+                                                </a>
+                                                <div class="accordion-content" data-tab-content>
+                                                    <div class="row">
+                                                        <div class="columns medium-1">
+                                                            <ul class="menu vertical">
+                                                                <li><a class="button link primary" href="#"><i class="fa fa-check"></i></a></li>
+                                                                <li><a class="button link success" href="#"><i class="fa fa-trash"></i></a></li>
+                                                                <li><a class="button link alert" href="#"><i class="fa fa-envelope"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="columns medium-11">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet purus dui. Praesent eget lacus porttitor nisl convallis facilisis. Sed a suscipit eros. Nulla semper, risus sit amet cursus dignissim, felis odio ultricies nibh, nec iaculis eros massa fringilla massa. Mauris a tempus diam, et laoreet odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut gravida sed est at accumsan. Pellentesque vel mi accumsan dolor vulputate eleifend eu vitae quam. Sed posuere commodo pharetra. Maecenas euismod quis enim id finibus. Aliquam venenatis nulla consequat posuere aliquet. Mauris sodales tortor a leo hendrerit pharetra. Curabitur interdum facilisis sem, consectetur venenatis metus hendrerit a. Duis risus erat, fermentum ornare dui ac, lobortis porttitor nibh. Cras consectetur feugiat tincidunt.</p>
 
-                                        <table class="single-line marginless">
-                                            <tr>
-                                                <td class="thirds"><a href="#">From: Emilio Aguinaldo</a></td>
-                                                <td class="thirds"><a href="#"><b>Fraudalent:</b> Harry Potter's Haberdashery</a></td>
-                                                <td class=""><i>2 minutes ago</i></td>
-                                                <td class="">
-                                                        <i class="fa fa-check"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="thirds"><a href="#">From: Marcelo H. del Pilar</a></td>
-                                                <td class="thirds"><a href="#"><b>Fraudalent:</b> Harry Potter's Haberdashery</a></td>
-                                                <td class=""><i>2 minutes ago</i></td>
-                                                <td class="">
-                                                        <i class="fa fa-check"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="thirds"><a href="#">From: Archie Baldwin</a></td>
-                                                <td class="thirds"><a href="#"><b>Fraudalent:</b> Harry Potter's Haberdashery</a></td>
-                                                <td class=""><i>2 minutes ago</i></td>
-                                                <td class="">
-                                                        <i class="fa fa-check"></i>
-                                                </td>
-                                            </tr>                                                                                        
-                                            <tr>
-                                                <td class="thirds"><a href="#">From: Connie Constantia</a></td>
-                                                <td class="thirds"><a href="#"><b>Fraudalent:</b> 12 Booths For Rent</a></td>
-                                                <td class=""><i>2 hours ago</i></td>
-                                                <td class="">
-                                                    <i class="fa fa-ban"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="thirds"><a href="#">From: Francisco Dagohoy</a></td>
-                                                <td class="thirds"><a href="#"><b>Fraudalent:</b> 12 Booths For Rent</a></td>
-                                                <td class=""><i>2 hours ago</i></td>
-                                                <td class="">
-                                                    <i class="fa fa-check"></i>
-                                                </td>
-                                            </tr>                                            
-                                            <tr>
-                                                <td><a href="#">From: Freddie Aguilar</a></td>
-                                                <td class=""><a href="#"><b>Fraudalent:</b> Amy Schumer</a></td>
-                                                <td class=""><i>11/23/2015</i></td>
-                                                <td class="">
-                                                    <ul class="menu pull-right">
-                                                        <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                        <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                        <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                        </table>
+                                                            <p>Maecenas venenatis vehicula neque vitae cursus. Vivamus luctus purus ut nulla fringilla sodales a ut massa. Etiam est quam, faucibus vel tristique at, rhoncus eu est. Proin rutrum nulla leo, at sollicitudin metus cursus in. Vivamus vel magna malesuada, tristique lectus sit amet, tempor enim. Suspendisse potenti. Morbi interdum erat in neque accumsan, gravida mattis orci pulvinar. Suspendisse sed leo ac libero rutrum mattis eu sit amet odio. Nunc bibendum eleifend gravida. Proin nisl dolor, pretium et libero iaculis, porta hendrerit erat. Mauris venenatis augue ut sem porta, nec eleifend elit facilisis. Maecenas urna enim, mattis in rhoncus et, interdum ullamcorper nisl. Ut vel ipsum lacinia, fringilla magna quis, sodales nulla. Morbi cursus, nibh id consectetur efficitur, nibh erat sodales risus, at luctus magna leo vel nisl. Nulla facilisi. In vestibulum aliquam enim, non sagittis nibh pellentesque vitae.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="accordion-item" data-accordion-item>
+                                                <a href="#" class="accordion-title">
+                                                    <div class="row">
+                                                        <div class="columns medium-4">From: Archie Baldwin</div>
+                                                        <div class="columns medium-5"><b>Fraudalent:</b> Harry Potter's Haberdashery</div>
+                                                        <div class="columns medium-3">2 minutes ago</div>
+                                                    </div>
+                                                </a>
+                                                <div class="accordion-content" data-tab-content>
+                                                    <div class="row">
+                                                        <div class="columns medium-1">
+                                                            <ul class="menu vertical">
+                                                                <li><a class="button link primary" href="#"><i class="fa fa-check"></i></a></li>
+                                                                <li><a class="button link success" href="#"><i class="fa fa-trash"></i></a></li>
+                                                                <li><a class="button link alert" href="#"><i class="fa fa-envelope"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="columns medium-11">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet purus dui. Praesent eget lacus porttitor nisl convallis facilisis. Sed a suscipit eros. Nulla semper, risus sit amet cursus dignissim, felis odio ultricies nibh, nec iaculis eros massa fringilla massa. Mauris a tempus diam, et laoreet odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut gravida sed est at accumsan. Pellentesque vel mi accumsan dolor vulputate eleifend eu vitae quam. Sed posuere commodo pharetra. Maecenas euismod quis enim id finibus. Aliquam venenatis nulla consequat posuere aliquet. Mauris sodales tortor a leo hendrerit pharetra. Curabitur interdum facilisis sem, consectetur venenatis metus hendrerit a. Duis risus erat, fermentum ornare dui ac, lobortis porttitor nibh. Cras consectetur feugiat tincidunt.</p>
+
+                                                            <p>Maecenas venenatis vehicula neque vitae cursus. Vivamus luctus purus ut nulla fringilla sodales a ut massa. Etiam est quam, faucibus vel tristique at, rhoncus eu est. Proin rutrum nulla leo, at sollicitudin metus cursus in. Vivamus vel magna malesuada, tristique lectus sit amet, tempor enim. Suspendisse potenti. Morbi interdum erat in neque accumsan, gravida mattis orci pulvinar. Suspendisse sed leo ac libero rutrum mattis eu sit amet odio. Nunc bibendum eleifend gravida. Proin nisl dolor, pretium et libero iaculis, porta hendrerit erat. Mauris venenatis augue ut sem porta, nec eleifend elit facilisis. Maecenas urna enim, mattis in rhoncus et, interdum ullamcorper nisl. Ut vel ipsum lacinia, fringilla magna quis, sodales nulla. Morbi cursus, nibh id consectetur efficitur, nibh erat sodales risus, at luctus magna leo vel nisl. Nulla facilisi. In vestibulum aliquam enim, non sagittis nibh pellentesque vitae.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="accordion-item" data-accordion-item>
+                                                <a href="#" class="accordion-title">
+                                                    <div class="row">
+                                                        <div class="columns medium-4">From: Archie Baldwin</div>
+                                                        <div class="columns medium-5"><b>Fraudalent:</b> Harry Potter's Haberdashery</div>
+                                                        <div class="columns medium-3">2 minutes ago</div>
+                                                    </div>
+                                                </a>
+                                                <div class="accordion-content" data-tab-content>
+                                                    <div class="row">
+                                                        <div class="columns medium-1">
+                                                            <ul class="menu vertical">
+                                                                <li><a class="button link primary" href="#"><i class="fa fa-check"></i></a></li>
+                                                                <li><a class="button link success" href="#"><i class="fa fa-trash"></i></a></li>
+                                                                <li><a class="button link alert" href="#"><i class="fa fa-envelope"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="columns medium-11">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet purus dui. Praesent eget lacus porttitor nisl convallis facilisis. Sed a suscipit eros. Nulla semper, risus sit amet cursus dignissim, felis odio ultricies nibh, nec iaculis eros massa fringilla massa. Mauris a tempus diam, et laoreet odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut gravida sed est at accumsan. Pellentesque vel mi accumsan dolor vulputate eleifend eu vitae quam. Sed posuere commodo pharetra. Maecenas euismod quis enim id finibus. Aliquam venenatis nulla consequat posuere aliquet. Mauris sodales tortor a leo hendrerit pharetra. Curabitur interdum facilisis sem, consectetur venenatis metus hendrerit a. Duis risus erat, fermentum ornare dui ac, lobortis porttitor nibh. Cras consectetur feugiat tincidunt.</p>
+
+                                                            <p>Maecenas venenatis vehicula neque vitae cursus. Vivamus luctus purus ut nulla fringilla sodales a ut massa. Etiam est quam, faucibus vel tristique at, rhoncus eu est. Proin rutrum nulla leo, at sollicitudin metus cursus in. Vivamus vel magna malesuada, tristique lectus sit amet, tempor enim. Suspendisse potenti. Morbi interdum erat in neque accumsan, gravida mattis orci pulvinar. Suspendisse sed leo ac libero rutrum mattis eu sit amet odio. Nunc bibendum eleifend gravida. Proin nisl dolor, pretium et libero iaculis, porta hendrerit erat. Mauris venenatis augue ut sem porta, nec eleifend elit facilisis. Maecenas urna enim, mattis in rhoncus et, interdum ullamcorper nisl. Ut vel ipsum lacinia, fringilla magna quis, sodales nulla. Morbi cursus, nibh id consectetur efficitur, nibh erat sodales risus, at luctus magna leo vel nisl. Nulla facilisi. In vestibulum aliquam enim, non sagittis nibh pellentesque vitae.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tabs-panel" id="panel2b">
+                                    <div class="row">
+                                        <div class="medium-6 columns">
+                                            <p class="mt-half">Reports resolved: <b>6</b></p>
+                                        </div>
+                                        <div class="medium-6 columns">
+                                            <a href="#" class="button hollow small pull-right mb-1">See All Reports</a>
+                                        </div>
+                                    </div>
+                                    <!-- ----- -->
+                                        <ul class="accordion mt-1" data-accordion data-allow-all-closed="true">
+                                            <li class="accordion-item" data-accordion-item>
+                                                <a href="#" class="accordion-title">
+                                                    <div class="row">
+                                                        <div class="columns medium-4">From: Emilio Aguinaldo</div>
+                                                        <div class="columns medium-5"><b>Fraudalent:</b> Harry Potter's Haberdashery</div>
+                                                        <div class="columns medium-2">2 minutes ago</div>
+                                                        <div class="columns medium-1"><i class="fa fa-check"></i></div>
+                                                    </div>
+                                                </a>
+                                                <div class="accordion-content" data-tab-content>
+                                                    <div class="row">
+                                                        <div class="columns medium-1 date1">
+                                                            <span class="label success"><h6>resolved</h6>
+                                                            <p><h4>May</h4></p>
+                                                            <p><h2>22</h2></p>
+                                                            <p><h4>2016</h4></p></span>
+                                                        </div>
+                                                        <div class="columns medium-11">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet purus dui. Praesent eget lacus porttitor nisl convallis facilisis. Sed a suscipit eros. Nulla semper, risus sit amet cursus dignissim, felis odio ultricies nibh, nec iaculis eros massa fringilla massa. Mauris a tempus diam, et laoreet odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut gravida sed est at accumsan. Pellentesque vel mi accumsan dolor vulputate eleifend eu vitae quam. Sed posuere commodo pharetra. Maecenas euismod quis enim id finibus. Aliquam venenatis nulla consequat posuere aliquet. Mauris sodales tortor a leo hendrerit pharetra. Curabitur interdum facilisis sem, consectetur venenatis metus hendrerit a. Duis risus erat, fermentum ornare dui ac, lobortis porttitor nibh. Cras consectetur feugiat tincidunt.</p>
+
+                                                            <p>Maecenas venenatis vehicula neque vitae cursus. Vivamus luctus purus ut nulla fringilla sodales a ut massa. Etiam est quam, faucibus vel tristique at, rhoncus eu est. Proin rutrum nulla leo, at sollicitudin metus cursus in. Vivamus vel magna malesuada, tristique lectus sit amet, tempor enim. Suspendisse potenti. Morbi interdum erat in neque accumsan, gravida mattis orci pulvinar. Suspendisse sed leo ac libero rutrum mattis eu sit amet odio. Nunc bibendum eleifend gravida. Proin nisl dolor, pretium et libero iaculis, porta hendrerit erat. Mauris venenatis augue ut sem porta, nec eleifend elit facilisis. Maecenas urna enim, mattis in rhoncus et, interdum ullamcorper nisl. Ut vel ipsum lacinia, fringilla magna quis, sodales nulla. Morbi cursus, nibh id consectetur efficitur, nibh erat sodales risus, at luctus magna leo vel nisl. Nulla facilisi. In vestibulum aliquam enim, non sagittis nibh pellentesque vitae.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="accordion-item" data-accordion-item>
+                                                <a href="#" class="accordion-title">
+                                                    <div class="row">
+                                                        <div class="columns medium-4">From: Marcelo H. del Pilar</div>
+                                                        <div class="columns medium-5"><b>Fraudalent:</b> Harry Potter's Haberdashery</div>
+                                                        <div class="columns medium-2">2 minutes ago</div>
+                                                        <div class="columns medium-1"><i class="fa fa-check"></i></div>
+                                                    </div>
+                                                </a>
+                                                <div class="accordion-content" data-tab-content>
+                                                    <div class="row">
+                                                        <div class="columns medium-1 date1">
+                                                            <span class="label success"><h6>resolved</h6>
+                                                            <p><h4>May</h4></p>
+                                                            <p><h2>22</h2></p>
+                                                            <p><h4>2016</h4></p></span>
+                                                        </div>
+                                                        <div class="columns medium-11">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet purus dui. Praesent eget lacus porttitor nisl convallis facilisis. Sed a suscipit eros. Nulla semper, risus sit amet cursus dignissim, felis odio ultricies nibh, nec iaculis eros massa fringilla massa. Mauris a tempus diam, et laoreet odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut gravida sed est at accumsan. Pellentesque vel mi accumsan dolor vulputate eleifend eu vitae quam. Sed posuere commodo pharetra. Maecenas euismod quis enim id finibus. Aliquam venenatis nulla consequat posuere aliquet. Mauris sodales tortor a leo hendrerit pharetra. Curabitur interdum facilisis sem, consectetur venenatis metus hendrerit a. Duis risus erat, fermentum ornare dui ac, lobortis porttitor nibh. Cras consectetur feugiat tincidunt.</p>
+
+                                                            <p>Maecenas venenatis vehicula neque vitae cursus. Vivamus luctus purus ut nulla fringilla sodales a ut massa. Etiam est quam, faucibus vel tristique at, rhoncus eu est. Proin rutrum nulla leo, at sollicitudin metus cursus in. Vivamus vel magna malesuada, tristique lectus sit amet, tempor enim. Suspendisse potenti. Morbi interdum erat in neque accumsan, gravida mattis orci pulvinar. Suspendisse sed leo ac libero rutrum mattis eu sit amet odio. Nunc bibendum eleifend gravida. Proin nisl dolor, pretium et libero iaculis, porta hendrerit erat. Mauris venenatis augue ut sem porta, nec eleifend elit facilisis. Maecenas urna enim, mattis in rhoncus et, interdum ullamcorper nisl. Ut vel ipsum lacinia, fringilla magna quis, sodales nulla. Morbi cursus, nibh id consectetur efficitur, nibh erat sodales risus, at luctus magna leo vel nisl. Nulla facilisi. In vestibulum aliquam enim, non sagittis nibh pellentesque vitae.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="accordion-item" data-accordion-item>
+                                                <a href="#" class="accordion-title">
+                                                    <div class="row">
+                                                        <div class="columns medium-4">From: Archie Baldwin</div>
+                                                        <div class="columns medium-5"><b>Fraudalent:</b> Harry Potter's Haberdashery</div>
+                                                        <div class="columns medium-2">2 minutes ago</div>
+                                                        <div class="columns medium-1"><i class="fa fa-check"></i></div>
+                                                    </div>
+                                                </a>
+                                                <div class="accordion-content" data-tab-content>
+                                                    <div class="row">
+                                                        <div class="columns medium-1 date1">
+                                                            <span class="label success"><h6>resolved</h6>
+                                                            <p><h4>May</h4></p>
+                                                            <p><h2>22</h2></p>
+                                                            <p><h4>2016</h4></p></span>
+                                                        </div>
+                                                        <div class="columns medium-11">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet purus dui. Praesent eget lacus porttitor nisl convallis facilisis. Sed a suscipit eros. Nulla semper, risus sit amet cursus dignissim, felis odio ultricies nibh, nec iaculis eros massa fringilla massa. Mauris a tempus diam, et laoreet odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut gravida sed est at accumsan. Pellentesque vel mi accumsan dolor vulputate eleifend eu vitae quam. Sed posuere commodo pharetra. Maecenas euismod quis enim id finibus. Aliquam venenatis nulla consequat posuere aliquet. Mauris sodales tortor a leo hendrerit pharetra. Curabitur interdum facilisis sem, consectetur venenatis metus hendrerit a. Duis risus erat, fermentum ornare dui ac, lobortis porttitor nibh. Cras consectetur feugiat tincidunt.</p>
+
+                                                            <p>Maecenas venenatis vehicula neque vitae cursus. Vivamus luctus purus ut nulla fringilla sodales a ut massa. Etiam est quam, faucibus vel tristique at, rhoncus eu est. Proin rutrum nulla leo, at sollicitudin metus cursus in. Vivamus vel magna malesuada, tristique lectus sit amet, tempor enim. Suspendisse potenti. Morbi interdum erat in neque accumsan, gravida mattis orci pulvinar. Suspendisse sed leo ac libero rutrum mattis eu sit amet odio. Nunc bibendum eleifend gravida. Proin nisl dolor, pretium et libero iaculis, porta hendrerit erat. Mauris venenatis augue ut sem porta, nec eleifend elit facilisis. Maecenas urna enim, mattis in rhoncus et, interdum ullamcorper nisl. Ut vel ipsum lacinia, fringilla magna quis, sodales nulla. Morbi cursus, nibh id consectetur efficitur, nibh erat sodales risus, at luctus magna leo vel nisl. Nulla facilisi. In vestibulum aliquam enim, non sagittis nibh pellentesque vitae.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="accordion-item" data-accordion-item>
+                                                <a href="#" class="accordion-title">
+                                                    <div class="row">
+                                                        <div class="columns medium-4">From: Connie Constantia</div>
+                                                        <div class="columns medium-5"><b>Fraudalent:</b> Harry Potter's Haberdashery</div>
+                                                        <div class="columns medium-2">2 minutes ago</div>
+                                                        <div class="columns medium-1"><i class="fa fa-check"></i></div>
+                                                    </div>
+                                                </a>
+                                                <div class="accordion-content" data-tab-content>
+                                                    <div class="row">
+                                                        <div class="columns medium-1 date1">
+                                                            <span class="label success"><h6>resolved</h6>
+                                                            <p><h4>May</h4></p>
+                                                            <p><h2>22</h2></p>
+                                                            <p><h4>2016</h4></p></span>
+                                                        </div>
+                                                        <div class="columns medium-11">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet purus dui. Praesent eget lacus porttitor nisl convallis facilisis. Sed a suscipit eros. Nulla semper, risus sit amet cursus dignissim, felis odio ultricies nibh, nec iaculis eros massa fringilla massa. Mauris a tempus diam, et laoreet odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut gravida sed est at accumsan. Pellentesque vel mi accumsan dolor vulputate eleifend eu vitae quam. Sed posuere commodo pharetra. Maecenas euismod quis enim id finibus. Aliquam venenatis nulla consequat posuere aliquet. Mauris sodales tortor a leo hendrerit pharetra. Curabitur interdum facilisis sem, consectetur venenatis metus hendrerit a. Duis risus erat, fermentum ornare dui ac, lobortis porttitor nibh. Cras consectetur feugiat tincidunt.</p>
+
+                                                            <p>Maecenas venenatis vehicula neque vitae cursus. Vivamus luctus purus ut nulla fringilla sodales a ut massa. Etiam est quam, faucibus vel tristique at, rhoncus eu est. Proin rutrum nulla leo, at sollicitudin metus cursus in. Vivamus vel magna malesuada, tristique lectus sit amet, tempor enim. Suspendisse potenti. Morbi interdum erat in neque accumsan, gravida mattis orci pulvinar. Suspendisse sed leo ac libero rutrum mattis eu sit amet odio. Nunc bibendum eleifend gravida. Proin nisl dolor, pretium et libero iaculis, porta hendrerit erat. Mauris venenatis augue ut sem porta, nec eleifend elit facilisis. Maecenas urna enim, mattis in rhoncus et, interdum ullamcorper nisl. Ut vel ipsum lacinia, fringilla magna quis, sodales nulla. Morbi cursus, nibh id consectetur efficitur, nibh erat sodales risus, at luctus magna leo vel nisl. Nulla facilisi. In vestibulum aliquam enim, non sagittis nibh pellentesque vitae.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="accordion-item" data-accordion-item>
+                                                <a href="#" class="accordion-title">
+                                                    <div class="row">
+                                                        <div class="columns medium-4">From: Francisco Dagohoy</div>
+                                                        <div class="columns medium-5"><b>Fraudalent:</b> 12 Booths For Rent</div>
+                                                        <div class="columns medium-2">2 minutes ago</div>
+                                                        <div class="columns medium-1"><i class="fa fa-ban"></i></div>
+                                                    </div>
+                                                </a>
+                                                <div class="accordion-content" data-tab-content>
+                                                    <div class="row">
+                                                        <div class="columns medium-1 date1">
+                                                            <span class="label warning"><h6>resolved</h6>
+                                                            <p><h4>May</h4></p>
+                                                            <p><h2>22</h2></p>
+                                                            <p><h4>2016</h4></p></span>
+                                                        </div>
+                                                        <div class="columns medium-11">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet purus dui. Praesent eget lacus porttitor nisl convallis facilisis. Sed a suscipit eros. Nulla semper, risus sit amet cursus dignissim, felis odio ultricies nibh, nec iaculis eros massa fringilla massa. Mauris a tempus diam, et laoreet odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut gravida sed est at accumsan. Pellentesque vel mi accumsan dolor vulputate eleifend eu vitae quam. Sed posuere commodo pharetra. Maecenas euismod quis enim id finibus. Aliquam venenatis nulla consequat posuere aliquet. Mauris sodales tortor a leo hendrerit pharetra. Curabitur interdum facilisis sem, consectetur venenatis metus hendrerit a. Duis risus erat, fermentum ornare dui ac, lobortis porttitor nibh. Cras consectetur feugiat tincidunt.</p>
+
+                                                            <p>Maecenas venenatis vehicula neque vitae cursus. Vivamus luctus purus ut nulla fringilla sodales a ut massa. Etiam est quam, faucibus vel tristique at, rhoncus eu est. Proin rutrum nulla leo, at sollicitudin metus cursus in. Vivamus vel magna malesuada, tristique lectus sit amet, tempor enim. Suspendisse potenti. Morbi interdum erat in neque accumsan, gravida mattis orci pulvinar. Suspendisse sed leo ac libero rutrum mattis eu sit amet odio. Nunc bibendum eleifend gravida. Proin nisl dolor, pretium et libero iaculis, porta hendrerit erat. Mauris venenatis augue ut sem porta, nec eleifend elit facilisis. Maecenas urna enim, mattis in rhoncus et, interdum ullamcorper nisl. Ut vel ipsum lacinia, fringilla magna quis, sodales nulla. Morbi cursus, nibh id consectetur efficitur, nibh erat sodales risus, at luctus magna leo vel nisl. Nulla facilisi. In vestibulum aliquam enim, non sagittis nibh pellentesque vitae.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="accordion-item" data-accordion-item>
+                                                <a href="#" class="accordion-title">
+                                                    <div class="row">
+                                                        <div class="columns medium-4">From: Freddie Aguilar</div>
+                                                        <div class="columns medium-5"><b>Fraudalent:</b> Amy Schumer</div>
+                                                        <div class="columns medium-2">2 minutes ago</div>
+                                                        <div class="columns medium-1"><i class="fa fa-check"></i></div>
+                                                    </div>
+                                                </a>
+                                                <div class="accordion-content" data-tab-content>
+                                                    <div class="row">
+                                                        <div class="columns medium-1 date1">
+                                                            <span class="label success"><h6>resolved</h6>
+                                                            <p><h4>May</h4></p>
+                                                            <p><h2>22</h2></p>
+                                                            <p><h4>2016</h4></p></span>
+                                                        </div>
+                                                        <div class="columns medium-11">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet purus dui. Praesent eget lacus porttitor nisl convallis facilisis. Sed a suscipit eros. Nulla semper, risus sit amet cursus dignissim, felis odio ultricies nibh, nec iaculis eros massa fringilla massa. Mauris a tempus diam, et laoreet odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut gravida sed est at accumsan. Pellentesque vel mi accumsan dolor vulputate eleifend eu vitae quam. Sed posuere commodo pharetra. Maecenas euismod quis enim id finibus. Aliquam venenatis nulla consequat posuere aliquet. Mauris sodales tortor a leo hendrerit pharetra. Curabitur interdum facilisis sem, consectetur venenatis metus hendrerit a. Duis risus erat, fermentum ornare dui ac, lobortis porttitor nibh. Cras consectetur feugiat tincidunt.</p>
+
+                                                            <p>Maecenas venenatis vehicula neque vitae cursus. Vivamus luctus purus ut nulla fringilla sodales a ut massa. Etiam est quam, faucibus vel tristique at, rhoncus eu est. Proin rutrum nulla leo, at sollicitudin metus cursus in. Vivamus vel magna malesuada, tristique lectus sit amet, tempor enim. Suspendisse potenti. Morbi interdum erat in neque accumsan, gravida mattis orci pulvinar. Suspendisse sed leo ac libero rutrum mattis eu sit amet odio. Nunc bibendum eleifend gravida. Proin nisl dolor, pretium et libero iaculis, porta hendrerit erat. Mauris venenatis augue ut sem porta, nec eleifend elit facilisis. Maecenas urna enim, mattis in rhoncus et, interdum ullamcorper nisl. Ut vel ipsum lacinia, fringilla magna quis, sodales nulla. Morbi cursus, nibh id consectetur efficitur, nibh erat sodales risus, at luctus magna leo vel nisl. Nulla facilisi. In vestibulum aliquam enim, non sagittis nibh pellentesque vitae.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    <!-- ----- -->
                             </div>
-                        </div>
+                            </div>
                         <!-- ---------- -->
                         </div>
                     </div>

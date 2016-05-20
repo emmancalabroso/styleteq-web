@@ -6657,7 +6657,7 @@ ul.list-block {
   color: rgba(39, 43, 65, 0.54);
   font-family: Montserrat, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
 
-.searchuser {
+.searchtxt {
   width: 20rem;
   height: 2rem; }
 
@@ -6668,3 +6668,16 @@ ul.list-block {
   .ratings li i {
     padding: 0 .25rem;
     color: #5A1657 !important; }
+
+.date1 {
+  text-align: center; }
+  .date1 hr {
+    margin: .1rem 0; }
+  .date1 h5 {
+    border-bottom: 2px solid #323232; }
+  .date1 p {
+    margin: 0; }
+  .date1 h4 {
+    margin-bottom: 0rem !important; }
+  .date1 h1 {
+    margin-bottom: 0rem !important; }
