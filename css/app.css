@@ -6362,7 +6362,7 @@ table {
     text-decoration: underline; }
 
 tbody th, tbody td {
-  padding: 0.625rem 1rem 0.625rem; }
+  padding: 1rem; }
   tbody th.halves, tbody td.halves {
     width: 50%; }
   tbody th.thirds, tbody td.thirds {
