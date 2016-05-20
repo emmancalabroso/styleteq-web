@@ -5902,31 +5902,31 @@ body {
   margin: 0 !important; }
 
 .mt-half {
-  margin-top: 0.5rem; }
+  margin-top: 0.5rem !important; }
 
 .mt-1 {
-  margin-top: 1rem; }
+  margin-top: 1rem !important; }
 
 .mt-2 {
-  margin-top: 2rem; }
+  margin-top: 2rem !important; }
 
 .ml-half {
-  margin-left: 0.5rem; }
+  margin-left: 0.5rem !important; }
 
 .ml-1 {
-  margin-left: 1rem; }
+  margin-left: 1rem !important; }
 
 .ml-2 {
-  margin-left: 2rem; }
+  margin-left: 2rem !important; }
 
 .mb-1 {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem !important; }
 
 .mb-2 {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem !important; }
 
 .mb-5 {
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem !important; }
 
 .flexed {
   display: table; }
@@ -6020,7 +6020,7 @@ section {
   /* IE6-9 */
   background: #5A1657 url("../img/stylist-tools-cropped-left.jpg") 0 -230px no-repeat;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fix ed; }
   .jumbotron .cta {
     padding: 5rem 0; }
     .jumbotron .cta .callout {
@@ -6339,6 +6339,7 @@ footer {
   color: rgba(39, 43, 65, 0.54); }
 
 table {
+  margin: 0;
   width: 100%;
   table-layout: fixed; }
   table.transparent {
@@ -6589,15 +6590,15 @@ ul.list-block {
   display: block;
   width: 100%; }
 
-.accordion > li.is-active .accordion-title {
-  color: rgba(39, 43, 65, 0.87);
-  background-color: #fefefe; }
-
-.accordion > li:last-child.is-active > .accordion-title {
-  border-bottom-width: 1px; }
-
-.accordion > li:last-child > .accordion-content {
-  border: none; }
+.accordion {
+  margin: 0; }
+  .accordion > li.is-active .accordion-title {
+    color: rgba(39, 43, 65, 0.87);
+    background-color: #fefefe; }
+  .accordion > li:last-child.is-active > .accordion-title {
+    border-bottom-width: 1px; }
+  .accordion > li:last-child > .accordion-content {
+    border: none; }
 
 .accordion-title {
   padding: 1rem;
