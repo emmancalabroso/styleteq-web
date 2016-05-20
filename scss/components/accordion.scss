@@ -1,16 +1,30 @@
+.accordion {
+	> li {
+		&:last-child {
+			&.is-active {
+				> .accordion-title {
+					border-bottom-width: 1px;
+				}
+			}
+			> .accordion-content {
+				border: none;
+			}
+		}
+	}
+}
+
 .accordion-title {
 	padding: 1rem;
 	font-size: 1rem;
 	line-height: 0.8;
 	color: rgba($base-body-font-color, $B-subtext);
 	font-family: $header-font-family;
-	&:hover {
+	&:hover, &:link, &:visited, &:active {
 		color: rgba($base-body-font-color, $B-subtext);
 		background-color: rgba($medium-gray, $B-dividers);
 	}
 }
 
 .accordion-content {
-	border-top: 1px solid rgba($black, $B-dividers);
 	padding: 1rem;
 }
