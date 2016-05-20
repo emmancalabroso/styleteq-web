@@ -15,10 +15,10 @@
 .ratings{
 	padding-right:1rem;
 	visibility:visible !important;
-	color:#5A1657;
+	color:$primary-color;
 	li i{
 		padding: 0 .25rem;
-		color:#5A1657 !important;
+		color:$primary-color !important;
 	}
 }
 
