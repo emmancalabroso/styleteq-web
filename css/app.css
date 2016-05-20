@@ -6192,7 +6192,6 @@ section {
   .top-bar ul {
     background-color: transparent; }
   .top-bar .menu li a {
-    color: #fefefe;
     text-transform: uppercase;
     transition: all ease-in 0.2s;
     -webkit-transition: all ease-in 0.2s;
