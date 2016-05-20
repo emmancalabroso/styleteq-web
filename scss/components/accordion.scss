@@ -33,3 +33,11 @@
 .accordion-content {
 	padding: 1rem;
 }
+
+ul#admin-dashboard {
+	> li {
+		> .accordion-title {
+			font-weight: 600;
+		}
+	}
+}
