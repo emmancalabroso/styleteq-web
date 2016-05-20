@@ -55,12 +55,15 @@
                     </div>
                     
                     <div class="row">
-                        <!-- ---------- -->
+                            <!-- --- Tab head -->
                             <ul class="tabs mt-1" data-tabs id="reports">
                                 <li class="tabs-title is-active"><a href="#panel1b" aria-selected="true">Pending</a></li>
                                 <li class="tabs-title"><a href="#panel2b">Resolved</a></li>
                             </ul>
+                            <!-- -- -->
+                            <!-- -- Tab content -->
                             <div class="tabs-content" data-tabs-content="reports">
+                                <!-- ---- UNRESOLVED REPORTS -->
                                 <div class="tabs-panel is-active" id="panel1b">
                                     <div>
                                         <div class="row">
@@ -73,12 +76,23 @@
                                         </div>
 
                                         <ul class="accordion mt-1" data-accordion data-allow-all-closed="true">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <td width="40%">From</td>
+                                                        <td width="50%">Complain</td>
+                                                        <td width="20%">Date</td>
+                                                        <td width="10%">Status</td>
+                                                    </tr>
+                                                </thead>
+                                            </table>
                                             <li class="accordion-item" data-accordion-item>
                                                 <a href="#" class="accordion-title">
                                                     <div class="row">
-                                                        <div class="columns medium-4">From: Archie Baldwin</div>
+                                                        <div class="columns medium-4">Archie Baldwin</div>
                                                         <div class="columns medium-5"><b>Fraudalent:</b> Harry Potter's Haberdashery</div>
-                                                        <div class="columns medium-3">2 minutes ago</div>
+                                                        <div class="columns medium-2">2 minutes ago</div>
+                                                        <div class="columns medium-1"><i class="fa fa-circle"></i></div>
                                                     </div>
                                                 </a>
                                                 <div class="accordion-content" data-tab-content>
@@ -101,9 +115,10 @@
                                             <li class="accordion-item" data-accordion-item>
                                                 <a href="#" class="accordion-title">
                                                     <div class="row">
-                                                        <div class="columns medium-4">From: Archie Baldwin</div>
+                                                        <div class="columns medium-4">Archie Baldwin</div>
                                                         <div class="columns medium-5"><b>Fraudalent:</b> Harry Potter's Haberdashery</div>
-                                                        <div class="columns medium-3">2 minutes ago</div>
+                                                        <div class="columns medium-2">2 minutes ago</div>
+                                                        <div class="columns medium-1"><i class="fa fa-circle"></i></div>
                                                     </div>
                                                 </a>
                                                 <div class="accordion-content" data-tab-content>
@@ -126,9 +141,10 @@
                                             <li class="accordion-item" data-accordion-item>
                                                 <a href="#" class="accordion-title">
                                                     <div class="row">
-                                                        <div class="columns medium-4">From: Archie Baldwin</div>
+                                                        <div class="columns medium-4">Archie Baldwin</div>
                                                         <div class="columns medium-5"><b>Fraudalent:</b> Harry Potter's Haberdashery</div>
-                                                        <div class="columns medium-3">2 minutes ago</div>
+                                                        <div class="columns medium-2">2 minutes ago</div>
+                                                        <div class="columns medium-1"><i class="fa fa-circle-o"></i></div>
                                                     </div>
                                                 </a>
                                                 <div class="accordion-content" data-tab-content>
@@ -151,6 +167,8 @@
                                         </ul>
                                     </div>
                                 </div>
+                                <!-- ---- -->
+                                <!-- ---- RESOLVED REPORTS -->
                                 <div class="tabs-panel" id="panel2b">
                                     <div class="row">
                                         <div class="medium-6 columns">
@@ -160,8 +178,17 @@
                                             <a href="#" class="button hollow small pull-right mb-1">See All Reports</a>
                                         </div>
                                     </div>
-                                    <!-- ----- -->
                                         <ul class="accordion mt-1" data-accordion data-allow-all-closed="true">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <td width="40%">From</td>
+                                                        <td width="50%">Complain</td>
+                                                        <td width="20%">Date</td>
+                                                        <td width="10%">Status</td>
+                                                    </tr>
+                                                </thead>
+                                            </table>
                                             <li class="accordion-item" data-accordion-item>
                                                 <a href="#" class="accordion-title">
                                                     <div class="row">
@@ -268,13 +295,13 @@
                                                         <div class="columns medium-4">From: Francisco Dagohoy</div>
                                                         <div class="columns medium-5"><b>Fraudalent:</b> 12 Booths For Rent</div>
                                                         <div class="columns medium-2">2 minutes ago</div>
-                                                        <div class="columns medium-1"><i class="fa fa-ban"></i></div>
+                                                        <div class="columns medium-1"><i class="fa fa-times"></i></div>
                                                     </div>
                                                 </a>
                                                 <div class="accordion-content" data-tab-content>
                                                     <div class="row">
                                                         <div class="columns medium-1 date1">
-                                                            <span class="label warning"><h6>resolved</h6>
+                                                            <span class="label warning"><h6>cancelled</h6>
                                                             <p><h4>May</h4></p>
                                                             <p><h2>22</h2></p>
                                                             <p><h4>2016</h4></p></span>
@@ -314,9 +341,10 @@
                                             </li>
                                         </ul>
                                     <!-- ----- -->
+                                </div>
+                                <!-- ---- -->
                             </div>
-                            </div>
-                        <!-- ---------- -->
+                            <!-- -- -->
                         </div>
                     </div>
                 </div>
