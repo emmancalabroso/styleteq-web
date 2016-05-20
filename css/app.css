@@ -6649,3 +6649,22 @@ ul.list-block {
   margin: 0; }
   .breadcrumbs li {
     font-size: 1rem; }
+
+.report-section-title {
+  padding: 1rem 1rem 2rem 0rem;
+  font-size: 1rem;
+  line-height: 0.8;
+  color: rgba(39, 43, 65, 0.54);
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+
+.searchuser {
+  width: 20rem;
+  height: 2rem; }
+
+.ratings {
+  padding-right: 1rem;
+  visibility: visible !important;
+  color: #5A1657; }
+  .ratings li i {
+    padding: 0 .25rem;
+    color: #5A1657 !important; }

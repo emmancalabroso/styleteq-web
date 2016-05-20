@@ -19,11 +19,11 @@
                             <span class="logo"><img src="img/styleteq-logo-white.png"></span>
                         </p>
                         <p class="dashboard-menu-title">MAIN MENU</p>
-                        <li class="active"><a href="dashboard.html"><i class="fa fa-user fa-fw"></i> Dashboard</a></li>
+                        <li><a href="dashboard.html"><i class="fa fa-user fa-fw"></i> Dashboard</a></li>
                         <li><a href="reports.html"><i class="fa fa-pie-chart fa-fw"></i> Reports</a></li>
                         <li><a href="users.html"><i class="fa fa-user fa-fw"></i> Users</a></li>
-                        <li><a href="shops.html"><i class="fa fa-institution fa-fw"></i> Shops</a></li>
-                        <li><a href="booths.html"><i class="fa fa-institution fa-fw"></i> Booths</a></li>
+                        <li class="active"><a href="shops.html"><i class="fa fa-tag fa-fw"></i> Shops</a></li>
+                        <li><a href="booths.html"><i class="fa fa-tags fa-fw"></i> Booths</a></li>
                         <p class="dashboard-menu-title">Settings</p>
                         <li><a href="account.html"><i class="fa fa-gear fa-fw"></i> Account</a></li>
                         <!-- <p class="dashboard-menu-title">MORE</p>
@@ -56,60 +56,115 @@
                     
                     <div class="row">
                         <div class="medium-12 columns">
-                            <ul class="accordion mt-1" data-accordion  data-multi-expand="true">
-                                <li class="accordion-item is-active" data-accordion-item>
-                                    <a href="#" class="accordion-title">Recent Reports</a>
-                                    <div class="accordion-content" data-tab-content>
-                                        <div class="row">
-                                            <div class="medium-6 columns">
-                                                <p class="mt-half">You have <b>3</b> unresolved reports.</p>
-                                            </div>
-                                            <div class="medium-6 columns">
-                                                <a href="#" class="button hollow small pull-right mb-1">See All Reports</a>
-                                            </div>
-                                        </div>
+                            <div class="row">
+                                <div class="medium-6 columns">
+                                    <p class="mt-half page-lead">Registered shops <b>7</b></p>
+                                </div>
+                                <div class="medium-6 columns">
+                                    <input type="text" placeholder="Shop" class="small pull-right searchtxt page-lead">
+                                </div>
+                            </div>
 
-                                        <table class="single-line marginless">
-                                            <tr>
-                                                <td class="thirds"><a href="#">From: Archie Baldwin</a></td>
-                                                <td class="thirds"><a href="#"><b>Fraudalent:</b> Harry Potter's Haberdashery</a></td>
-                                                <td class=""><i>2 minutes ago</i></td>
-                                                <td class="">
-                                                    <ul class="menu pull-right">
-                                                        <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                        <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                        <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#">From: Connie Constantia</a></td>
-                                                <td class=""><a href="#"><b>Fraudalent:</b> 12 Booths For Rent</a></td>
-                                                <td class=""><i>2 hours ago</i></td>
-                                                <td class="">
-                                                    <ul class="menu pull-right">
-                                                        <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                        <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                        <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#">From: Freddie Aguilar</a></td>
-                                                <td class=""><a href="#"><b>Fraudalent:</b> Amy Schumer</a></td>
-                                                <td class=""><i>11/23/2015</i></td>
-                                                <td class="">
-                                                    <ul class="menu pull-right">
-                                                        <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                        <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                        <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </li>
-                            </ul>
+                            <table class="single-line marginless">
+                                <tr>
+                                    <td class="thirds"><a href="#">The Blind Barber</a></td>
+                                    <td class="thirds"><a href="#">6/F Keppel Bldg. Ayala Business Park, Cebu City</a></td>
+                                    <td class=""><i>(032) 425 3370</i></td>
+                                    <td class="">
+                                        <ul class="menu pull-right ratings">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star-half-o"></i></li>
+                                            <li><i class="fa fa-star-o"></i></li>
+                                            <li><i class="fa fa-star-o"></i></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Barber of Hell's Bottom</a></td>
+                                    <td class=""><a href="#">6/F Keppel Bldg. Ayala Business Park, Cebu City</a></td>
+                                    <td class=""><i>(032) 425 3370</i></td>
+                                    <td class="">
+                                        <ul class="menu pull-right ratings">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star-half-o"></i></li>
+                                            <li><i class="fa fa-star-o"></i></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Aidan Gill for Men</a></td>
+                                    <td class=""><a href="#">6/F Keppel Bldg. Ayala Business Park, Cebu City</a></td>
+                                    <td class=""><i>(032) 425 3370</i></td>
+                                    <td class="">
+                                        <ul class="menu pull-right ratings">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star-o"></i></li>
+                                            <li><i class="fa fa-star-o"></i></li>
+                                            <li><i class="fa fa-star-o"></i></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">The Modern Man</a></td>
+                                    <td class=""><a href="#">6/F Keppel Bldg. Ayala Business Park, Cebu City</a></td>
+                                    <td class=""><i>(032) 425 3370</i></td>
+                                    <td class="">
+                                        <ul class="menu pull-right ratings">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star-o"></i></li>
+                                            <li><i class="fa fa-star-o"></i></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Rudy's Barbershop</a></td>
+                                    <td class=""><a href="#">6/F Keppel Bldg. Ayala Business Park, Cebu City</a></td>
+                                    <td class=""><i>(032) 425 3370</i></td>
+                                    <td class="">
+                                        <ul class="menu pull-right ratings">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star-o"></i></li>
+                                            <li><i class="fa fa-star-o"></i></li>
+                                            <li><i class="fa fa-star-o"></i></li>
+                                            <li><i class="fa fa-star-o"></i></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Fellow Barber</a></td>
+                                    <td class=""><a href="#">6/F Keppel Bldg. Ayala Business Park, Cebu City</a></td>
+                                    <td class=""><i>(032) 425 3370</i></td>
+                                    <td class="">
+                                        <ul class="menu pull-right ratings">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star-o"></i></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Bird's Barbershop</a></td>
+                                    <td class=""><a href="#">6/F Keppel Bldg. Ayala Business Park, Cebu City</a></td>
+                                    <td class=""><i>(032) 425 3370</i></td>
+                                    <td class="">
+                                        <ul class="menu pull-right ratings">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star-half-o"></i></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>

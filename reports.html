@@ -20,10 +20,10 @@
                         </p>
                         <p class="dashboard-menu-title">MAIN MENU</p>
                         <li><a href="admin-home.html"><i class="fa fa-user fa-fw"></i> Dashboard</a></li>
-                        <li class="active"><a href="#"><i class="fa fa-pie-chart fa-fw"></i> Reports</a></li>
+                        <li><a href="#"><i class="fa fa-pie-chart fa-fw"></i> Reports</a></li>
                         <li><a href="users.html"><i class="fa fa-user fa-fw"></i> Users</a></li>
-                        <li><a href="shops.html"><i class="fa fa-institution fa-fw"></i> Shops</a></li>
-                        <li><a href="booths.html"><i class="fa fa-institution fa-fw"></i> Booths</a></li>
+                        <li class="active"><a href="shops.html"><i class="fa fa-tag fa-fw"></i> Shops</a></li>
+                        <li><a href="booths.html"><i class="fa fa-tags fa-fw"></i> Booths</a></li>
                         <p class="dashboard-menu-title">Settings</p>
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Account</a></li>
                         <!-- <p class="dashboard-menu-title">MORE</p>
@@ -63,10 +63,9 @@
                         </ul>
                         <div class="tabs-content" data-tabs-content="reports">
                             <div class="tabs-panel is-active" id="panel1">
-                                <ul class="accordion mt-1" data-accordion  data-multi-expand="true">
-                                <li class="accordion-item is-active" data-accordion-item>
-                                    <a href="#" class="accordion-title">Pending Reports</a>
-                                    <div class="accordion-content" data-tab-content>
+                                    <!-- <a href="#" class="accordion-title">Pending Reports</a> -->
+                                    <!-- <span class="report-section-title">Pending Reports</span> -->
+                                    <div>
                                         <div class="row">
                                             <div class="medium-6 columns">
                                                 <p class="mt-half">You have <b>3</b> unresolved reports.</p>
@@ -115,17 +114,13 @@
                                             </tr>
                                         </table>
                                     </div>
-                                </li>
-                            </ul>
                             </div>
                             <div class="tabs-panel" id="panel2">
-                                <ul class="accordion mt-1" data-accordion  data-multi-expand="true">
-                                <li class="accordion-item is-active" data-accordion-item>
-                                    <a href="#" class="accordion-title">Resolved Reports</a>
-                                    <div class="accordion-content" data-tab-content>
+                                    <!-- <a href="#" class="accordion-title">Resolved Reports</a> -->
+                                    <!-- <span class="report-section-title">Resolved Reports</span> -->
                                         <div class="row">
                                             <div class="medium-6 columns">
-                                                <p class="mt-half">You have <b>3</b> unresolved reports.</p>
+                                                <p class="mt-half">Reports resolved: <b>6</b></p>
                                             </div>
                                             <div class="medium-6 columns">
                                                 <a href="#" class="button hollow small pull-right mb-1">See All Reports</a>
@@ -134,29 +129,45 @@
 
                                         <table class="single-line marginless">
                                             <tr>
+                                                <td class="thirds"><a href="#">From: Emilio Aguinaldo</a></td>
+                                                <td class="thirds"><a href="#"><b>Fraudalent:</b> Harry Potter's Haberdashery</a></td>
+                                                <td class=""><i>2 minutes ago</i></td>
+                                                <td class="">
+                                                        <i class="fa fa-check"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="thirds"><a href="#">From: Marcelo H. del Pilar</a></td>
+                                                <td class="thirds"><a href="#"><b>Fraudalent:</b> Harry Potter's Haberdashery</a></td>
+                                                <td class=""><i>2 minutes ago</i></td>
+                                                <td class="">
+                                                        <i class="fa fa-check"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
                                                 <td class="thirds"><a href="#">From: Archie Baldwin</a></td>
                                                 <td class="thirds"><a href="#"><b>Fraudalent:</b> Harry Potter's Haberdashery</a></td>
                                                 <td class=""><i>2 minutes ago</i></td>
                                                 <td class="">
-                                                    <ul class="menu pull-right">
-                                                        <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                        <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                        <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                                    </ul>
+                                                        <i class="fa fa-check"></i>
+                                                </td>
+                                            </tr>                                                                                        
+                                            <tr>
+                                                <td class="thirds"><a href="#">From: Connie Constantia</a></td>
+                                                <td class="thirds"><a href="#"><b>Fraudalent:</b> 12 Booths For Rent</a></td>
+                                                <td class=""><i>2 hours ago</i></td>
+                                                <td class="">
+                                                    <i class="fa fa-ban"></i>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a href="#">From: Connie Constantia</a></td>
-                                                <td class=""><a href="#"><b>Fraudalent:</b> 12 Booths For Rent</a></td>
+                                                <td class="thirds"><a href="#">From: Francisco Dagohoy</a></td>
+                                                <td class="thirds"><a href="#"><b>Fraudalent:</b> 12 Booths For Rent</a></td>
                                                 <td class=""><i>2 hours ago</i></td>
                                                 <td class="">
-                                                    <ul class="menu pull-right">
-                                                        <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                        <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                        <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                                    </ul>
+                                                    <i class="fa fa-check"></i>
                                                 </td>
-                                            </tr>
+                                            </tr>                                            
                                             <tr>
                                                 <td><a href="#">From: Freddie Aguilar</a></td>
                                                 <td class=""><a href="#"><b>Fraudalent:</b> Amy Schumer</a></td>
@@ -170,9 +181,6 @@
                                                 </td>
                                             </tr>
                                         </table>
-                                    </div>
-                                </li>
-                            </ul>
                             </div>
                         </div>
                         <!-- ---------- -->
