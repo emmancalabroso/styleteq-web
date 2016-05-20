@@ -6579,6 +6579,10 @@ ul.list-block {
   display: block;
   width: 100%; }
 
+.accordion > li.is-active .accordion-title {
+  color: rgba(39, 43, 65, 0.87);
+  background-color: #fefefe; }
+
 .accordion > li:last-child.is-active > .accordion-title {
   border-bottom-width: 1px; }
 
@@ -6589,8 +6593,7 @@ ul.list-block {
   padding: 1rem;
   font-size: 1rem;
   line-height: 0.8;
-  color: rgba(39, 43, 65, 0.54);
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+  color: rgba(39, 43, 65, 0.54); }
   .accordion-title:hover, .accordion-title:link, .accordion-title:visited, .accordion-title:active {
     color: rgba(39, 43, 65, 0.54);
     background-color: rgba(202, 202, 202, 0.12); }

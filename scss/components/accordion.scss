@@ -1,5 +1,11 @@
 .accordion {
 	> li {
+		&.is-active {
+			.accordion-title {
+				color: rgba($base-body-font-color, $B-text);
+				background-color: $white;
+			}
+		}
 		&:last-child {
 			&.is-active {
 				> .accordion-title {
@@ -18,7 +24,6 @@
 	font-size: 1rem;
 	line-height: 0.8;
 	color: rgba($base-body-font-color, $B-subtext);
-	font-family: $header-font-family;
 	&:hover, &:link, &:visited, &:active {
 		color: rgba($base-body-font-color, $B-subtext);
 		background-color: rgba($medium-gray, $B-dividers);
