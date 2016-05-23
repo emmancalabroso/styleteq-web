@@ -1,0 +1,32 @@
+.heading-search{
+	position: relative;
+	margin-top: 1rem;
+
+	input{
+		border-radius: 2.5rem;
+		text-align: center;
+		background-color: $light-gray;
+	}
+	input:invalid{
+		width:5rem;
+	}
+
+	input:valid{
+		width: 15rem;
+	}
+
+	input:focus{
+	-webkit-transition: width .2s ease-in-out;
+    -moz-transition: width .2s ease-in-out;
+    -o-transition: width .2s ease-in-out;
+    transition: ease-in-out, width .2s ease-in-out;
+
+    width:15rem;
+		// width: 15rem;
+
+	}
+
+	h3{
+		font-weight: lighter;
+	}
+}

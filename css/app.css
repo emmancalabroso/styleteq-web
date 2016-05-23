@@ -6339,6 +6339,12 @@ footer {
 .subheader {
   color: rgba(39, 43, 65, 0.54); }
 
+.badge {
+  font-size: 1rem; }
+
+.breadcrumbs li {
+  font-size: .8rem !important; }
+
 table {
   margin: 0;
   width: 100%;
@@ -6678,31 +6684,6 @@ ul#admin-dashboard > li > .accordion-title {
   .breadcrumbs li {
     font-size: 1rem; }
 
-.report-section-title {
-  padding: 1rem 1rem 2rem 0rem;
-  font-size: 1rem;
-  line-height: 0.8;
-  color: rgba(39, 43, 65, 0.54);
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
-
-.searchtxt {
-  width: 20rem;
-  height: 2rem; }
-
-.ratings {
-  padding-right: 1rem;
-  visibility: visible !important;
-  color: #5A1657; }
-  .ratings li i {
-    padding: 0 .25rem;
-    color: #5A1657 !important; }
-
-.accordhead {
-  padding: 0 1rem;
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  color: rgba(39, 43, 65, 0.54);
-  font-weight: bold; }
-
 .date1 {
   text-align: center; }
   .date1 hr {
@@ -6722,3 +6703,20 @@ ul#admin-dashboard > li > .accordion-title {
   border: 1px solid rgba(42, 42, 42, 0.12);
   background-color: #fefefe;
   margin-top: 1rem; }
+
+.heading-search {
+  position: relative;
+  margin-top: 1rem; }
+  .heading-search input {
+    border-radius: 2.5rem;
+    text-align: center;
+    background-color: #e6e6e6; }
+  .heading-search input:invalid {
+    width: 5rem; }
+  .heading-search input:valid {
+    width: 15rem; }
+  .heading-search input:focus {
+    transition: ease-in-out, width .2s ease-in-out;
+    width: 15rem; }
+  .heading-search h3 {
+    font-weight: lighter; }

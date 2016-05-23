@@ -19,11 +19,11 @@
                             <span class="logo"><img src="img/styleteq-logo-white.png"></span>
                         </p>
                         <p class="dashboard-menu-title">MAIN MENU</p>
-                        <li><a href="dashboard.html"><i class="fa fa-user fa-fw"></i> Dashboard</a></li>
+                        <li><a href="admin-home.html"><i class="fa fa-tachometer fa-fw"></i> Dashboard</a></li>
                         <li><a href="reports.html"><i class="fa fa-pie-chart fa-fw"></i> Reports</a></li>
-                        <li><a href="users.html"><i class="fa fa-user fa-fw"></i> Users</a></li>
+                        <li><a href="users.html"><i class="fa fa-users fa-fw"></i> Users</a></li>
                         <li class="active"><a href="shops.html"><i class="fa fa-tag fa-fw"></i> Shops</a></li>
-                        <li><a href="booths.html"><i class="fa fa-tags fa-fw"></i> Booths</a></li>
+                        <!-- <li><a href="booths.html"><i class="fa fa-tags fa-fw"></i> Booths</a></li> -->
                         <p class="dashboard-menu-title">Settings</p>
                         <li><a href="account.html"><i class="fa fa-gear fa-fw"></i> Account</a></li>
                         <!-- <p class="dashboard-menu-title">MORE</p>
@@ -56,12 +56,18 @@
                     
                     <div class="row">
                         <div class="medium-12 columns">
+                            <nav aria-label="You are here:" role="navigation" class="page-lead">
+                                <ul class="breadcrumbs">
+                                    <li><a href="admin-home.html">home</a></li>
+                                    <li>reports</li>
+                                </ul>
+                            </nav>                           
                             <div class="row">
-                                <div class="medium-6 columns">
-                                    <p class="mt-half page-lead">Registered shops <b>7</b></p>
-                                </div>
-                                <div class="medium-6 columns">
-                                    <input type="text" placeholder="Shop" class="small pull-right searchtxt page-lead">
+                                <div class="heading-search columns">
+                                    <div class="pull-right">
+                                        <input type="text" placeholder="shop" required>
+                                    </div>
+                                    <h3>Registered shops: <b>7</b></h3>
                                 </div>
                             </div>
                             <table class="single-line marginless">
