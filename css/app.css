@@ -6590,6 +6590,12 @@ ul.list-block {
   display: block;
   width: 100%; }
 
+ul.stats {
+  list-style: none;
+  margin: 0; }
+  ul.stats li {
+    padding-bottom: .5rem; }
+
 .accordion {
   margin: 0; }
   .accordion > li.is-active .accordion-title {
@@ -6708,3 +6714,10 @@ ul#admin-dashboard > li > .accordion-title {
     margin-bottom: 0rem !important; }
   .date1 h1 {
     margin-bottom: 0rem !important; }
+
+.container {
+  position: relative;
+  border-radius: 2px;
+  border: 1px solid rgba(42, 42, 42, 0.12);
+  background-color: #fefefe;
+  margin-top: 1rem; }
