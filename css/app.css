@@ -5968,15 +5968,15 @@ section {
       font-weight: normal; }
   section.section-cta {
     padding: 5rem 0;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5a1657+0,751d71+100 */
-    background: #5a1657;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c86dd7+0,3023ae+100 */
+    background: #c86dd7;
     /* Old browsers */
     /* FF3.6-15 */
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #5a1657 0%, #751d71 100%);
+    background: linear-gradient(to bottom, #c86dd7 0%, #3023ae 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a1657', endColorstr='#751d71',GradientType=1 );
-    /* IE6-9 fallback on horizontal gradient */ }
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c86dd7', endColorstr='#3023ae',GradientType=0 );
+    /* IE6-9 */ }
     section.section-cta > * {
       color: #fefefe; }
     section.section-cta .subheader {
@@ -6020,7 +6020,7 @@ section {
   /* IE6-9 */
   background: #5A1657 url("../img/stylist-tools-cropped-left.jpg") 0 -230px no-repeat;
   background-size: cover;
-  background-attachment: fix ed; }
+  background-attachment: fixed; }
   .jumbotron .cta {
     padding: 5rem 0; }
     .jumbotron .cta .callout {
@@ -6192,6 +6192,7 @@ section {
   .top-bar ul {
     background-color: transparent; }
   .top-bar .menu li a {
+    color: #fefefe;
     text-transform: uppercase;
     transition: all ease-in 0.2s;
     -webkit-transition: all ease-in 0.2s;
