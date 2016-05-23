@@ -6343,7 +6343,15 @@ footer {
   font-size: 1rem; }
 
 .breadcrumbs li {
-  font-size: .8rem !important; }
+  font-size: .8rem !important;
+  font-weight: bold; }
+
+.addNewRow {
+  font-size: 2rem;
+  text-align: center;
+  width: 100%; }
+  .addNewRow a:hover {
+    text-decoration: none !important; }
 
 table {
   margin: 0;
