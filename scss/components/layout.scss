@@ -106,12 +106,12 @@ section {
 	&.section-cta {
 		padding: 5rem 0;
 		// background: transparent;
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5a1657+0,751d71+100 */
-		background: rgb(90,22,87); /* Old browsers */
-        background: -moz-linear-gradient(45deg,  rgba(90,22,87,1) 0%, rgba(117,29,113,1) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(45deg,  rgba(90,22,87,1) 0%,rgba(117,29,113,1) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(45deg,  rgba(90,22,87,1) 0%,rgba(117,29,113,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a1657', endColorstr='#751d71',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c86dd7+0,3023ae+100 */
+        background: rgb(200,109,215); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(200,109,215,1) 0%, rgba(48,35,174,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(200,109,215,1) 0%,rgba(48,35,174,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(200,109,215,1) 0%,rgba(48,35,174,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c86dd7', endColorstr='#3023ae',GradientType=0 ); /* IE6-9 */
         > * {
         	color: $white;
         }
@@ -161,7 +161,7 @@ section {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ffffff', endColorstr='#0fffffff',GradientType=1 ); /* IE6-9 */
 	background: $primary-color url('../img/stylist-tools-cropped-left.jpg') 0 -230px no-repeat;
 	background-size: cover;
-	background-attachment: fix ed;
+	background-attachment: fixed;
 	.cta {
 		padding: 5rem 0;
 		.callout {
