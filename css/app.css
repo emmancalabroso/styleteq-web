@@ -6714,24 +6714,33 @@ ul#admin-dashboard > li > .accordion-title {
   background-color: #fefefe;
   margin-top: 1rem; }
 
-.heading-search {
-  position: relative;
-  margin-top: 1rem; }
-  .heading-search input {
+.addNewbtn {
+  width: 100%;
+  position: relative; }
+  .addNewbtn h5 {
+    margin: .2rem; }
+
+.search-box {
+  position: relative; }
+  .search-box input {
     border-radius: 2.5rem;
     text-align: center;
-    background-color: #e6e6e6; }
-  .heading-search input:invalid {
+    background-color: #e6e6e6;
+    height: 2rem;
+    margin-bottom: 0 !important; }
+  .search-box input::after {
+    content: "search"; }
+  .search-box input:invalid {
     width: 5rem; }
-  .heading-search input:valid {
-    width: 15rem; }
-  .heading-search input:focus {
+  .search-box input:valid {
+    width: 17rem; }
+  .search-box input:focus {
     transition: ease-in-out, width .2s ease-in-out;
-    width: 15rem; }
-  .heading-search h3 {
+    width: 17rem; }
+  .search-box h3 {
     font-weight: lighter; }
-  .heading-search span.label {
-    font-size: 1rem;
+  .search-box span.label {
+    font-size: 2rem;
     line-height: 10%;
     -webkit-transform: translateY(-20%);
         -ms-transform: translateY(-20%);

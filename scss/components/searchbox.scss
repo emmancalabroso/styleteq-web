@@ -1,19 +1,23 @@
-.heading-search{
+.search-box{
 	position: relative;
-	margin-top: 1rem;
-
+	// margin-top: 1rem;
 
 	input{
 		border-radius: 2.5rem;
 		text-align: center;
 		background-color: $light-gray;
+		height: 2rem;
+		margin-bottom:0 !important;
+	}
+	input::after{
+		content:"search"
 	}
 	input:invalid{
 		width:5rem;
 	}
 
 	input:valid{
-		width: 15rem;
+		width: 17rem;
 	}
 
 	input:focus{
@@ -22,9 +26,7 @@
     -o-transition: width .2s ease-in-out;
     transition: ease-in-out, width .2s ease-in-out;
 
-    width:15rem;
-		// width: 15rem;
-
+    width:17rem;
 	}
 
 	h3{
@@ -32,7 +34,7 @@
 	}
 
 	span.label{
-		font-size: 1rem;
+		font-size: 2rem;
 		line-height: 10%;
 		transform: translateY(-20%);
 		cursor: pointer !important;
