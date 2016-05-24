@@ -6347,9 +6347,12 @@ footer {
   font-weight: bold; }
 
 .addNewRow {
-  font-size: 2rem;
+  font-size: 2rem !important;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  color: #fbfbfb; }
+  .addNewRow div {
+    background-color: #2a2a2a !important; }
   .addNewRow a:hover {
     text-decoration: none !important; }
 
@@ -6728,3 +6731,7 @@ ul#admin-dashboard > li > .accordion-title {
     width: 15rem; }
   .heading-search h3 {
     font-weight: lighter; }
+
+.pagination {
+  margin-bottom: 0 !important;
+  font-weight: bold; }

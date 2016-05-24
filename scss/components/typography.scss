@@ -58,10 +58,14 @@
 }
 
 .addNewRow{
-	font-size:2rem;
+	font-size:2rem !important;
 	text-align:center;
 	width:100%;
+	color: $faint-gray;
 
+	div	{
+		background-color: $black !important;
+	}
 	a:hover{
 		text-decoration: none !important;
 	}
