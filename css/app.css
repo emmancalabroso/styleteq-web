@@ -6346,16 +6346,6 @@ footer {
   font-size: .8rem !important;
   font-weight: bold; }
 
-.addNewRow {
-  font-size: 2rem !important;
-  text-align: center;
-  width: 100%;
-  color: #fbfbfb; }
-  .addNewRow div {
-    background-color: #2a2a2a !important; }
-  .addNewRow a:hover {
-    text-decoration: none !important; }
-
 table {
   margin: 0;
   width: 100%;
@@ -6731,7 +6721,16 @@ ul#admin-dashboard > li > .accordion-title {
     width: 15rem; }
   .heading-search h3 {
     font-weight: lighter; }
+  .heading-search span.label {
+    font-size: 1rem;
+    line-height: 10%;
+    -webkit-transform: translateY(-20%);
+        -ms-transform: translateY(-20%);
+            transform: translateY(-20%);
+    cursor: pointer !important; }
 
 .pagination {
   margin-bottom: 0 !important;
-  font-weight: bold; }
+  font-weight: bold;
+  padding-bottom: 1rem;
+  padding-top: 1rem; }
