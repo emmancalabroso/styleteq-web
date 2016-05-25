@@ -6714,10 +6714,10 @@ ul#admin-dashboard > li > .accordion-title {
   background-color: #fefefe;
   margin-top: 1rem; }
 
-.addNewbtn {
+a.addNewbtn {
   width: 100%;
   position: relative; }
-  .addNewbtn h5 {
+  a.addNewbtn h5 {
     margin: .2rem; }
 
 .search-box {
