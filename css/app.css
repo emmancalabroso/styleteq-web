@@ -6017,8 +6017,9 @@ section {
     margin-bottom: 3rem; }
 
 .jumbotron {
-  min-height: 900px;
+  position: relative;
   padding: 0;
+  background: #5A1657;
   background-color: -moz-linear-gradient(left, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.06) 100%);
   /* FF3.6-15 */
   background-color: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.06) 100%);
@@ -6026,10 +6027,33 @@ section {
   background-color: linear-gradient(to right, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.06) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ffffff', endColorstr='#0fffffff',GradientType=1 );
-  /* IE6-9 */
-  background: #5A1657 url("../img/stylist-tools-cropped-left.jpg") 0 -230px no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
+  /* IE6-9 */ }
+  .jumbotron > .orbit > .orbit-container {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%; }
+    .jumbotron > .orbit > .orbit-container > .orbit-slide {
+      height: 100%;
+      width: 100%; }
+      .jumbotron > .orbit > .orbit-container > .orbit-slide.slide-1 {
+        background: #5A1657 url("../img/orbit/Landing-Page-Blowdry.jpg") center center no-repeat;
+        background-size: cover; }
+      .jumbotron > .orbit > .orbit-container > .orbit-slide.slide-2 {
+        background: #5A1657 url("../img/orbit/Splash-Page-Nail.jpg") center center no-repeat;
+        background-size: cover; }
+      .jumbotron > .orbit > .orbit-container > .orbit-slide.slide-3 {
+        background: #5A1657 url("../img/orbit/Splash-Page-Unisex.jpg") center center no-repeat;
+        background-size: cover; }
+      .jumbotron > .orbit > .orbit-container > .orbit-slide.slide-4 {
+        background: #5A1657 url("../img/orbit/stylist-tools-cropped-left.jpg") center center no-repeat;
+        background-size: cover; }
+  .jumbotron > .orbit > .cta-wrapper {
+    position: relative;
+    z-index: 2; }
   .jumbotron .cta {
     padding: 5rem 0; }
     .jumbotron .cta .callout {

@@ -165,15 +165,51 @@ section {
 }
 
 .jumbotron {
-	min-height: 900px;
+	position: relative;
 	padding: 0;
+	background: $primary-color;
 	background-color: -moz-linear-gradient(left, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.06) 100%); /* FF3.6-15 */
 	background-color: -webkit-linear-gradient(left, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.06) 100%); /* Chrome10-25,Safari5.1-6 */
 	background-color: linear-gradient(to right, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.06) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ffffff', endColorstr='#0fffffff',GradientType=1 ); /* IE6-9 */
-	background: $primary-color url('../img/stylist-tools-cropped-left.jpg') 0 -230px no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
+	// background: $primary-color url('../img/stylist-tools-cropped-left.jpg') 0 -230px no-repeat;
+	// background-size: cover;
+	// background-attachment: fixed;
+	> .orbit {
+		> .orbit-container {
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 100%;
+			> .orbit-slide {
+				height: 100%;
+				width: 100%;
+				&.slide-1 {
+					background: $primary-color url('../img/orbit/Landing-Page-Blowdry.jpg') center center no-repeat;
+					background-size: cover;
+				}
+				&.slide-2 {
+					background: $primary-color url('../img/orbit/Splash-Page-Nail.jpg') center center no-repeat;
+					background-size: cover;
+				}
+				&.slide-3 {
+					background: $primary-color url('../img/orbit/Splash-Page-Unisex.jpg') center center no-repeat;
+					background-size: cover;
+				}
+				&.slide-4 {
+					background: $primary-color url('../img/orbit/stylist-tools-cropped-left.jpg') center center no-repeat;
+					background-size: cover;
+				}
+			}
+		}
+		> .cta-wrapper {
+			position: relative;
+			z-index: 2;
+		}
+	}
 	.cta {
 		padding: 5rem 0;
 		.callout {

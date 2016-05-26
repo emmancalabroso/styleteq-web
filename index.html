@@ -10,61 +10,76 @@
     </head>
     <body>
         
-        <section class="jumbotron" data-stellar-background-ratio="0.5">
-            <header class="top-bar">
-                <div class="row">
-                    <div class="top-bar-title">
-                        <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
-                            <span class="menu-icon dark" data-toggle></span>
-                        </span>
-                        <span class="logo"><img src="img/styleteq-logo-white.png"></span>
-                    </div>
-                    <div id="responsive-menu">
-                        <div class="top-bar-right">
-                            <ul class="menu">
-                                <!-- <li class="bordered">
-                                    <a class="button hollow" href="register-stylist.html">Be A Professional</a>
-                                </li> -->
-                                <li>
-                                    <a href="login.html">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="login.html">Log In</a>
-                                </li>
-                                <li class="bordered">
-                                    <a class="button hollow white" href="register.html">Sign Up</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </header>
+        <section class="jumbotron">
 
-            <div id="animation-1" class="cta">
-                <div class="row" data-equalizer>
-                    <div class="medium-3 small-12 columns text-center" data-equalizer-watch>
-                        <div class="animated scene-screen">
-                            <img class="screen-wrapper" src="img/iPhone-5S-black.png">
-                            <img class="screen" src="img/screen-scene.gif">
+            <div class="orbit" role="region" aria-label="Hero Section Images" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;" data-pause-on-hover="false">
+                <ul class="orbit-container">
+                    <li class="slide-1 is-active orbit-slide"></li>
+                    <li class="slide-2 orbit-slide"></li>
+                    <li class="slide-3 orbit-slide"></li>
+                    <li class="slide-4 orbit-slide"></li>
+                </ul>
+                
+                <div class="cta-wrapper">
+                    <header class="top-bar">
+                        <div class="row">
+                            <div class="top-bar-title">
+                                <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+                                    <span class="menu-icon dark" data-toggle></span>
+                                </span>
+                                <span class="logo"><img src="img/styleteq-logo-white.png"></span>
+                            </div>
+                            <div id="responsive-menu">
+                                <div class="top-bar-right">
+                                    <ul class="menu">
+                                        <li class="bordered">
+                                            <a class="button hollow white" href="register-stylist.html">Be A Professional</a>
+                                        </li>
+                                        <li>
+                                            <a href="login.html">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="login.html">Log In</a>
+                                        </li>
+                                        <li class="bordered">
+                                            <a class="button hollow white" href="register.html">Sign Up</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    
+                    <div id="animation-1" class="cta">
+                        <div class="row" data-equalizer>
+                            <div class="medium-3 small-12 columns text-center" data-equalizer-watch>
+                                <div class="animated scene-screen">
+                                    <img class="screen-wrapper" src="img/iPhone-5S-black.png">
+                                    <img class="screen" src="img/screen-scene.gif">
+                                </div>
+                            </div>
+                            <div class="medium-6 small-12 columns end flexed" data-equalizer-watch>
+                                <div class="callout flexed-item">
+                                    <h1>Never lose a client and stay booked daily.</h1>
+                                    <h4 class="subheader mt-2">Eliminate trial and error by browsing the work of professionals before setting an appointment.</h4>
+                                    <ul class="menu">
+                                        <li class="menu-text">Get it here.</li>
+                                        <li>
+                                             <a class="button" href="#"><i class="fa fa-apple fa-fw"></i> iOS</a>
+                                        </li>
+                                        <li>
+                                            <a class="button" href="#"><i class="fa fa-android fa-fw"></i> ANDROID</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="medium-6 small-12 columns end flexed" data-equalizer-watch>
-                        <div class="callout flexed-item">
-                            <h1>Never lose a client and stay booked daily.</h1>
-                            <h4 class="subheader mt-2">Eliminate trial and error by browsing the work of professionals before setting an appointment.</h4>
-                            <ul class="menu">
-                                <li class="menu-text">Get it here.</li>
-                                <li>
-                                     <a class="button" href="#"><i class="fa fa-apple fa-fw"></i> iOS</a>
-                                </li>
-                                <li>
-                                    <a class="button" href="#"><i class="fa fa-android fa-fw"></i> ANDROID</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+                </div> <!-- End of cta wrapper -->
+
+            </div> <!-- End of orbit -->
+            
         </section>
 
         <section id="users-section">
@@ -342,11 +357,9 @@
 
         <script type="text/javascript">
 
-            $(window).stellar();
-
-            $(document).ready(function(){
-               $('.scene-screen').addClass('fadeInLeft');
-            });
+            // $(document).ready(function(){
+            //    $('.scene-screen').addClass('fadeInLeft');
+            // });
 
             var waypoint = new Waypoint({
                 element: document.getElementById('users-section'),
