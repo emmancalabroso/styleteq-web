@@ -19,7 +19,7 @@
                             <span class="logo"><img src="img/styleteq-logo-white.png"></span>
                         </p>
                         <p class="dashboard-menu-title">MAIN MENU</p>
-                        <li class="active"><a href="dashboard.html"><i class="fa fa-tachometer fa-fw"></i> Dashboard</a></li>
+                        <li class="active"><a href="admin-home.html"><i class="fa fa-tachometer fa-fw"></i> Dashboard</a></li>
                         <li><a href="reports.html"><i class="fa fa-pie-chart fa-fw"></i> Reports</a></li>
                         <li><a href="users.html"><i class="fa fa-users fa-fw"></i> Users</a></li>
                         <li><a href="shops.html"><i class="fa fa-tag fa-fw"></i> Shops</a></li>
@@ -56,7 +56,70 @@
                     
                     <div class="row">
                         <div class="medium-12 columns">
-                            <ul id="admin-dashboard" class="accordion mt-1" data-accordion  data-multi-expand="true">
+                            <ul id="admin-dashboard" class="accordion mt-1" data-accordion  data-multi-expand="true" data-allow-all-closed="true">
+                                <li class="accordion-item is-active" data-accordion>
+                                    <a href="#" class="accordion-title">Statistics</a>
+                                    <div class="accordion-content" data-tab-content>
+                                        <ul class="menu vertical stats ulcol">
+                                            <li><i class="fa fa-heart"></i><span class="ml-half">Registered : <b>6,431</b></span></li>
+                                            <li><i class="fa fa-heart"></i><span class="ml-half">Proffesionals : <b>4,404</b></span></li>
+                                            <li><i class="fa fa-bookmark"></i><span class="ml-half">Shop Owners : <b>3,002</b></span></li>
+                                            <li><i class="fa fa-camera"></i><span class="ml-half">shops : <b>5,823</b></span></li>
+                                            <li><i class="fa fa-cab"></i><span class="ml-half">Others : <b>8</b></span></li>
+                                            <li><i class="fa fa-diamond"></i><span class="ml-half">Others : <b>14</b></span></li>
+                                            <li><i class="fa fa-bell"></i><span class="ml-half">Others : <b>64</b></span></li>
+                                            <li><i class="fa fa-calendar"></i><span class="ml-half">Others : <b>103</b></span></li>
+                                            <li><i class="fa fa-heart"></i><span class="ml-half">Registered : <b>6,431</b></span></li>
+                                            <li><i class="fa fa-heart"></i><span class="ml-half">Proffesionals : <b>4,404</b></span></li>
+                                            <li><i class="fa fa-bookmark"></i><span class="ml-half">Shop Owners : <b>3,002</b></span></li>
+                                            <li><i class="fa fa-camera"></i><span class="ml-half">shops : <b>5,823</b></span></li>
+                                            <li><i class="fa fa-cab"></i><span class="ml-half">Others : <b>8</b></span></li>
+                                            <li><i class="fa fa-diamond"></i><span class="ml-half">Others : <b>14</b></span></li>
+                                            <li><i class="fa fa-bell"></i><span class="ml-half">Others : <b>64</b></span></li>
+                                            <li><i class="fa fa-calendar"></i><span class="ml-half">Others : <b>103</b></span></li>
+                                        </ul>
+                                        <!-- <ul class="menu vertical stats">
+                                            <div class="row">
+                                                <div class="medium-4 columns">
+                                                    <h5>User</h5>
+                                                    <hr>
+                                                    <li><i class="fa fa-heart"></i><span class="ml-half">Registered : <b>6,431</b></span></li>
+                                                    <li><i class="fa fa-heart"></i><span class="ml-half">Proffesionals : <b>4,404</b></span></li>
+                                                    <li><i class="fa fa-bookmark"></i><span class="ml-half">Shop Owners : <b>3,002</b></span></li>
+                                                    <li><i class="fa fa-camera"></i><span class="ml-half">shops : <b>5,823</b></span></li>
+                                                    <li><i class="fa fa-cab"></i><span class="ml-half">Others : <b>8</b></span></li>
+                                                    <li><i class="fa fa-diamond"></i><span class="ml-half">Others : <b>14</b></span></li>
+                                                    <li><i class="fa fa-bell"></i><span class="ml-half">Others : <b>64</b></span></li>
+                                                    <li><i class="fa fa-calendar"></i><span class="ml-half">Others : <b>103</b></span></li>
+                                                </div>
+                                                <div class="medium-4 columns">
+                                                    <h5>Shop</h5>
+                                                    <hr>
+                                                    <li><i class="fa fa-heart"></i><span class="ml-half">Registered : <b>6,431</b></span></li>
+                                                    <li><i class="fa fa-heart"></i><span class="ml-half">Proffesionals : <b>4,404</b></span></li>
+                                                    <li><i class="fa fa-bookmark"></i><span class="ml-half">Shop Owners : <b>3,002</b></span></li>
+                                                    <li><i class="fa fa-camera"></i><span class="ml-half">shops : <b>5,823</b></span></li>
+                                                    <li><i class="fa fa-cab"></i><span class="ml-half">Others : <b>8</b></span></li>
+                                                    <li><i class="fa fa-diamond"></i><span class="ml-half">Others : <b>14</b></span></li>
+                                                    <li><i class="fa fa-bell"></i><span class="ml-half">Others : <b>64</b></span></li>
+                                                    <li><i class="fa fa-calendar"></i><span class="ml-half">Others : <b>103</b></span></li>
+                                                </div>
+                                                <div class="medium-4 columns">
+                                                    <h5>Others</h5>
+                                                    <hr>
+                                                    <li><i class="fa fa-heart"></i><span class="ml-half">Registered : <b>6,431</b></span></li>
+                                                    <li><i class="fa fa-heart"></i><span class="ml-half">Proffesionals : <b>4,404</b></span></li>
+                                                    <li><i class="fa fa-bookmark"></i><span class="ml-half">Shop Owners : <b>3,002</b></span></li>
+                                                    <li><i class="fa fa-camera"></i><span class="ml-half">shops : <b>5,823</b></span></li>
+                                                    <li><i class="fa fa-cab"></i><span class="ml-half">Others : <b>8</b></span></li>
+                                                    <li><i class="fa fa-diamond"></i><span class="ml-half">Others : <b>14</b></span></li>
+                                                    <li><i class="fa fa-bell"></i><span class="ml-half">Others : <b>64</b></span></li>
+                                                    <li><i class="fa fa-calendar"></i><span class="ml-half">Others : <b>103</b></span></li>
+                                                </div>
+                                            </div>
+                                        </ul> -->
+                                    </div>
+                                </li>
                                 <li class="accordion-item is-active" data-accordion-item>
                                     <a href="#" class="accordion-title">Recent Reports <span class="label">2</span></a> 
                                     <div class="accordion-content" data-tab-content>
