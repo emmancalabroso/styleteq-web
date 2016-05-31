@@ -6,7 +6,6 @@
 	.menu {
 		li {
 			a {
-				color: $white;
 				text-transform: uppercase;
 				transition: all ease-in 0.2s;
 				-webkit-transition: all ease-in 0.2s;
@@ -58,6 +57,15 @@
 						box-shadow: 0 2px 0 0 $white;
 						-webkit-box-shadow: 0 2px 0 0 $white;
 					}
+				}
+			}
+		}
+	}
+	&.white {
+		.menu {
+			li {
+				a {
+					color: $white;
 				}
 			}
 		}

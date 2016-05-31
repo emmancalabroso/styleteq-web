@@ -41,7 +41,7 @@
                         </div>
                         <div class="title-bar-right">
                             <!-- <a href="register-stylist.html" class="button primary small"><i class="fa fa-certificate fa-fw"></i> Become A Stylist</a> -->
-                            <a href="login.html" class="button link small white"><i class="fa fa-sign-out fa-fw"></i> Sign Out</a>
+                            <a href="login.html" class="button link small"><i class="fa fa-sign-out fa-fw"></i> Sign Out</a>
                         </div>
                     </div>
 
@@ -56,28 +56,28 @@
                     
                     <div class="row">
                         <div class="medium-12 columns">
-                            <nav aria-label="You are here:" role="navigation" class="page-lead">
+                            <nav aria-label="You are here:" role="navigation" class="mt-1 mb-1">
                                 <ul class="breadcrumbs">
-                                    <li><a href="admin-home.html">home</a></li>
-                                    <li><a href="shops.html">shops</a></li>
-                                    <li>Shop view</li>
+                                    <li><a href="shops.html">Shops</a></li>
+                                    <li>Shop Name</li>
                                 </ul>
                             </nav>
-                            <hr>
-                            <div class="container">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="medium-12 columns">
+                            <div class="well">
                                 <ul class="menu">
-                                    <li><a class="button link primary" href="edit-profile.html"><i class="fa fa-pencil"></i></a></li>
-                                    <li><a class="button link primary" href="#"><i class="fa fa-trash"></i></a></li>
-                                    <li><a class="button link primary" href="#"><i class="fa fa-envelope"></i></a></li>
-                                    <li>| Other Buttons: </li>
-                                    <li><a class="button link primary" href="#"><i class="fa fa-plus"></i></a></li>
-                                    <li><a class="button link primary" href="#"><i class="fa fa-search"></i></a></li>
-                                    <li><a class="button link primary" href="#"><i class="fa fa-cloud"></i></a></li>
-                                    <li><a class="button link primary" href="#"><i class="fa fa-cloud"></i></a></li>
-                                    <li><a class="button link primary" href="#"><i class="fa fa-database"></i></a></li>
-                                    <li><a class="button link primary" href="#"><i class="fa fa-desktop"></i></a></li>
+                                    <li><a class="button link primary small" href="edit-profile.html"><i class="fa fa-edit fa-fw"></i>Edit Shop</a></li>
+                                    <li><a class="button link primary small" href="#"><i class="fa fa-trash fa-fw"></i>Delete</a></li>
                                 </ul>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="medium-12 columns">
                             <div class="user-profile media-object">
                                 <div class="media-object-section middle">
                                     <div class="img-wrapper circle">
@@ -87,12 +87,13 @@
                                 </div>
                                 <div class="media-object-section">
                                     <h4>Shop Name</h4>
-                                    <p class="subheader">@shop</p>
+                                    <p class="subheader">@shop_owner</p>
                                     <p class="subheader empty">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
                                     <ul class="menu expanded">
                                         <li><i class="fa fa-map-marker fa-fw"></i> Chicago, Illinois</li>
                                         <li><i class="fa fa-phone fa-fw"></i> (123) 456789</li>
-                                        <li><i class="fa fa-clock-o fa-fw"></i> 8:00 AM - 8:30 PM</li>
+                                        <li><i class="fa fa-heart"></i><span class="ml-half">Followers : <b>21</b></span></li>
+                                        <li><i class="fa fa-heart"></i><span class="ml-half">Following : <b>54</b></span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -100,374 +101,82 @@
                     </div>
 
                     <div class="row">
-                        <div class="medium-2 columns">
-                            <img class="thumbnail" src="img/salon-owner.png">
+                        <div class="medium-12 columns">
+                            <h5 class="subheader mt-1 mb-1">Stylists</h5>
+                            <table class="single-line">
+                                <thead>
+                                    <tr>
+                                        <th width="45%">Name</th>
+                                        <th width="45%">Experties</th>
+                                        <th width="20%">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td><a href="user-view.html">Landen Swanson</a></td>
+                                    <td><a href="user-view.html">Experties</a></td>
+                                    <td class="">
+                                        <ul class="menu pull-right">
+                                            <li><a class="button link success" href="#"><i class="fa fa-edit"></i></a></li>
+                                            <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="shop-view.html">Marvin Parks</a></td>
+                                    <td><a href="user-view.html">Experties</a></td>
+                                    <td class="">
+                                        <ul class="menu pull-right">
+                                            <li><a class="button link success" href="#"><i class="fa fa-edit"></i></a></li>
+                                            <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="shop-view.html">Adyson Willis</a></td>
+                                    <td><a href="user-view.html">Experties</a></td>
+                                    <td class="">
+                                        <ul class="menu pull-right">
+                                            <li><a class="button link success" href="#"><i class="fa fa-edit"></i></a></li>
+                                            <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="shop-view.html">Jaylyn Kirby</a></td>
+                                    <td><a href="user-view.html">Experties</a></td>
+                                    <td class="">
+                                        <ul class="menu pull-right">
+                                            <li><a class="button link success" href="#"><i class="fa fa-edit"></i></a></li>
+                                            <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="shop-view.html">Yael Schroeder</a></td>
+                                    <td><a href="user-view.html">Experties</a></td>
+                                    <td class="">
+                                        <ul class="menu pull-right">
+                                            <li><a class="button link success" href="#"><i class="fa fa-edit"></i></a></li>
+                                            <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
-                        <div class="medium-2 columns">
-                            <img class="thumbnail" src="img/woman-hair-stylist.png">
-                        </div>
-                        <div class="medium-2 columns">
-                            <img class="thumbnail" src="img/salon-owner.png">
-                        </div>
-                        <div class="medium-2 columns">
-                            <img class="thumbnail" src="img/woman-hair-stylist.png">
-                        </div>
-                        <div class="medium-2 columns">
-                            <img class="thumbnail" src="img/salon-owner.png">
-                        </div>
-                        <div class="medium-2 columns">
-                            <img class="thumbnail" src="img/woman-hair-stylist.png">
-                        </div>                        
                     </div>
-                    <div class="row mt-2">
-                        <div class="medium-3 column pull-right">
-                            <div class="container">
-                                <h4 class="mt-half ml-1">Statistics</h4>
-                                <div class="mt-1 mb-1 ml-1">
-                                    <ul class="menu vertical stats">
-                                        <li><i class="fa fa-heart"></i><span class="ml-half">Followers : <b>21</b></span></li>
-                                        <li><i class="fa fa-heart"></i><span class="ml-half">Following : <b>54</b></span></li>
-                                        <li><i class="fa fa-bookmark"></i><span class="ml-half">Booths : <b>41</b></span></li>
-                                        <li><i class="fa fa-camera"></i><span class="ml-half">Others : <b>35</b></span></li>
-                                        <li><i class="fa fa-cab"></i><span class="ml-half">Others : <b>8</b></span></li>
-                                        <li><i class="fa fa-diamond"></i><span class="ml-half">Others : <b>14</b></span></li>
-                                        <li><i class="fa fa-bell"></i><span class="ml-half">Others : <b>64</b></span></li>
-                                        <li><i class="fa fa-calendar"></i><span class="ml-half">Others : <b>103</b></span></li>
-
-                                    </ul>                                    
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="medium-9 column">
-                            <div class="container">
-                                <h4 class="ml-1 mt-half">Stylist</h4>
-
-                                <table class="single-line">
-                                    <thead>
-                                        <tr>
-                                            <th width="45%">Name</th>
-                                            <th width="45%">Experties</th>
-                                            <th width="20%">action?</th>
-                                        </tr>
-                                    </thead>
-                                    <tr>
-                                        <td><a href="user-view.html">Landen Swanson</a></td>
-                                        <td><a href="user-view.html">Experties</a></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link success" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="shop-view.html">Marvin Parks</a></td>
-                                        <td><a href="user-view.html">Experties</a></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="shop-view.html">Adyson Willis</a></td>
-                                        <td><a href="user-view.html">Experties</a></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="shop-view.html">Jaylyn Kirby</a></td>
-                                        <td><a href="user-view.html">Experties</a></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link success" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                            <td><a href="shop-view.html">Yael Schroeder</a></td>
-                                            <td><a href="user-view.html">Experties</a></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="shop-view.html">Juan Mueller</a></td>
-                                        <td><a href="user-view.html">Experties</a></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="shop-view.html">Hayden Nicholson</a></td>
-                                        <td><a href="user-view.html">Experties</a></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link success" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="shop-view.html">Roland Yang</a></td>
-                                        <td><a href="user-view.html">Experties</a></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="shop-view.html">Quinten Mayo</a></td>
-                                        <td><a href="user-view.html">Experties</a></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="shop-view.html">Noelia Osmun</a></td>
-                                        <td><a href="user-view.html">Experties</a></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="shop-view.html">Skyler Mcclain</a></td>
-                                        <td><a href="user-view.html">Experties</a></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="shop-view.html">Audrey Decker</a></td>
-                                        <td><a href="user-view.html">Experties</a></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="shop-view.html">Noelia Osmun</a></td>
-                                        <td><a href="user-view.html">Experties</a></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="shop-view.html">Jeni Manseau</a></td>
-                                        <td><a href="user-view.html">Experties</a></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="shop-view.html">Tamela Atchley</a></td>
-                                        <td><a href="user-view.html">Experties</a></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <ul class="pagination text-center" role="navigation" aria-label="Pagination">
-                                    <li class="pagination-previous disabled">previous <span class="show-for-sr">page</span></li>
-                                    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
-                                    <li><a href="#" aria-label="page 2">2</a></li>
-                                    <li><a href="#" aria-label="page 3">3</a></li>
-                                    <li class="ellipsis"></li>
-                                    <li><a href="#" aria-label="page 5">5</a></li>
-                                    <li><a href="#" aria-label="page 6">6</a></li>
-                                    <li><a href="#" aria-label="page 7">7</a></li>
-                                    <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
-                                </ul>
-                            </div>
-                            
-                            <div class="mt-2 container">
-                                <h4 class="ml-1 mt-half">Active complaints</h4>
-
-                                <table class="single-line">
-                                    <tr>
-                                        <td class="thirds"><a href="#">Seth Lucero</a></td>
-                                        <td class="thirds"><a href="#"><b>Fraudalent:</b> Harry Potter's Haberdashery</a></td>
-                                        <td class=""><i>2 minutes ago</i></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link success" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">Noelle Fitzpatrick</a></td>
-                                        <td class=""><a href="#"><b>Fraudalent:</b> 12 Booths For Rent</a></td>
-                                        <td class=""><i>2 hours ago</i></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">Jameson Hicks</a></td>
-                                        <td class=""><a href="#"><b>Fraudalent:</b> Amy Schumer</a></td>
-                                        <td class=""><i>11/23/2015</i></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="thirds"><a href="#">Davon Yu</a></td>
-                                        <td class="thirds"><a href="#"><b>Fraudalent:</b> Harry Potter's Haberdashery</a></td>
-                                        <td class=""><i>2 minutes ago</i></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link success" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">Arthur Ruiz</a></td>
-                                        <td class=""><a href="#"><b>Fraudalent:</b> 12 Booths For Rent</a></td>
-                                        <td class=""><i>2 hours ago</i></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">Freddie Aguilar</a></td>
-                                        <td class=""><a href="#"><b>Fraudalent:</b> Amy Schumer</a></td>
-                                        <td class=""><i>11/23/2015</i></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="thirds"><a href="#">Reed Bernard</a></td>
-                                        <td class="thirds"><a href="#"><b>Fraudalent:</b> Harry Potter's Haberdashery</a></td>
-                                        <td class=""><i>2 minutes ago</i></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link success" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">Alina Castro</a></td>
-                                        <td class=""><a href="#"><b>Fraudalent:</b> 12 Booths For Rent</a></td>
-                                        <td class=""><i>2 hours ago</i></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">Seth Lucero</a></td>
-                                        <td class=""><a href="#"><b>Fraudalent:</b> Amy Schumer</a></td>
-                                        <td class=""><i>11/23/2015</i></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">Teresa Walsh</a></td>
-                                        <td class=""><a href="#"><b>Fraudalent:</b> Amy Schumer</a></td>
-                                        <td class=""><i>11/23/2015</i></td>
-                                        <td class="">
-                                            <ul class="menu pull-right">
-                                                <li><a class="button link primary" href="#"><i class="fa fa-eye"></i></a></li>
-                                                <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <ul class="pagination text-center" role="navigation" aria-label="Pagination">
-                                    <li class="pagination-previous disabled">previous <span class="show-for-sr">page</span></li>
-                                    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
-                                    <li><a href="#" aria-label="page 2">2</a></li>
-                                    <li><a href="#" aria-label="page 3">3</a></li>
-                                    <li class="ellipsis"></li>
-                                    <li><a href="#" aria-label="page 5">5</a></li>
-                                    <li><a href="#" aria-label="page 6">6</a></li>
-                                    <li><a href="#" aria-label="page 7">7</a></li>
-                                    <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
-                                </ul>
-                            </div>
-                            
+                    <div class="row">
+                        <div class="medium-12 columns">
+                            <ul class="pagination text-center" role="navigation" aria-label="Pagination">
+                                <li class="pagination-previous disabled">previous <span class="show-for-sr">page</span></li>
+                                <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+                                <li><a href="#" aria-label="page 2">2</a></li>
+                                <li><a href="#" aria-label="page 3">3</a></li>
+                                <li class="ellipsis"></li>
+                                <li><a href="#" aria-label="page 5">5</a></li>
+                                <li><a href="#" aria-label="page 6">6</a></li>
+                                <li><a href="#" aria-label="page 7">7</a></li>
+                                <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>

@@ -41,6 +41,20 @@ table {
 thead, tbody {
 	border-left: none;
 	border-right: none;
+	th, td {
+		&.halves {
+			width: 50%;
+		}
+		&.thirds {
+			width: 33.33%;
+		}
+		&.quarters {
+			width: 25%;
+		}
+		&.eighths {
+			width: 12.5%;
+		}
+	}
 }
 
 thead {
@@ -54,18 +68,6 @@ thead {
 tbody {
 	th, td {
 		padding: 0.875rem 1rem;
-		&.halves {
-			width: 50%;
-		}
-		&.thirds {
-			width: 33.33%;
-		}
-		&.quarters {
-			width: 25%;
-		}
-		&.eighths {
-			width: 12.5%;
-		}
 		.menu {
 			visibility: hidden;
 			transition: all ease-in 0.2s;

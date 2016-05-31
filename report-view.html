@@ -19,13 +19,13 @@
                             <span class="logo"><img src="img/styleteq-logo-white.png"></span>
                         </p>
                         <p class="dashboard-menu-title">MAIN MENU</p>
-                        <li class="active"><a href="admin-home.html"><i class="fa fa-tachometer fa-fw"></i> Dashboard</a></li>
-                        <li><a href="reports.html"><i class="fa fa-pie-chart fa-fw"></i> Reports</a></li>
+                        <li><a href="admin-home.html"><i class="fa fa-tachometer fa-fw"></i> Dashboard</a></li>
+                        <li class="active"><a href="#"><i class="fa fa-pie-chart fa-fw"></i> Reports</a></li>
                         <li><a href="users.html"><i class="fa fa-users fa-fw"></i> Users</a></li>
                         <li><a href="shops.html"><i class="fa fa-tag fa-fw"></i> Shops</a></li>
                         <!-- <li><a href="booths.html"><i class="fa fa-tags fa-fw"></i> Booths</a></li> -->
                         <p class="dashboard-menu-title">Settings</p>
-                        <li><a href="account.html"><i class="fa fa-gear fa-fw"></i> Account</a></li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Account</a></li>
                         <!-- <p class="dashboard-menu-title">MORE</p>
                         <li><a href="register-stylist.html"><i class="fa fa-certificate fa-fw"></i> Become A Stylist</a></li> -->
                     </ul>
@@ -53,71 +53,76 @@
                             </ul>
                         </div>
                     </div>
-                    
+ 
                     <div class="row">
                         <div class="medium-12 columns">
-                            <ul id="admin-dashboard" class="accordion mt-1" data-accordion  data-multi-expand="true" data-allow-all-closed="true">
-                                <li class="accordion-item is-active" data-accordion-item>
-                                    <a href="#" class="accordion-title">Recent Reports <span class="label">1</span></a> 
-                                    <div class="accordion-content" data-tab-content>
-                                        <div class="row">
-                                            <div class="medium-6 columns">
-                                                <p class="subheader mt-half">You have <b>1</b> unresolved report.</p>
-                                            </div>
-                                            <div class="medium-6 columns">
-                                                <a href="reports.html" class="button hollow small pull-right mb-1">See All Reports</a>
-                                            </div>
-                                        </div>
-
-                                        <table class="single-line">
-                                            <thead>
-                                                <tr>
-                                                    <th>Reporter</th>
-                                                    <th class="thirds">Detail</th>
-                                                    <th>Date Reported</th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><a href="user-view.html">Archie Baldwin</a></td>
-                                                    <td class="thirds"><a href="shop-view"><b>Fraudalent:</b> Harry Potter's Haberdashery</a></td>
-                                                    <td class=""><i>2 minutes ago</i></td>
-                                                    <td class="">
-                                                        <ul class="menu pull-right">
-                                                            <li><a class="button link success" href="#"><i class="fa fa-eye"></i></a></li>
-                                                            <li><a class="button link success" href="#"><i class="fa fa-check"></i></a></li>
-                                                            <li><a class="button link alert" href="#"><i class="fa fa-close"></i></a></li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </li>
-                                <li class="accordion-item is-active" data-accordion-item>
-                                    <a href="#" class="accordion-title">Messages</a>
-                                    <div class="accordion-content" data-tab-content>
-                                        <div class="row">
-                                            <div class="medium-12 colum">
-                                                <p class="text-center subheader mt-2 mb-2">This content is still empty.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="accordion-item is-active" data-accordion-item>
-                                    <a href="#" class="accordion-title">Recent Activity</a>
-                                    <div class="accordion-content" data-tab-content>
-                                        <div class="row">
-                                            <div class="medium-12 colum">
-                                                <p class="text-center subheader mt-2 mb-2">This content is still empty.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                            <nav aria-label="You are here:" role="navigation" class="mt-1 mb-1">
+                                <ul class="breadcrumbs">
+                                    <li><a href="reports.html">Reports</a></li>
+                                    <li>Report Details</li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
+
+                    <div class="row">
+                        <div class="medium-12 columns">
+                            <div class="callout">
+                                <div class="row">
+                                    <div class="medium-12 columns">
+                                        <div class="well mb-1">
+                                            <div class="row">
+                                                <div class="medium-2 columns">
+                                                    <span class="subheader">Reporter:</span>
+                                                </div>
+                                                <div class="medium-10 columns">
+                                                    <a href="user-view.html"><b>John Doe</b></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="medium-12 columns">
+                                        <div class="well mb-1">
+                                            <div class="row">
+                                                <div class="medium-2 columns">
+                                                    <span class="subheader">Details:</span>
+                                                </div>
+                                                <div class="medium-10 columns">
+                                                    <p class="mb-half"><a href="shop-view.html"><b>Finn's Greatest Haircutters</b></a></p>
+                                                    <p class="marginless">Owned by: <a href="user-view.html"><b>Huckleberry Finn</b></a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="medium-12 columns">
+                                        <div class="well mb-1">
+                                            <div class="row">
+                                                <div class="medium-2 columns">
+                                                    <span class="subheader">Full Description:</span>
+                                                </div>
+                                                <div class="medium-10 columns">
+                                                    <p class="marginless">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="medium-6 columns">
+                                        <a href="#" class="button success marginless"><i class="fa fa-check fa-fw"></i> Mark As Resolved</a>
+                                        <a href="#" class="button alert marginless"><i class="fa fa-trash fa-fw"></i> Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
                 </div>
 
                 <!-- close wrapper, no more content after this -->

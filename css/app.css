@@ -5928,6 +5928,9 @@ body {
 .mr-2 {
   margin-right: 2rem !important; }
 
+.mb-half {
+  margin-bottom: 0.5rem !important; }
+
 .mb-1 {
   margin-bottom: 1rem !important; }
 
@@ -6225,7 +6228,6 @@ section {
   .top-bar ul {
     background-color: transparent; }
   .top-bar .menu li a {
-    color: #fefefe;
     text-transform: uppercase;
     transition: all ease-in 0.2s;
     -webkit-transition: all ease-in 0.2s;
@@ -6259,6 +6261,8 @@ section {
     .top-bar.dark .menu li a:hover {
       box-shadow: 0 2px 0 0 #fefefe;
       -webkit-box-shadow: 0 2px 0 0 #fefefe; }
+  .top-bar.white .menu li a {
+    color: #fefefe; }
 
 footer {
   background-color: #1A1D2C; }
@@ -6328,7 +6332,7 @@ footer {
 
 .button {
   text-transform: uppercase;
-  letter-spacing: 1px; }
+  font-weight: 600; }
   .button.link {
     border: none;
     background-color: transparent;
@@ -6406,6 +6410,14 @@ table {
 thead, tbody {
   border-left: none;
   border-right: none; }
+  thead th.halves, thead td.halves, tbody th.halves, tbody td.halves {
+    width: 50%; }
+  thead th.thirds, thead td.thirds, tbody th.thirds, tbody td.thirds {
+    width: 33.33%; }
+  thead th.quarters, thead td.quarters, tbody th.quarters, tbody td.quarters {
+    width: 25%; }
+  thead th.eighths, thead td.eighths, tbody th.eighths, tbody td.eighths {
+    width: 12.5%; }
 
 thead {
   background-color: #fefefe; }
@@ -6415,14 +6427,6 @@ thead {
 
 tbody th, tbody td {
   padding: 0.875rem 1rem; }
-  tbody th.halves, tbody td.halves {
-    width: 50%; }
-  tbody th.thirds, tbody td.thirds {
-    width: 33.33%; }
-  tbody th.quarters, tbody td.quarters {
-    width: 25%; }
-  tbody th.eighths, tbody td.eighths {
-    width: 12.5%; }
   tbody th .menu, tbody td .menu {
     visibility: hidden;
     transition: all ease-in 0.2s; }
@@ -6509,7 +6513,7 @@ textarea {
 
 select {
   height: 3rem;
-  padding: 0.8rem; }
+  padding: 0 0.8rem; }
 
 [type='file'] {
   padding: 1rem 0.8rem;
@@ -6677,8 +6681,8 @@ ul.stats {
 
 .accordion-title {
   padding: 1rem;
-  font-size: 1rem;
-  line-height: 0.8;
+  font-size: 1.125rem;
+  line-height: 1.5em;
   color: rgba(39, 43, 65, 0.54); }
   .accordion-title:hover, .accordion-title:link, .accordion-title:visited, .accordion-title:active {
     color: rgba(39, 43, 65, 0.54);
@@ -6772,6 +6776,11 @@ a.addNewbtn {
   a.addNewbtn h5 {
     margin: .2rem; }
 
+.well {
+  padding: 1rem;
+  border: 1px solid rgba(42, 42, 42, 0.12);
+  border-radius: 2px; }
+
 .search-box {
   position: relative; }
   .search-box input {
@@ -6802,5 +6811,5 @@ a.addNewbtn {
 .pagination {
   margin-bottom: 0 !important;
   font-weight: bold;
-  padding-bottom: 1rem;
-  padding-top: 1rem; }
+  padding-bottom: 2rem;
+  padding-top: 2rem; }
