@@ -6043,7 +6043,7 @@ section {
       height: 100%;
       width: 100%; }
       .jumbotron > .orbit > .orbit-container > .orbit-slide.slide-1 {
-        background: #5A1657 url("../img/orbit/Landing-Page-Blowdry.jpg") center center no-repeat;
+        background: #5A1657 url("../img/orbit/At-The-Barbershop.jpg") center center no-repeat;
         background-size: cover; }
       .jumbotron > .orbit > .orbit-container > .orbit-slide.slide-2 {
         background: #5A1657 url("../img/orbit/Becoming-Hairdressers.jpg") center center no-repeat;
@@ -6223,6 +6223,9 @@ section {
     .shop-entry:hover .options {
       visibility: visible; }
 
+.label {
+  vertical-align: middle; }
+
 .top-bar {
   background-color: transparent; }
   .top-bar ul {
@@ -6231,7 +6234,8 @@ section {
     text-transform: uppercase;
     transition: all ease-in 0.2s;
     -webkit-transition: all ease-in 0.2s;
-    padding: 0.7rem 2rem; }
+    padding: 0.7rem 2rem;
+    font-weight: 600; }
     .top-bar .menu li a.button:hover {
       color: #5A1657;
       background-color: #fefefe;
