@@ -1594,7 +1594,7 @@ textarea[readonly] {
   -webkit-appearance: none;
   -moz-appearance: none; }
 
-input[type='search'] {
+input[type="search"] {
   box-sizing: border-box; }
 
 [type='file'],
@@ -2291,7 +2291,7 @@ select {
   vertical-align: top; }
   .media-object-section:first-child {
     padding-right: 1rem; }
-  .media-object-section:last-child:not( + .media-object-section:first-child) {
+  .media-object-section:last-child {
     padding-left: 1rem; }
   .media-object-section.middle {
     vertical-align: middle; }
@@ -3823,7 +3823,7 @@ table.hover tr:nth-of-type(even):hover {
 
 .fa {
   display: inline-block;
-  font: normal normal normal 14px / 1 FontAwesome;
+  font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -5892,7 +5892,8 @@ body {
   background-color: #fbfbfb;
   text-rendering: optimizeLegibility; }
 
-.off-canvas-content, .off-canvas-content {
+.off-canvas-content,
+.off-canvas-content {
   background-color: #fbfbfb; }
 
 .row {
@@ -6429,7 +6430,8 @@ thead {
     font-size: 1.025rem;
     padding: 1.2rem 1rem; }
 
-tbody th, tbody td {
+tbody th,
+tbody td {
   padding: 0.875rem 1rem; }
   tbody th .menu, tbody td .menu {
     visibility: hidden;
@@ -6498,20 +6500,7 @@ legend {
   [type='radio'] + label.sublabel {
     font-size: 0.875rem; }
 
-[type='text'],
-[type='password'],
-[type='date'],
-[type='datetime'],
-[type='datetime-local'],
-[type='month'],
-[type='week'],
-[type='email'],
-[type='number'],
-[type='search'],
-[type='tel'],
-[type='time'],
-[type='url'],
-[type='color'],
+[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'],
 textarea {
   height: 3rem; }
 
@@ -6737,7 +6726,8 @@ ul#admin-dashboard > li > .accordion-title {
 .menu.white > li > a {
   color: #fefefe; }
 
-.menu > li > a > img, .menu > li > a > i {
+.menu > li > a > img,
+.menu > li > a > i {
   margin-top: -0.2rem; }
 
 .media-object-section {
