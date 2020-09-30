@@ -7466,7 +7466,7 @@ ul.tags {
   .img-wrapper.featured-user {
     max-height: 10rem;
     max-width: 10rem;
-    height: 100%;
+    height: 100vh;
     width: 100%; }
 
 .featured-image-block-grid-header {
