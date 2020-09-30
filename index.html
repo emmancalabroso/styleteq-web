@@ -5,17 +5,23 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>StyleTeq</title>
+
+        <!-- Important Owl stylesheet -->
+        <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css">
+
+        <!-- Default Theme -->
+        <link rel="stylesheet" href="js/owl-carousel/owl.theme.css">
+
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/app.css">
     </head>
     <body>
         
         <section class="jumbotron">
-
             <div class="orbit" role="region" aria-label="Hero Section Images" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;" data-pause-on-hover="false">
                 <ul class="orbit-container">
-                    <!-- <li class="slide-1 is-active orbit-slide"></li> -->
-                    <li class="slide-2 is-active orbit-slide"></li>
+                    <li class="slide-1 is-active orbit-slide"></li>
+                    <li class="slide-2 orbit-slide"></li>
                     <li class="slide-3 orbit-slide"></li>
                     <li class="slide-4 orbit-slide"></li>
                 </ul>
@@ -32,8 +38,11 @@
                             <div id="responsive-menu">
                                 <div class="top-bar-right">
                                     <ul class="white menu">
+                                        <li class="bordered search-box home">
+                                            <input type="text" placeholder="Search" value="" required="" style="background: transparent !important;"">
+                                        </li>
                                         <li class="bordered">
-                                            <a class="button hollow white" href="register-stylist.html">Be A Professional</a>
+                                            <a href="register-stylist.html">Be A Professional</a>
                                         </li>
                                         <li>
                                             <a href="login.html">Blog</a>
@@ -120,8 +129,8 @@
                         </a>
                     </li>
                 </ul>
-                <div class="tabs-content" data-tabs-content="users-tabs" data-equalizer>
-                    <div class="tabs-panel is-active" id="panel1">
+                <div class="tabs-content pb-0" data-tabs-content="users-tabs" data-equalizer>
+                    <div class="tabs-panel pb-0 is-active" id="panel1">
                         <div class="row">
                             <div class="medium-7 columns flexed" data-equalizer-watch>
                                 <div class="flexed-item">
@@ -197,6 +206,130 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="medium-8 medium-offset-2 columns text-center pb-1">
+                    <h2 class="text-center mb-2">Featured Users</h2>
+                    <!-- <p class="h4 text-center subheader">Popular Professionals</p> -->
+                </div>
+                <div class="large-12 columns pt-1">
+                    <div id="owl-featuredUser" class="owl-carousel">
+                        <div>
+                            <a href="">
+                                <div class="panel bg-white ml-1 mr-1 p1 text-center">
+                                    <div class="featured-user img-fit img-wrapper circle">
+                                        <img src="./img/cute_client.jpg">
+                                    </div>
+
+                                    <br />
+                                    <div class="media-object marginless">
+                                        <div class="media-object-section middle">
+                                            <div class="text-group marginless">
+                                                <h5>@styleteqceo</h5>
+                                                <p class="type-normal less-view">Leodus Thomas</p>
+                                                <small class="subheader less-view">
+                                                    CEO of Styleteq
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <div class="panel bg-white ml-1 mr-1 p1 text-center">
+                                    <div class="featured-user img-fit img-wrapper circle">
+                                        <img src="./img/cute_client.jpg">
+                                    </div>
+
+                                    <br />
+                                    <div class="media-object marginless">
+                                        <div class="media-object-section middle">
+                                            <div class="text-group marginless">
+                                                <h5>@styleteqceo</h5>
+                                                <p class="type-normal less-view">Leodus Thomas</p>
+                                                <small class="subheader less-view">
+                                                    CEO of Styleteq
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <div class="panel bg-white ml-1 mr-1 p1 text-center">
+                                    <div class="featured-user img-fit img-wrapper circle">
+                                        <img src="./img/cute_client.jpg">
+                                    </div>
+
+                                    <br />
+                                    <div class="media-object marginless">
+                                        <div class="media-object-section middle">
+                                            <div class="text-group marginless">
+                                                <h5>@styleteqceo</h5>
+                                                <p class="type-normal less-view">Leodus Thomas</p>
+                                                <small class="subheader less-view">
+                                                    CEO of Styleteq
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <div class="panel bg-white ml-1 mr-1 p1 text-center">
+                                    <div class="featured-user img-fit img-wrapper circle">
+                                        <img src="./img/cute_client.jpg">
+                                    </div>
+
+                                    <br />
+                                    <div class="media-object marginless">
+                                        <div class="media-object-section middle">
+                                            <div class="text-group marginless">
+                                                <h5>@styleteqceo</h5>
+                                                <p class="type-normal less-view">Leodus Thomas</p>
+                                                <small class="subheader less-view">
+                                                    CEO of Styleteq
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <div class="panel bg-white p1 text-center">
+                                    <div class="featured-user img-fit img-wrapper circle">
+                                        <img src="./img/cute_client.jpg">
+                                    </div>
+
+                                    <br />
+                                    <div class="media-object marginless">
+                                        <div class="media-object-section middle">
+                                            <div class="text-group marginless">
+                                                <h5>@styleteqceo</h5>
+                                                <p class="type-normal less-view">Leodus Thomas</p>
+                                                <small class="subheader less-view">
+                                                    CEO of Styleteq
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -343,6 +476,7 @@
                     <ul class="social-media menu align-right">
                         <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest fa-lg"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -353,6 +487,9 @@
         <script src="bower_components/foundation-sites/dist/foundation.js"></script>
         <script src="js/noframework.waypoints.min.js"></script>
         <script src="js/jquery.stellar.min.js"></script>
+            
+        <script src="js/owl-carousel/owl.carousel.js"></script>
+
         <script src="js/app.js"></script>
 
         <script type="text/javascript">
@@ -360,6 +497,17 @@
             // $(document).ready(function(){
             //    $('.scene-screen').addClass('fadeInLeft');
             // });
+
+            $(document).ready(function() {
+ 
+                $("#owl-featuredUser").owlCarousel({
+                    items: 3,
+                    nav: true,
+                    loop: true
+                    // itemsScaleUp: true
+                });
+             
+            });
 
             var waypoint = new Waypoint({
                 element: document.getElementById('users-section'),

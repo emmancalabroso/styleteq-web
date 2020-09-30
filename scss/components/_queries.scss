@@ -1,0 +1,145 @@
+.public-view {
+	margin-bottom: 7.5rem !important;
+}
+
+@media only screen and (max-width: 1340px) {
+	.stick-bottom {
+		width: 80% !important;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.stick-download {
+        width: 96% !important;
+    }
+
+}
+
+@media only screen and (max-width: 1165px) {
+	li.btn-login {
+		padding-left: 2.5rem;
+	}
+}
+
+@media only screen and (max-width: 1160px) {
+	li.btn-login {
+		padding-left: 2rem;
+	}
+}
+
+@media only screen and (max-width: 1160px) {
+	li.btn-login {
+		padding-left: 1rem;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.stick-bottom {
+		width: 65% !important;
+	}
+	.stick-download {
+        br.br2 {
+        	display: inline-block !important;
+        }
+
+        img.store {
+        	margin: 0rem 0.5rem !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 890px) {
+	.stick-download {
+		h5 {
+   			line-height: 1rem !important;
+   		}
+	}
+
+    .public-view {
+		margin-bottom: 8.3rem !important;
+	}
+}
+
+@media only screen and (max-width: 825px) {
+	.fixed-size {
+		img {
+			height: 300px !important;
+		}
+   }
+}
+
+@media only screen and (max-width: 770px) {
+	.stick-bottom {
+		width: 62% !important;
+	}
+}
+
+@media only screen and (max-width: 655px) {
+	.stick-download {
+        br.br1 {
+        	display: inline-block !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+	.stick-bottom {
+		width: 100% !important;
+	}
+}
+
+@media only screen and (max-width: 565px) {
+	.search {
+		margin: 0 auto !important;
+		li {
+			display: inline-block;
+			margin: 0.125rem 0.5rem;
+			select {
+				width: 22rem !important;
+				margin: 0 1rem 0 0;
+			}
+
+			a {
+				width: 10.4rem !important;
+			}
+		}
+	}
+}
+
+
+
+@media only screen and (max-width: 545px) {
+	.stick-download {
+		img{
+			&.v-align-center {
+				margin-bottom: 1rem !important;
+			}
+
+			&.store {
+				margin-top: 1rem !important;
+			}
+		}
+	}
+
+    .public-view {
+		margin-bottom: 10.3rem !important;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	li.btn-login {
+		padding-left: 0rem !important;
+		width: 95% !important;
+		border-top: 1px solid rgba(42, 42, 42, 0.1);
+		margin-top: 1rem !important;
+
+		a {
+		margin-top: 1rem !important;
+		margin-top: 0.5rem !important;
+		width: 100% !important;
+		text-align: center !important;
+		}
+	}
+}
+
+

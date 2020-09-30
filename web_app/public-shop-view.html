@@ -1,0 +1,327 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>StyleTeq - Dashboard</title>
+
+        <!-- Important Owl stylesheet -->
+        <link rel="stylesheet" href="../js/owl-carousel/owl.carousel.css">
+
+        <!-- Default Theme -->
+        <link rel="stylesheet" href="../js/owl-carousel/owl.theme.css">
+
+        <link rel="stylesheet" href="../css/app.css">
+    </head>
+    <body>
+        <div class="off-canvas-wrapper public-view">
+            <div id="mainDashboard" class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+                <!-- original content goes in this container -->
+                <div class="off-canvas-content dashboard-main" data-off-canvas-content>
+
+                    <!-- "wider" top-bar menu for 'medium' and up -->
+                    <div class="row">
+                        <div class="large-12 medium-12">
+                            <div id="widemenu" class="top-bar">
+                                <div class="top-bar-left">
+                                    <ul class="search menu">
+                                        <li>
+                                            <select>
+                                                <optgroup label="Users">
+                                                    <option value="1">James Alexander</option>
+                                                    <option value="2">Heidi Armstedt</option>
+                                                </optgroup>
+                                                <optgroup label="Images">
+                                                    <option value="3">#image1</option>
+                                                    <option value="4">#image2</option>
+                                                </optgroup>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <select>
+                                                <option>Location 1</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <a href="search-results.html" class="button primary expanded"><i class="fa fa-search"></i> &nbsp;Search</a>
+                                        </li>
+                                        <li>
+                                            <a data-toggle="searchFilters" class="button primary hollow expanded"><i class="fa fa-filter"></i> &nbsp;Filters</a>
+                                        </li>
+                                        <li class="btn-login">
+                                            <a href="#" class="primary"> <i class="fa fa-user" aria-hidden="true"></i> &nbsp;Login</a>
+                                        </li>  
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Filters -->
+                    <div id="searchFilters" class="row" data-toggler data-animate="fade-in fade-out">
+                        <fieldset class="large-6 columns">
+                            <legend>Filter Your Search</legend>
+                            <input type="radio" name="filter" value="images" id="images" required><label for="images">Images</label>
+                            <input type="radio" name="filter" value="shops" id="shops"><label for="shops">Shops</label>
+                            <input type="radio" name="filter" value="Users" id="Users"><label for="Users">Users</label>
+                            <input type="radio" name="filter" value="booths" id="booths"><label for="booths">Booths For Rent</label>
+                            <input type="radio" name="filter" value="Specials" id="Specials"><label for="Specials">Specials</label>
+                        </fieldset>
+                        <fieldset class="large-6 columns">
+                            <legend>Check these out</legend>
+                            <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                            <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+                            <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+                        </fieldset>
+                    </div>
+
+                    <div class="row ">
+                        <div class="large-12 columns">
+                            <div class="text-group mt-1 mb-1">
+                                <h4>The Best Salon In the World</h4>
+                                <p class="subheader"><i class="fa fa-heart"></i>&nbsp; 23 Followers</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <div id="owl-example" class="owl-carousel">
+                                <div>
+                                    <img src="https://unsplash.it/600/440?image=899" alt="">
+                                </div>
+                                <div>
+                                    <img src="https://unsplash.it/600/440?image=693" alt="">
+                                </div>
+                                <div>
+                                    <img src="https://unsplash.it/600/440?image=452" alt="">
+                                </div>
+                                <div>
+                                    <img src="https://unsplash.it/600/440?image=452" alt="">
+                                </div>
+                                <div>
+                                    <img src="https://unsplash.it/600/440?image=899" alt="">
+                                </div>
+                                <div>
+                                    <img src="https://unsplash.it/600/440?image=693" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <div class="flex-container">
+                                <div class="media-object">
+                                    <div class="media-object-section logo middle">
+                                        <div class="img-wrapper circle">
+                                            <img src= "../img/sample-pic.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="media-object-section middle">
+                                        <span class="h4">James Alexander</span>
+                                        <p class="subheader"><small>Millennium Center, 6825 S. Galena Street, Suite 314, Centennial, CO, United States Of America &nbsp; <a data-open="viewMap">View Map</a></small></p>
+
+                                        <!-- Likes Modal -->
+                                        <div id="viewMap" class="reveal" data-reveal>
+                                            <div class="reveal-heading">
+                                                <h5>View Map</h5>
+                                                <button class="close-button" data-close aria-label="Close reveal" type="button">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div id="map"></div>
+                                            <script>
+                                              function initMap() {
+                                                var uluru = {lat: -25.363, lng: 131.044};
+                                                var map = new google.maps.Map(document.getElementById('map'), {
+                                                  zoom: 4,
+                                                  center: uluru
+                                                });
+                                                var marker = new google.maps.Marker({
+                                                  position: uluru,
+                                                  map: map
+                                                });
+                                              }
+                                            </script>
+                                            <script async defer
+                                            src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+                                            </script>
+                                        </div>
+                                        <!-- Like Modal End -->
+
+                                    </div>
+                                </div>
+                                <a href="user_profile.html" class="button primary hollow small pull-right">View Profile</a>
+                            </div>
+
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <h6 class="page-lead">Booths For Rent</h6>
+                                </div>
+                            </div>
+                            <ul class="list-block flex-container">
+                                <li>
+                                    <div class="media-object">
+                                        <div class="media-object-section flushed middle">
+                                            <div class="img-wrapper small img-fit">
+                                                <img src="https://unsplash.it/600/440?image=693">
+                                            </div> 
+                                        </div>
+                                        <div class="media-object-section middle">
+                                            <div class="text-group">
+                                                <p><b>3 Booths Available</b></p>
+                                                <small class="subheader">Bridges Hair Salon</small>
+                                                <small class="subheader">302 Oak Ct, Eugene, WV</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="booth-view.html" class="button primary pull-right"><i class="fa fa-eye-o"></i>&nbsp; View Booth</a>
+                                </li>
+                                <li>
+                                    <div class="media-object">
+                                        <div class="media-object-section flushed middle">
+                                            <div class="img-wrapper small img-fit">
+                                                <img src="https://unsplash.it/600/440?image=693">
+                                            </div> 
+                                        </div>
+                                        <div class="media-object-section middle">
+                                            <div class="text-group">
+                                                <p><b>3 Booths Available</b></p>
+                                                <small class="subheader">Bridges Hair Salon</small>
+                                                <small class="subheader">302 Oak Ct, Eugene, WV</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="booth-view.html" class="button primary pull-right"><i class="fa fa-eye-o"></i>&nbsp; View Booth</a>
+                                </li>
+                                <li class="bb-0">
+                                    <div class="m0-auto add-media mb-1">
+                                        <div class="text-center p1 pb-1">
+                                            <a href="">
+                                                <h5 class="mb-0 text-upper"><i class="fa fa-plus mr-half" aria-hidden="true"></i> Click here to add booth</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <h6 class="page-lead">Professionals</h6>
+                                </div>
+                            </div>
+                            <ul class="list-block flex-container">
+                                <li>
+                                    <div class="media-object">
+                                        <div class="media-object-section flushed middle">
+                                            <div class="img-wrapper small circle">
+                                                <img src="../img/sample-pic.jpg">
+                                            </div> 
+                                        </div>
+                                        <div class="media-object-section middle">
+                                            <div class="text-group">
+                                                <p><b>@jamesalexander</b></p>
+                                                <small class="subheader">Hair Technician</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="user_profile.html" class="button primary pull-right">View Profile</a>
+                                </li>
+                                <li>
+                                    <div class="media-object">
+                                        <div class="media-object-section flushed middle">
+                                            <div class="img-wrapper small circle">
+                                                <img src="../img/sample-pic.jpg">
+                                            </div> 
+                                        </div>
+                                        <div class="media-object-section middle">
+                                            <div class="text-group">
+                                                <p><b>@jamesalexander</b></p>
+                                                <small class="subheader">Hair Technician</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="user_profile.html" class="button primary pull-right">View Profile</a>
+                                </li>
+                                <li>
+                                    <div class="media-object">
+                                        <div class="media-object-section flushed middle">
+                                            <div class="img-wrapper small circle">
+                                                <img src="../img/sample-pic.jpg">
+                                            </div> 
+                                        </div>
+                                        <div class="media-object-section middle">
+                                            <div class="text-group">
+                                                <p><b>@jamesalexander</b></p>
+                                                <small class="subheader">Hair Technician</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="user_profile.html" class="button primary pull-right">View Profile</a>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+
+                </div>
+                <!-- close wrapper, no more content after this -->
+
+            </div>
+        </div>
+
+        <!-- STICKY DOWNLOAD -->
+        <div class="row panel">
+            <div class="large-12 medium-12 columns">
+                <div class="stick-download p1 text-center">
+                    <p class="marginless">
+                        <h5 class="text-white inline v-align-center">Download the Styleteq App and gain access to the best Grooming Professionals near you & beyond.
+                        </h5> <br class="breaking br2" />
+                    </p>
+                    <a href="">
+                        <img src="../img/icon-appleplay.png" class="inline mr-1 ml-1 store">
+                    </a>
+                    <a href="">
+                        <img src="../img/icon-googleplay.png" class="inline store">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <script src="../js/owl-carousel/owl.carousel.js"></script>
+        
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/what-input/what-input.js"></script>
+        <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+        <script src="../bower_components/foundation-sites/js/foundation.toggler.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+        <script src="../js/app.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function() {
+ 
+                $("#owl-example").owlCarousel({
+                    items: 3,
+                    nav: true,
+                    loop: true
+                    // itemsScaleUp: true
+                });
+             
+            });
+
+            $(function () {
+                var timer;
+
+                $(window).resize(function() {
+                    clearTimeout(timer);
+                    timer = setTimeout(function() {
+                      $('.dashboard-menu').css("height", $(window).height());
+                    }, 40); 
+                }).resize();
+            });
+        </script>
+    </body>
+</html>

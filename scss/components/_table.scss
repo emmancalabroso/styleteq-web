@@ -1,0 +1,233 @@
+table {
+	margin: 0;
+	width: 100%;
+	table-layout: fixed;
+	font-size: 0.875rem;
+	&.transparent {
+		background: transparent;
+		border: none;
+		thead, tbody, tfoot {
+			background: transparent;
+			border: none;
+			tr {
+				background: transparent;
+			}
+		}
+	}
+	&.white {
+		color: $white;
+	}
+	&.single-line {
+		tbody {
+			th, td, tr {
+				> a, > i, > span {
+					color: rgba($base-body-font-color, $B-text);
+					// truncate
+					display: inline-block;
+					width: 100%;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					vertical-align: top;
+				}
+				.table-control {
+					+ a, i, + span {
+						color: rgba($base-body-font-color, $B-text);
+						// truncate
+						display: inline-block;
+						width: 75%;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						vertical-align: top;
+					}
+				}
+				> .img-wrapper {
+					display: inline-block;
+					overflow: hidden;
+					vertical-align: middle;
+				}
+				> a {
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+				&.active {
+					font-weight: 600;
+
+					a {
+						color: $primary-color;
+					}
+				}
+				
+				.truncate {
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+			}
+		}
+	}
+}
+
+.panel {
+	> table {
+		thead, tbody, tfoot {
+			border-top: none;
+		}
+		thead {
+			th {
+				padding: 1rem;
+			}
+		}
+		tbody {
+			td {
+				padding: 1.2rem 1rem;
+			}
+		}
+	}
+
+	.in-messages {
+		padding-bottom: 9rem;
+		.reply {
+			background-color: rgba($light-gray, $B-hinttext);
+		}
+	}
+	
+	//FIXING FIREFOX
+	@-moz-document url-prefix() {
+	    .in-messages {
+			padding-bottom: 10rem !important;
+		}
+	}
+
+	.stick-bottom {
+		position: fixed;
+		bottom: 0;
+		max-width: 73rem;
+		width: 100%;
+		background: #fefefe;
+		
+		.send {
+			line-height: 7.5;
+		}
+	}
+
+	.stick-download {
+		position: fixed;
+		bottom: 0;
+		max-width: 73rem;
+		width: 100%;
+		background: $primary-color;
+		border-radius: 0.2rem 0.2rem 0rem 0rem;
+		img {
+			width: 100%;
+			max-width: 6rem;
+
+			&.store {
+				max-width: 8rem !important;
+				opacity: 0.9;
+				&:hover {
+					filter: alpha(opacity=100);
+			        opacity: 1;
+			        -webkit-transition: opacity .15s ease-in-out;
+			        -moz-transition: opacity .15s ease-in-out;
+			        -ms-transition: opacity .15s ease-in-out;
+			        -o-transition: opacity .15s ease-in-out;
+			        transition: opacity .15s ease-in-out;
+		    	}
+			}
+		}
+
+		.v-align-center {
+			line-height: 2.4rem;
+		}
+
+		.stick-download-link {
+			&:hover {
+				color: $white !important;
+			}
+		}
+	}
+}
+
+thead, tbody {
+	border-left: none;
+	border-right: none;
+	th, td {
+		&.halves {
+			width: 50%;
+		}
+		&.thirds {
+			width: 33.33%;
+		}
+		&.quarters {
+			width: 25%;
+		}
+		&.eighths {
+			width: 12.5%;
+		}
+	}
+}
+
+thead {
+	background-color: $white;
+	th {
+		padding: 1.2rem 0.25rem;
+	}
+}
+
+tbody {
+	th, td {
+		padding: 0.875rem 0.25rem;
+		.menu {
+			visibility: hidden;
+			transition: all ease-in 0.2s;
+		}
+	}
+	tr {	
+		&:hover {
+			th, td {
+				.menu {
+					visibility: visible;
+				}
+			}
+		}
+		
+	}
+	tr:nth-child(2n) {
+		background-color: rgba($medium-gray, $B-dividers);
+	}
+}
+
+tbody#iddrag {
+	th, td {
+		padding: 0.875rem 0.25rem;
+		.menu {
+			visibility: hidden;
+			transition: all ease-in 0.2s;
+		}
+	}
+	tr {
+		&:hover {
+			th, td {
+				.menu {
+					visibility: visible;
+				}
+			}
+		}
+		&.classdrag {
+			border-top: 1px solid #f5f5f5;
+			&:nth-child(even) {
+				background: transparent !important;
+			}
+			&:nth-child(odd) {
+				background: transparent !important;
+			}
+		}
+		
+	}
+}
+
+
+

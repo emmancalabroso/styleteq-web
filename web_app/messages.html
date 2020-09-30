@@ -1,0 +1,232 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>StyleTeq - Dashboard</title>
+        <link rel="stylesheet" href="../css/app.css">
+    </head>
+    <body>
+        <div class="off-canvas-wrapper">
+            <div id="mainDashboard" class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+                <!-- off-canvas left menu -->
+                <div class="off-canvas reveal-for-medium position-left" id="offCanvasLeft" data-off-canvas>
+                    <ul class="vertical dropdown menu dashboard-menu" data-dropdown-menu>
+                        <p class="dashboard-menu-text text-center">
+                            <span class="logo"><img src="../img/styleteq-logo-white.png"></span>
+                        </p>
+                        <li class="profile">
+                            <a href="user_profile.html">
+                                <img src="../img/sample-pic.jpg" class="img-wrapper circle"> <span>@jamesalexander</span>
+                                <small>View Profile</small>
+                            </a>
+                        </li>
+                        <li class=""><a href="index.html"><i class="fa fa-newspaper-o fa-fw"></i> Activity</a></li>
+                        <p class="dashboard-menu-title">Account</p>
+                        <li class="active"><a href="messages.html"><i class="fa fa-envelope-o fa-fw"></i>My Messages <span class="button__badge ml-1">5 New</span></a> </li>
+                        <li class=""><a href="shops.html"><i class="fa fa-cut fa-fw"></i> My Shops</a></li>
+                        <li><a href="images.html"><i class="fa fa-camera-retro fa-fw"></i> My Images</a></li>
+                        <li><a href="specials.html"><i class="fa fa-connectdevelop fa-fw"></i> My Specials</a>
+                        <p class="dashboard-menu-title">Settings</p>
+                        <li><a href="#"><i class="fa fa-info-circle fa-fw"></i> How To</a></li>
+                        <li><a href="#"><i class="fa fa-file-text-o fa-fw"></i> Terms Of Service</a></li>
+                        <li><a href="#"><i class="fa fa-user-plus fa-fw"></i> Invite User</a></li>
+                        <li class="footer"><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Sign Out</a></li>
+                    </ul>
+                </div>
+
+                <!-- original content goes in this container -->
+                <div class="off-canvas-content dashboard-main" data-off-canvas-content>
+
+                    <!-- "wider" top-bar menu for 'medium' and up -->
+                    <div id="widemenu" class="top-bar">
+                        <div class="top-bar-title">
+                            <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+                                <button class="menu-icon dark mr-1" type="button"  data-open="offCanvasLeft"></button>
+                            </span>
+                        </div>
+                        <div class="top-bar-left">
+                            <ul class="search menu">
+                                <li>
+                                    <select>
+                                        <optgroup label="Users">
+                                            <option value="1">James Alexander</option>
+                                            <option value="2">Heidi Armstedt</option>
+                                        </optgroup>
+                                        <optgroup label="Images">
+                                            <option value="3">#image1</option>
+                                            <option value="4">#image2</option>
+                                        </optgroup>
+                                    </select>
+                                </li>
+                                <li>
+                                    <select>
+                                        <option>Location 1</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <a class="button primary expanded"><i class="fa fa-search"></i> &nbsp;Search</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row expanded">
+                        <div class="medium-6 column">
+                            <nav aria-label="You are here:" role="navigation" class="mt-1 mb-1">
+                                <ul class="breadcrumbs">
+                                    <li>All Messages</li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="medium-6 column">
+                            <div class="search-box mt-half mb-half">
+                                <div class="pull-right search-box">
+                                    <!-- <input type="text" placeholder="Search" required> -->
+                                    <a data-open="composemessage" class="button small mb-0 hollow"><i class="fa fa-pencil fa-fw mr-half" aria-hidden="true" name=""></i>Compose Message</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- COMPOSE MESSAGE MODAL -->
+                    <div id="composemessage" class="reveal" data-reveal>
+                        <div class="reveal-heading">
+                            <h5>Compose Message</h5>
+                            <button class="close-button" data-close aria-label="Close reveal" type="button">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <ul class="list-block">
+                            <form>
+                                <div class="pt-half pr-1 pl-1 bb-1">
+                                    <li>
+                                        <label class="">To:</label>
+                                        <input type="text" name="">
+                                    </li>
+                                </div>
+
+                                <div class="pt-half pr-1 pl-1">
+                                    <li>
+                                        <label class="">Subject:</label>
+                                        <input type="text" name="">
+                                    </li>
+                                    <li>
+                                        <label class="">Message:</label>
+                                        <textarea rows="7"></textarea>
+                                    </li>
+                                    <input type="submit" class="button pull-right mb-1" name="">
+                                </div>
+                            </form>
+                        </ul>
+                    </div>
+                    <!-- COMPOSE MESSAGE MODAL END -->
+
+                    
+                    <div class="row expanded">
+                        <div class="medium-12 column">
+                            <div class="panel">
+                                <table class="single-line">
+                                    <thead>
+                                        <tr>
+                                            <th>From:</th>
+                                            <th>Subject</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="active">
+                                            <td>Justin Bieber</td>
+                                            <td><a href="in-messages.html">Sed ut perspiciatis</a></td>
+                                            <td class="truncate">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</td>
+                                        </tr>
+                                        <tr class="active">
+                                            <td>Justin Bieber</td>
+                                            <td><a href="in-messages.html">Ut enim ad minima veniam, quis nostrum exercitationem</a></td>
+                                            <td class="truncate">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>Me</td>
+                                            <td><a href="in-messages.html">At vero eos et accusamus</a></td>
+                                            <td class="truncate">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</td>
+                                        </tr>
+                                        <tr class="active">
+                                            <td>Justin Bieber</td>
+                                            <td><a href="in-messages.html">2 Booths Available</a></td>
+                                            <td class="truncate">But I must explain to you how all this mistaken idea of denouncing pleasure</td>
+                                        </tr>
+                                        <tr class="active">
+                                            <td>Justin Bieber</td>
+                                            <td><a href="in-messages.html">Et harum quidem rerum</a></td>
+                                            <td class="truncate">Nor again is there anyone who loves or pursues or desires to obtain</td>
+                                        </tr>
+                                        <tr class="active">
+                                            <td>Justin Bieber</td>
+                                            <td><a href="in-messages.html">On the other hand</a></td>
+                                            <td class="truncate">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized</td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>Me</td>
+                                            <td><a href="in-messages.html">2 Booths Available</a></td>
+                                            <td class="truncate">12 Professionals</td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>Me</td>
+                                            <td><a href="in-messages.html">2 Booths Available</a></td>
+                                            <td class="truncate">12 Professionals</td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>Me</td>
+                                            <td><a href="in-messages.html">2 Booths Available</a></td>
+                                            <td class="truncate">12 Professionals</td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>Me</td>
+                                            <td><a href="in-messages.html">2 Booths Available</a></td>
+                                            <td class="truncate">12 Professionals</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <ul class="pagination" role="navigation" aria-label="Pagination">
+                                  <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+                                  <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+                                  <li><a href="#" aria-label="Page 2">2</a></li>
+                                  <li><a href="#" aria-label="Page 3">3</a></li>
+                                  <li><a href="#" aria-label="Page 4">4</a></li>
+                                  <li class="ellipsis" aria-hidden="true"></li>
+                                  <li><a href="#" aria-label="Page 12">12</a></li>
+                                  <li><a href="#" aria-label="Page 13">13</a></li>
+                                  <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- close wrapper, no more content after this -->
+            </div>
+        </div>
+        
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/what-input/what-input.js"></script>
+        <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+        <script src="../js/app.js"></script>
+
+        <script type="text/javascript">
+            $(function () {
+                var timer;
+
+                $(window).resize(function() {
+                    clearTimeout(timer);
+                    timer = setTimeout(function() {
+                      $('.dashboard-menu').css("height", $(window).height());
+                    }, 40); 
+                }).resize();
+            });
+        </script>
+    </body>
+</html>

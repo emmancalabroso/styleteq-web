@@ -1,0 +1,209 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>StyleTeq - Dashboard</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../css/app.css">
+    </head>
+    <body>
+        <div class="off-canvas-wrapper">
+            <div id="mainDashboard" class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+                <!-- off-canvas left menu -->
+                <div class="off-canvas reveal-for-medium position-left" id="offCanvasLeft" data-off-canvas>
+                    <ul class="vertical dropdown menu dashboard-menu" data-dropdown-menu>
+                        <p class="dashboard-menu-text text-center">
+                            <span class="logo"><img src="../img/styleteq-logo-white.png"></span>
+                        </p>
+                        <li class="profile">
+                            <a href="user_profile.html">
+                                <img src="../img/sample-pic.jpg" class="img-wrapper circle"> <span>@jamesalexander</span>
+                                <small>View Profile</small>
+                            </a>
+                        </li>
+                        <li class="active"><a href="index.html"><i class="fa fa-newspaper-o fa-fw"></i> Activity</a></li>
+                        <p class="dashboard-menu-title">Account</p>
+                        <li class=""><a href="shops.html"><i class="fa fa-cut fa-fw"></i> My Shops</a></li>
+                        <li><a href="#"><i class="fa fa-camera-retro fa-fw"></i> My Images</a></li>
+                        <li><a href="#"><i class="fa fa-connectdevelop fa-fw"></i> My Specials</a>
+                        <p class="dashboard-menu-title">Settings</p>
+                        <li><a href="#"><i class="fa fa-info-circle fa-fw"></i> How To</a></li>
+                        <li><a href="#"><i class="fa fa-file-text-o fa-fw"></i> Terms Of Service</a></li>
+                        <li><a href="#"><i class="fa fa-user-plus fa-fw"></i> Invite User</a></li>
+                        <li class="footer"><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Sign Out</a></li>
+                    </ul>
+                </div>
+
+                <!-- original content goes in this container -->
+                <div class="off-canvas-content dashboard-main" data-off-canvas-content>
+
+                    <!-- "wider" top-bar menu for 'medium' and up -->
+                    <div id="widemenu" class="top-bar">
+                        <div class="top-bar-title">
+                            <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+                                <button class="menu-icon dark mr-1" type="button"  data-open="offCanvasLeft"></button>
+                            </span>
+                        </div>
+                        <div class="top-bar-left">
+                            <ul class="search menu">
+                                <li>
+                                    <select>
+                                        <optgroup label="Users">
+                                            <option value="1">James Alexander</option>
+                                            <option value="2">Heidi Armstedt</option>
+                                        </optgroup>
+                                        <optgroup label="Images">
+                                            <option value="3">#image1</option>
+                                            <option value="4">#image2</option>
+                                        </optgroup>
+                                    </select>
+                                </li>
+                                <li>
+                                    <select>
+                                        <option>Location 1</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <a class="button primary expanded"><i class="fa fa-search"></i> &nbsp;Search</a>
+                                </li>
+                                <li>
+                                    <a data-toggle="searchFilters" class="button primary hollow expanded"><i class="fa fa-filter"></i> &nbsp;Filters</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Filters -->
+                    <div id="searchFilters" class="row" data-toggler data-animate="fade-in fade-out">
+                        <fieldset class="large-6 columns">
+                            <legend>Filter Your Search</legend>
+                            <input type="radio" name="filter" value="images" id="images" required><label for="images">Images</label>
+                            <input type="radio" name="filter" value="shops" id="shops"><label for="shops">Shops</label>
+                            <input type="radio" name="filter" value="Users" id="Users"><label for="Users">Users</label>
+                            <input type="radio" name="filter" value="booths" id="booths"><label for="booths">Booths For Rent</label>
+                            <input type="radio" name="filter" value="Specials" id="Specials"><label for="Specials">Specials</label>
+                        </fieldset>
+                        <fieldset class="large-6 columns">
+                            <legend>Check these out</legend>
+                            <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                            <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+                            <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+                        </fieldset>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <h6 class="page-lead">Users</h6>
+                        </div>
+                    </div>
+                    <ul class="list-block flex-container">
+                        <li>
+                            <div class="media-object">
+                                <div class="media-object-section flushed middle">
+                                    <div class="img-wrapper">
+                                        <img src="../img/sample-pic.jpg">
+                                    </div> 
+                                </div>
+                                <div class="media-object-section middle">
+                                    <div class="text-group">
+                                        <p><b>@jamesalexander</b> <small class="ml-1">45.3 Miles</small></p>
+                                        <small class="subheader">544 Jackson Lane, Memphis, DE</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <a href="#" class="button primary hollow pull-right"><i class="fa fa-plus"></i>&nbsp; Follow</a> -->
+                        </li>
+                        <li>
+                            <div class="media-object">
+                                <div class="media-object-section flushed middle">
+                                    <div class="img-wrapper">
+                                        <img src="../img/sample-pic.jpg">
+                                    </div> 
+                                </div>
+                                <div class="media-object-section middle">
+                                    <div class="text-group">
+                                        <p><b>@jamesalexander</b> <small class="ml-1">45.3 Miles</small></p>
+                                        <small class="subheader">762 Pine Lane, Everett, MA</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <a href="#" class="button primary hollow pull-right"><i class="fa fa-plus"></i>&nbsp; Follow</a> -->
+                        </li>
+                    </ul>
+
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <h6 class="page-lead">Shops</h6>
+                        </div>
+                    </div>
+                    <ul class="list-block flex-container">
+                        <li>
+                            <div class="media-object">
+                                <div class="media-object-section flushed middle">
+                                    <div class="img-wrapper">
+                                        <img src="../img/sample-pic.jpg">
+                                    </div> 
+                                </div>
+                                <div class="media-object-section middle">
+                                    <div class="text-group">
+                                        <p><b>Thomas's Vietnamese Dim Sum</b> <small class="ml-1">45.3 Miles</small></p>
+                                        <small class="subheader">1329 Church Way, Birmingham, LA</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <a href="#" class="button primary hollow pull-right"><i class="fa fa-plus"></i>&nbsp; Follow</a> -->
+                        </li>
+                        <li>
+                            <div class="media-object">
+                                <div class="media-object-section flushed middle">
+                                    <div class="img-wrapper">
+                                        <img src="../img/sample-pic.jpg">
+                                    </div> 
+                                </div>
+                                <div class="media-object-section middle">
+                                    <div class="text-group">
+                                        <p><b>Patrick's Fish & Fries</b> <small class="ml-1">45.3 Miles</small></p>
+                                        <small class="subheader">707 Valley Way, San Francisco, NY</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <a href="#" class="button primary hollow pull-right"><i class="fa fa-plus"></i>&nbsp; Follow</a> -->
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- close wrapper, no more content after this -->
+
+            </div>
+        </div>
+        
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/what-input/what-input.js"></script>
+        <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+        <script src="../bower_components/foundation-sites/js/foundation.toggler.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
+        <script src="../js/app.js"></script>
+
+        <script type="text/javascript">
+            $(function () {
+                var timer;
+
+                $(window).resize(function() {
+                    clearTimeout(timer);
+                    timer = setTimeout(function() {
+                      $('.dashboard-menu').css("height", $(window).height());
+                    }, 40); 
+                }).resize();
+            });
+
+            $('select').select2();
+
+        </script>
+    </body>
+</html>

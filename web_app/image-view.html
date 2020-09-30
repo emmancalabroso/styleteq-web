@@ -1,0 +1,441 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>StyleTeq - Dashboard</title>
+
+        <!-- Important Owl stylesheet -->
+        <link rel="stylesheet" href="../js/owl-carousel/owl.carousel.css">
+
+        <!-- Default Theme -->
+        <link rel="stylesheet" href="../js/owl-carousel/owl.theme.css">
+
+        <link rel="stylesheet" href="../css/app.css">
+    </head>
+    <body>
+        <div class="off-canvas-wrapper">
+            <div id="mainDashboard" class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+                <!-- off-canvas left menu -->
+                <div class="off-canvas reveal-for-medium position-left" id="offCanvasLeft" data-off-canvas>
+                    <ul class="vertical dropdown menu dashboard-menu" data-dropdown-menu>
+                        <p class="dashboard-menu-text text-center">
+                            <span class="logo"><img src="../img/styleteq-logo-white.png"></span>
+                        </p>
+                        <li class="profile">
+                            <a href="user_profile.html">
+                                <img src="../img/sample-pic.jpg" class="img-wrapper circle"> <span>@jamesalexander</span>
+                                <small>View Profile</small>
+                            </a>
+                        </li>
+                        <li><a href="index.html"><i class="fa fa-newspaper-o fa-fw"></i> Activity</a></li>
+                        <p class="dashboard-menu-title">Account</p>
+                        <li><a href="messages.html"><i class="fa fa-envelope-o fa-fw"></i>My Messages <span class="button__badge ml-1">5 New</span></a> </li>
+                        <li class=""><a href="shops.html"><i class="fa fa-cut fa-fw"></i> My Shops</a></li>
+                        <li class="active"><a href="images.html"><i class="fa fa-camera-retro fa-fw"></i> My Images</a></li>
+                        <li><a href="specials.html"><i class="fa fa-connectdevelop fa-fw"></i> My Specials</a>
+                        <p class="dashboard-menu-title">Settings</p>
+                        <li><a href="#"><i class="fa fa-info-circle fa-fw"></i> How To</a></li>
+                        <li><a href="#"><i class="fa fa-file-text-o fa-fw"></i> Terms Of Service</a></li>
+                        <li><a href="#"><i class="fa fa-user-plus fa-fw"></i> Invite User</a></li>
+                        <li class="footer"><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Sign Out</a></li>
+                    </ul>
+                </div>
+
+                <!-- original content goes in this container -->
+                <div class="off-canvas-content dashboard-main" data-off-canvas-content>
+
+                    <!-- "wider" top-bar menu for 'medium' and up -->
+                    <div id="widemenu" class="top-bar">
+                        <div class="top-bar-title">
+                            <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+                                <button class="menu-icon dark mr-1" type="button"  data-open="offCanvasLeft"></button>
+                            </span>
+                        </div>
+                        <div class="top-bar-left">
+                            <ul class="search menu">
+                                <li>
+                                    <select>
+                                        <optgroup label="Users">
+                                            <option value="1">James Alexander</option>
+                                            <option value="2">Heidi Armstedt</option>
+                                        </optgroup>
+                                        <optgroup label="Images">
+                                            <option value="3">#image1</option>
+                                            <option value="4">#image2</option>
+                                        </optgroup>
+                                    </select>
+                                </li>
+                                <li>
+                                    <select>
+                                        <option>Location 1</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <a class="button primary expanded"><i class="fa fa-search"></i> &nbsp;Search</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row expanded">
+                        <div class="medium-6 columns">
+                            <nav aria-label="You are here:" role="navigation" class="mt-1 mb-1">
+                                <ul class="breadcrumbs">
+                                    <li><a href="images.html">My Images</a></li>
+                                    <li>View Image</li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="medium-6 columns">
+                            <div class="search-box mt-half mb-half">
+                                <div class="pull-right search-box">
+                                    <input type="text" placeholder="Search" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <div class="flex-container">
+                                <div class="media-object">
+                                    <div class="media-object-section logo middle">
+                                        <div class="img-wrapper circle">
+                                            <img src= "../img/sample-pic.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="media-object-section middle">
+                                        <span class="h4">James Alexander</span>
+                                        <p class="subheader"><small>Millennium Center, 6825 S. Galena Street, Suite 314, Centennial, CO, United States Of America</small></p>
+
+                                    </div>
+                                </div>
+                                <a href="user_profile.html" class="button primary hollow small pull-right">View Profile</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row newsfeed-modal">
+                        <div class="large-12 columns">
+                            <div class="callout">
+                                <div class="row">
+                                    <div class="large-6 columns main-post">
+                                        <div class="post-img v-align-center">
+                                            <img src="../img/sample-pic2.png" alt="">
+                                        </div>
+
+                                        <ul class="list-inline table justified">
+                                            <li class="text-center"><a href="#"><i class="fa fa-share"></i>&nbsp; Share</a></li>
+                                            <li class="text-center"><a href="edit-image.html"><i class="fa fa-edit"></i>&nbsp; Edit</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="large-6 columns">
+                                        <div class="row p1 bb-1">
+                                            <div class="large-12 columns paddingless">
+                                                <p class="mt-1">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row bb-1">
+                                            <div class="large-12 columns pt-half pb-half">
+                                                <ul class="list-inline marginless newsfeed-rgfont">
+                                                    <li class="mr-2">
+                                                        <a href="">
+                                                            <i class="fa fa-heart-o fa-fw"></i> 35 Likes
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa fa-comment-o fa-fw"></i> 13 Comments
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="row large-collapse comments p1">
+                                            <div class="large-12 pb-half">
+                                                <div class="row">
+                                                    <div class="large-2 medium-2 columns pr-half">
+                                                        <a href="">
+                                                            <img src="../img/sample-pic.jpg"class="img-wrapper circle">
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="large-10 medium-10 columns paddingless">
+
+                                                        <p class="marginless"> 
+                                                        <a href="" class="inline">@jamesalexander
+                                                        </a> This is a test comment from a random people and yeah, this is a nonesense topic useless readers.
+                                                        </p>
+
+                                                        <label>1 min &#8226 <a href=""> Reply</a></label> 
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <div class="large-12">
+                                                <div class="row">
+                                                    <div class="large-2 medium-2 columns pr-half">
+                                                        <a href="">
+                                                            <img src="../img/sample-pic.jpg"class="img-wrapper circle">
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="large-10 medium-10 columns paddingless">
+
+                                                        <p class="marginless"> 
+                                                        <a href="" class="inline">@jamesalexander
+                                                        </a> Lol!
+                                                        </p>
+
+                                                        <label>1 min &#8226 <a href=""> Reply</a></label> 
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <div class="large-12">
+                                                <div class="row">
+                                                    <div class="large-2 medium-2 columns pr-half">
+                                                        <a href="">
+                                                            <img src="../img/sample-pic.jpg"class="img-wrapper circle">
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="large-10 medium-10 columns paddingless">
+
+                                                        <p class="marginless"> 
+                                                        <a href="" class="inline">@jamesalexander
+                                                        </a> Don't read this! yeaha!
+                                                        </p>
+
+                                                        <label>1 min &#8226 <a href=""> Reply</a></label> 
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <div class="large-12">
+                                                <div class="row">
+                                                    <div class="large-2 medium-2 columns pr-half">
+                                                        <a href="">
+                                                            <img src="../img/sample-pic.jpg"class="img-wrapper circle">
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="large-10 medium-10 columns paddingless">
+
+                                                        <p class="marginless"> 
+                                                        <a href="" class="inline">@jamesalexander
+                                                        </a> Don't read this! yeaha!
+                                                        </p>
+
+                                                        <label>1 min &#8226 <a href=""> Reply</a></label> 
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <div class="large-12">
+                                                <div class="row">
+                                                    <div class="large-2 medium-2 columns pr-half">
+                                                        <a href="">
+                                                            <img src="../img/sample-pic.jpg"class="img-wrapper circle">
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="large-10 medium-10 columns paddingless">
+
+                                                        <p class="marginless"> 
+                                                        <a href="" class="inline">@jamesalexander
+                                                        </a> Don't read this! yeaha!
+                                                        </p>
+
+                                                        <label>1 min &#8226 <a href=""> Reply</a></label> 
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <div class="large-12">
+                                                <div class="row">
+                                                    <div class="large-2 medium-2 columns pr-half">
+                                                        <a href="">
+                                                            <img src="../img/sample-pic.jpg"class="img-wrapper circle">
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="large-10 medium-10 columns paddingless">
+
+                                                        <p class="marginless"> 
+                                                        <a href="" class="inline">@jamesalexander
+                                                        </a> Don't read this! yeaha!
+                                                        </p>
+
+                                                        <label>1 min &#8226 <a href=""> Reply</a></label> 
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <div class="large-12">
+                                                <div class="row">
+                                                    <div class="large-2 medium-2 columns pr-half">
+                                                        <a href="">
+                                                            <img src="../img/sample-pic.jpg"class="img-wrapper circle">
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="large-10 medium-10 columns paddingless">
+
+                                                        <p class="marginless"> 
+                                                        <a href="" class="inline">@jamesalexander
+                                                        </a> Don't read this! yeaha!
+                                                        </p>
+
+                                                        <label>1 min &#8226 <a href=""> Reply</a></label> 
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <div class="large-12">
+                                                <div class="row">
+                                                    <div class="large-2 medium-2 columns pr-half">
+                                                        <a href="">
+                                                            <img src="../img/sample-pic.jpg"class="img-wrapper circle">
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="large-10 medium-10 columns paddingless">
+
+                                                        <p class="marginless"> 
+                                                        <a href="" class="inline">@jamesalexander
+                                                        </a> Don't read this! yeaha!
+                                                        </p>
+
+                                                        <label>1 min &#8226 <a href=""> Reply</a></label> 
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <div class="large-12">
+                                                <div class="row">
+                                                    <div class="large-2 medium-2 columns pr-half">
+                                                        <a href="">
+                                                            <img src="../img/sample-pic.jpg"class="img-wrapper circle">
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="large-10 medium-10 columns paddingless">
+
+                                                        <p class="marginless"> 
+                                                        <a href="" class="inline">@jamesalexander
+                                                        </a> Nice!
+                                                        </p>
+
+                                                        <label>1 min &#8226 <a href=""> Reply</a></label> 
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="large-12">
+                                                <div class="row">
+                                                    <div class="large-2 medium-2 columns pr-half">
+                                                        <a href="">
+                                                            <img src="../img/sample-pic.jpg"class="img-wrapper circle">
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="large-10 medium-10 columns paddingless">
+
+                                                        <p class="marginless"> 
+                                                        <a href="" class="inline">@jamesalexander
+                                                        </a> This one is yours!
+                                                        </p>
+
+                                                        <label>1 min &#8226 <a href=""> Reply</a></label> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row reply bb-1 bt-1 pt-1 disable">
+                                            <div class="large-12 columns">
+                                                <div class="row">
+                                                    <div class="large-2 medium-2 columns">
+                                                        <a href="">
+                                                            <img src="../img/sample-pic.jpg"class="img-wrapper circle">
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="large-10 medium-10 columns">
+                                                        <input type="text" name="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+
+        </div>
+        
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/what-input/what-input.js"></script>
+        <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+
+        <script src="../js/owl-carousel/owl.carousel.js"></script>
+
+        <script src="../js/app.js"></script>
+
+        <script type="text/javascript">
+
+            $(document).ready(function() {
+ 
+                $("#owl-example").owlCarousel({
+                    items: 3,
+                    nav: true,
+                    loop: true
+                    // itemsScaleUp: true
+                });
+             
+            });
+
+            $(function () {
+                var timer;
+
+                $(window).resize(function() {
+                    clearTimeout(timer);
+                    timer = setTimeout(function() {
+                      $('.dashboard-menu').css("height", $(window).height());
+                    }, 40); 
+                }).resize();
+            });
+        </script>
+    </body>
+</html>

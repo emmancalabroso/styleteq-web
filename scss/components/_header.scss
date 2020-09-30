@@ -1,0 +1,141 @@
+.top-bar {
+	background-color: transparent;
+	ul {
+		background-color: transparent;
+		
+		li {
+			&.featured-user {
+				width: 40%;
+				
+				input {
+					max-width: 100rem;
+					width: 100%;
+				}
+			}
+		}
+	}
+	.menu {
+		li {
+			a{
+				text-transform: uppercase;
+				transition: all ease-in 0.2s;
+				-webkit-transition: all ease-in 0.2s;
+				padding: 0.7rem 2rem;
+				font-weight: 600;
+				&.button {
+					&:hover {
+						color: $primary-color;
+						background-color: $white;
+						border-color: $white;
+						box-shadow: none;
+					}
+				}
+				&:hover {
+					box-shadow: 0 2px 0 0 $white;
+					-webkit-box-shadow: 0 2px 0 0 $white;
+				}
+			}
+			&.bordered {
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+
+			&.home {
+				text-transform: uppercase;
+				transition: all ease-in 0.2s;
+				-webkit-transition: all ease-in 0.2s;
+				padding: 0.7rem 2rem;
+				font-weight: 600 !important;
+				padding-right: 1rem;
+				padding-left: 1rem;
+			}
+		}
+		&.search {
+			li {
+				display: inline-block;
+				margin: 0.125rem 0.5rem;
+				select {
+					width: 18rem;
+					margin: 0 1rem 0 0;
+				}
+			}
+		}
+	}
+	.menu-centered {
+		display: inline-block;
+		width: 100%;
+	}
+	&.expanded {
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+		> li {
+			display: table-cell;
+		}
+	}
+	.top-bar-title {
+		display: inline-block;
+		float: left;
+		margin-bottom: 0.5rem;
+		.logo {
+			img {
+				width: 180px;
+				padding: 0 0.5rem;
+			}
+		}
+	}
+	.menu-icon {
+		&.dark {
+			&:after {
+				background: $black;
+				box-shadow: 0 7px 0 $black, 0 14px 0 $black;
+			}
+		}
+	}
+	&.dark {
+		.menu {
+			li {
+				a {
+					color: $white;
+					&.button {
+						color: $white;
+						border-color: $white;
+					}
+					&:hover {
+						box-shadow: 0 2px 0 0 $white;
+						-webkit-box-shadow: 0 2px 0 0 $white;
+					}
+				}
+			}
+		}
+	}
+	&.white {
+		.menu {
+			li {
+				a {
+					color: $white;
+				}
+			}
+		}
+	}
+
+	&.bb-0 {
+		border-bottom: 0px !important;
+	}
+}
+
+#searchFilters {
+	display: none;
+	border-bottom: 1px solid rgba(42, 42, 42, 0.12);
+	padding: 1rem 0;
+}
+
+.jumbotron {
+	.top-bar {
+		.top-bar-title,
+		.top-bar-left,
+		.top-bar-right {
+			padding: 2rem 0;
+		}
+	}
+}

@@ -69,6 +69,9 @@ legend {
 			font-size: 0.875rem;
 		}
 	}
+	&.table-control {
+		margin: 0 0.5rem 0 0;
+	}
 }
 
 [type='text'], 
@@ -92,6 +95,16 @@ textarea {
 select {
 	height: 3rem;
 	padding: 0 0.8rem;
+	&.table-control {
+		padding: 0 1.5rem 0 0.8rem;
+		vertical-align: middle;
+		width: 60%;
+		margin: 0 0.275rem 0 0;
+		height: 2.2rem;
+		display: inline-block;
+		font-size: 0.875rem;
+		font-weight: normal;
+	}
 }
 
 [type='file'] {

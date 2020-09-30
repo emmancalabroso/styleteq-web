@@ -1,0 +1,30 @@
+.about-us {
+	.cta {
+		min-height: 460px;
+	}
+	.callout {
+		z-index: 3;
+		margin-top: -15em;
+		border-radius: 0;
+	}
+	&.map-section {
+		> .row {
+			background-color: #6451A8;
+		}
+		.flexed {
+			color: #FFFFFF;
+		}
+	}
+	#map {
+    	height: 600px;
+    	width: 100%;
+   }
+   .menu {
+   	.button {
+   		margin-right: 15px;
+   	}
+   }
+   address {
+   	font-style: normal;
+   }
+}

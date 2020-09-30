@@ -1,0 +1,206 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>StyleTeq - Dashboard</title>
+
+        <!-- Important Owl stylesheet -->
+        <link rel="stylesheet" href="../js/owl-carousel/owl.carousel.css">
+
+        <!-- Default Theme -->
+        <link rel="stylesheet" href="../js/owl-carousel/owl.theme.css">
+
+        <link rel="stylesheet" href="../css/app.css">
+    </head>
+    <body>
+        <div class="off-canvas-wrapper public-view">
+            <div id="mainDashboard" class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+                <!-- original content goes in this container -->
+                <div class="off-canvas-content dashboard-main" data-off-canvas-content>
+
+                    <!-- "wider" top-bar menu for 'medium' and up -->
+                    <div class="row">
+                        <div class="large-12 medium-12">
+                            <div id="widemenu" class="top-bar">
+                                <div class="top-bar-left">
+                                    <ul class="search menu">
+                                        <li>
+                                            <select>
+                                                <optgroup label="Users">
+                                                    <option value="1">James Alexander</option>
+                                                    <option value="2">Heidi Armstedt</option>
+                                                </optgroup>
+                                                <optgroup label="Images">
+                                                    <option value="3">#image1</option>
+                                                    <option value="4">#image2</option>
+                                                </optgroup>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <select>
+                                                <option>Location 1</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <a href="search-results.html" class="button primary expanded"><i class="fa fa-search"></i> &nbsp;Search</a>
+                                        </li>
+                                        <li>
+                                            <a data-toggle="searchFilters" class="button primary hollow expanded"><i class="fa fa-filter"></i> &nbsp;Filters</a>
+                                        </li>
+                                        <li class="btn-login">
+                                            <a href="#" class="primary"> <i class="fa fa-user" aria-hidden="true"></i> &nbsp;Login</a>
+                                        </li>  
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Filters -->
+                    <div id="searchFilters" class="row" data-toggler data-animate="fade-in fade-out">
+                        <fieldset class="large-6 columns">
+                            <legend>Filter Your Search</legend>
+                            <input type="radio" name="filter" value="images" id="images" required><label for="images">Images</label>
+                            <input type="radio" name="filter" value="shops" id="shops"><label for="shops">Shops</label>
+                            <input type="radio" name="filter" value="Users" id="Users"><label for="Users">Users</label>
+                            <input type="radio" name="filter" value="booths" id="booths"><label for="booths">Booths For Rent</label>
+                            <input type="radio" name="filter" value="Specials" id="Specials"><label for="Specials">Specials</label>
+                        </fieldset>
+                        <fieldset class="large-6 columns">
+                            <legend>Check these out</legend>
+                            <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                            <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+                            <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+                        </fieldset>
+                    </div>
+
+                    <div class="row ">
+                        <div class="large-12 columns">
+                            <div class="text-group mt-1 mb-1">
+                                <h4>3 Booths For Rent</h4>
+                                <p class="subheader">Salon</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row ">
+                        <div class="large-12 columns">
+                            <div id="owl-example" class="owl-carousel">
+                                <div>
+                                    <img src="https://unsplash.it/600/440?image=899" alt="">
+                                </div>
+                                <div>
+                                    <img src="https://unsplash.it/600/440?image=693" alt="">
+                                </div>
+                                <div>
+                                    <img src="https://unsplash.it/600/440?image=452" alt="">
+                                </div>
+                                <div>
+                                    <img src="https://unsplash.it/600/440?image=452" alt="">
+                                </div>
+                                <div>
+                                    <img src="https://unsplash.it/600/440?image=899" alt="">
+                                </div>
+                                <div>
+                                    <img src="https://unsplash.it/600/440?image=693" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <div class="flex-container">
+                                <div class="media-object">
+                                    <div class="media-object-section logo middle">
+                                        <div class="img-wrapper">
+                                            <img src= "https://unsplash.it/600/440?image=899">
+                                        </div>
+                                    </div>
+                                    <div class="media-object-section middle">
+                                        <span class="h4">Bridges Hair Salon</span>
+                                        <p class="subheader"><small>Millennium Center, 6825 S. Galena Street, Suite 314, Centennial, CO, United States Of America</small></p>
+                                    </div>
+                                </div>
+                                <a href="shop-view.html" class="button primary hollow small pull-right">View Shop Profile</a>
+                            </div>
+
+                            <ul class="list-inline table justified">
+                                <li class="text-center">
+                                    <div class="text-group">
+                                        <h5 class="subheader">Amount / Rate</h5>
+                                        <h3>$600 Per Month</h3>
+                                    </div>
+                                </li>
+                                <li class="text-center">
+                                    <div class="text-group">
+                                        <h5 class="subheader">Payment Method</h5>
+                                        <h3>Commission</h3>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+
+                </div>
+                <!-- close wrapper, no more content after this -->
+
+            </div>
+        </div>
+
+        <!-- STICKY DOWNLOAD -->
+        <div class="row panel">
+            <div class="large-12 medium-12 columns">
+                <div class="stick-download p1 text-center">
+                    <p class="marginless">
+                        <h5 class="text-white inline v-align-center">Download the Styleteq App and gain access to the best Grooming Professionals near you & beyond.
+                        </h5> <br class="breaking br2" />
+                    </p>
+                    <a href="">
+                        <img src="../img/icon-appleplay.png" class="inline mr-1 ml-1 store">
+                    </a>
+                    <a href="">
+                        <img src="../img/icon-googleplay.png" class="inline store">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/what-input/what-input.js"></script>
+        <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+
+        <script src="../js/owl-carousel/owl.carousel.js"></script>
+
+        <script src="../js/app.js"></script>
+
+        <script type="text/javascript">
+
+            $(document).ready(function() {
+ 
+                $("#owl-example").owlCarousel({
+                    items: 3,
+                    nav: true,
+                    loop: true
+                    // itemsScaleUp: true
+                });
+             
+            });
+
+            $(function () {
+                var timer;
+
+                $(window).resize(function() {
+                    clearTimeout(timer);
+                    timer = setTimeout(function() {
+                      $('.dashboard-menu').css("height", $(window).height());
+                    }, 40); 
+                }).resize();
+            });
+        </script>
+    </body>
+</html>

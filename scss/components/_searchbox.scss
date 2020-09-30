@@ -1,8 +1,7 @@
-.search-box{
+.search-box, .message{
 	position: relative;
-	// margin-top: 1rem;
-
 	input{
+		font-size: 0.875rem;
 		border-radius: 2.5rem;
 		text-align: center;
 		background-color: $light-gray;
@@ -39,4 +38,32 @@
 		transform: translateY(-20%);
 		cursor: pointer !important;
 	}
+
+	&.home {
+		color: $white !important;
+
+		input {
+			color: $white;
+			border: 1px solid $white;
+			padding: 0px;
+			margin: 0px;
+		}
+		input::-webkit-input-placeholder {
+			color: $white;
+		}
+		 
+		input:-moz-placeholder { /* Firefox 18- */
+			color:  $white;  
+		}
+		 
+		input::-moz-placeholder {  /* Firefox 19+ */
+			color:  $white;  
+		}
+		 
+		input:-ms-input-placeholder {  
+			color: $white;  
+		}
+	}
 }
+
+

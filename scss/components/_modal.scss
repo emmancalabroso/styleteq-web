@@ -1,0 +1,80 @@
+.reveal {
+	margin: 0 auto;
+	padding: 0;
+	border: none;
+	top: inherit !important;
+	.newsfeed-panel {
+		width: 100%;
+		max-width: 60rem;
+	}
+	// .main-post {
+	// 	border-right: 1px solid rgba(42, 42, 42, 0.1);
+	// }
+	.reveal-heading, .reveal-body, .reveal-footer {
+		padding: 1rem;
+		margin: 0;
+	}
+	.reveal-heading {
+		background-color: $secondary-color;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin: 0;
+		}
+		> * {
+			color: $white;
+		}
+	}
+}
+
+.newsfeed-modal {
+	width: auto;
+	border-radius: 5px;
+	.comments {
+		max-height: 20rem;
+		overflow-y: scroll;
+		img {
+			width: 100%;
+			max-width: 2.25rem;
+			height: 100%;
+			max-height: 2.25rem;
+			object-fit: cover;
+		}
+
+		a, p, label{
+			font-size: 0.87rem;
+		}
+
+		a {
+			font-weight: bold;
+		}
+
+		label > a {
+			font-weight: normal;
+		}
+	}
+	.reply	{
+		background-color: #F8F8F8;
+		img {
+			max-width: 2.25rem;
+			height: 2.25rem;
+		}
+	}
+
+	.post-img {
+		position: relative;
+		text-align: center;
+	    vertical-align: middle;
+	    background-color: $faint-gray;
+		img {
+			height: 100% !important;
+			max-width: 100% !important;
+			width: auto !important;
+			max-height: 30rem !important;
+			object-fit: cover;
+		}
+	}
+}

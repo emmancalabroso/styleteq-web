@@ -139,10 +139,41 @@
 		}
 
 		.post-img {
+			position: relative;
+		    vertical-align: middle;
+		    background-color: $faint-gray;
 			img {
-				width: 100%;
-				max-width: 40.625rem;
 				height: auto;
+				width: 100%;
+				max-width: 100rem;
+
+			}
+
+			&.fixed-size {
+				img {
+					width: 100%;
+					height: 400px;
+					object-fit: cover;
+				}
+			}
+
+			.text-wrapper {
+				position: absolute;
+				padding: 0.5rem 1rem;
+				width: 100%;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: rgba($black, $B-subtext);
+				> h1,
+				h2,
+				h3,
+				h4,
+				h5,
+				h6 {
+					margin: 0;
+					color: $white;
+				}
 			}
 		}
 
@@ -160,7 +191,7 @@
 			font-size: 1.1875rem;
 		}
 	}
-	
+
 	width: 100%;
 	max-width: 34.375rem;
 	margin: 0 auto;
@@ -171,7 +202,10 @@
 	img {
 		width: 100%;
 		max-width: 3.125rem;
-		height: auto;
+		height: 100%;
+		max-height: 3.125rem;
+		object-fit: cover;
+		vertical-align: top;
 	}
 
 	small {
@@ -190,13 +224,86 @@
 
 .specials {
 	background-color: rgba(0, 0, 0, .02);
+
+	&:hover {
+		background-color: rgba(0, 0, 0, .03);
+		cursor: pointer;
+	}
 }
 
 .disable {
 	display: none !important;
 }
 
+.disable-link {
+	pointer-events: none;
+	cursor: default;
+}
+
 .enable {
 	display: inline-block !important;
 }
+
+.off-canvas-wrapper {
+	&.public-view {
+		margin-bottom: 3.5rem;
+	}
+}
+
+
+li.btn-login {
+	padding-left: 2.7rem;
+}
+
+
+
+// DRAGGABLE //
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+
+.classdrag {
+	cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+
+    &:active {
+    	cursor: grabbing;
+	    cursor: -moz-grabbing;
+	    cursor: -webkit-grabbing;
+    }
+
+    &.over {
+    	border-top: 2px solid $primary-color !important;
+    }
+}
+
+// DRAGGABLE ENDS //
+
+.is-active > .accordion-title::before {
+	display: none;
+}
+
+button.button{
+	&.save {
+		position: relative;
+		margin: 0;
+		float: right;
+		top: -3.3rem;
+		margin-right: 0.625rem;
+		margin-bottom: -3.3rem !important;
+	}
+}
+
+.ifempty {
+	min-height: 20rem;
+}
+
 

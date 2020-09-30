@@ -1,0 +1,141 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>StyleTeq - Dashboard</title>
+        <link rel="stylesheet" href="../css/app.css">
+    </head>
+    <body>
+        <div class="off-canvas-wrapper">
+            <div id="mainDashboard" class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+                <!-- off-canvas left menu -->
+                <div class="off-canvas reveal-for-medium position-left" id="offCanvasLeft" data-off-canvas>
+                    <ul class="vertical dropdown menu dashboard-menu" data-dropdown-menu>
+                        <p class="dashboard-menu-text text-center">
+                            <span class="logo"><img src="../img/styleteq-logo-white.png"></span>
+                        </p>
+                        <li class="profile">
+                            <a href="user_profile.html">
+                                <img src="../img/sample-pic.jpg" class="img-wrapper circle"> <span>@jamesalexander</span>
+                                <small>View Profile</small>
+                            </a>
+                        </li>
+                        <li><a href="index.html"><i class="fa fa-newspaper-o fa-fw"></i> Activity</a></li>
+                        <p class="dashboard-menu-title">Account</p>
+                        <li><a href="messages.html"><i class="fa fa-envelope-o fa-fw"></i>My Messages <span class="button__badge ml-1">5 New</span></a> </li>
+                        <li class=""><a href="shops.html"><i class="fa fa-cut fa-fw"></i> My Shops</a></li>
+                        <li class="active"><a href="images.html"><i class="fa fa-camera-retro fa-fw"></i> My Images</a></li>
+                        <li><a href="specials.html"><i class="fa fa-connectdevelop fa-fw"></i> My Specials</a>
+                        <p class="dashboard-menu-title">Settings</p>
+                        <li><a href="#"><i class="fa fa-info-circle fa-fw"></i> How To</a></li>
+                        <li><a href="#"><i class="fa fa-file-text-o fa-fw"></i> Terms Of Service</a></li>
+                        <li><a href="#"><i class="fa fa-user-plus fa-fw"></i> Invite User</a></li>
+                        <li class="footer"><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Sign Out</a></li>
+                    </ul>
+                </div>
+
+                <!-- original content goes in this container -->
+                <div class="off-canvas-content dashboard-main" data-off-canvas-content>
+
+                    <!-- "wider" top-bar menu for 'medium' and up -->
+                    <div id="widemenu" class="top-bar">
+                        <div class="top-bar-title">
+                            <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+                                <button class="menu-icon dark mr-1" type="button"  data-open="offCanvasLeft"></button>
+                            </span>
+                        </div>
+                        <div class="top-bar-left">
+                            <ul class="search menu">
+                                <li>
+                                    <select>
+                                        <optgroup label="Users">
+                                            <option value="1">James Alexander</option>
+                                            <option value="2">Heidi Armstedt</option>
+                                        </optgroup>
+                                        <optgroup label="Images">
+                                            <option value="3">#image1</option>
+                                            <option value="4">#image2</option>
+                                        </optgroup>
+                                    </select>
+                                </li>
+                                <li>
+                                    <select>
+                                        <option>Location 1</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <a class="button primary expanded"><i class="fa fa-search"></i> &nbsp;Search</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <div class="callout mt-1">
+
+                                <div class="featured-image-block-grid">
+                                    <div class="row large-up-3 small-up-1">
+                                        <div class="featured-image-block column">
+                                            <a href="image-view.html">
+                                                <img src="https://unsplash.it/600/440?image=899" />
+                                            </a>
+                                            <p class="text-center featured-image-block-title"><i class="fa fa-heart-o"></i>&nbsp; 3 Likes</p>
+                                        </div>
+                                        
+                                        <div class="featured-image-block column">
+                                            <a href="image-view.html">
+                                                <img src="https://unsplash.it/600/440?image=693" />
+                                            </a>
+                                            <p class="text-center featured-image-block-title"><i class="fa fa-heart-o"></i>&nbsp; 3 Likes</p>
+                                        </div>
+                                        
+                                        <div class="featured-image-block column">
+                                            <a href="image-view.html">
+                                                <img src="https://unsplash.it/600/440?image=452" />
+                                            </a>
+                                            <p class="text-center featured-image-block-title"><i class="fa fa-heart-o"></i>&nbsp; 3 Likes</p>
+                                        </div>
+
+                                        <div class="featured-image-block column">
+                                            <a href="image-view.html">
+                                                <img src="https://unsplash.it/600/440?image=452" />
+                                            </a>
+                                            <p class="text-center featured-image-block-title"><i class="fa fa-heart-o"></i>&nbsp; 3 Likes</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- close wrapper, no more content after this -->
+
+            </div>
+        </div>
+        
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/what-input/what-input.js"></script>
+        <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+        <script src="../js/app.js"></script>
+
+        <script type="text/javascript">
+            $(function () {
+                var timer;
+
+                $(window).resize(function() {
+                    clearTimeout(timer);
+                    timer = setTimeout(function() {
+                      $('.dashboard-menu').css("height", $(window).height());
+                    }, 40); 
+                }).resize();
+            });
+        </script>
+    </body>
+</html>

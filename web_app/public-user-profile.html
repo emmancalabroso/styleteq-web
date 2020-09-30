@@ -1,0 +1,505 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>StyleTeq - Dashboard</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../css/app.css">
+    </head>
+    <body>
+        <div class="off-canvas-wrapper public-view">
+            <div id="mainDashboard" class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+                <!-- original content goes in this container -->
+                <div class="off-canvas-content dashboard-main" data-off-canvas-content>
+
+                    <!-- "wider" top-bar menu for 'medium' and up -->
+                    <div class="row">
+                        <div class="large-12 medium-12">
+                            <div id="widemenu" class="top-bar">
+                                <div class="top-bar-left">
+                                    <ul class="search menu">
+                                        <li>
+                                            <select>
+                                                <optgroup label="Users">
+                                                    <option value="1">James Alexander</option>
+                                                    <option value="2">Heidi Armstedt</option>
+                                                </optgroup>
+                                                <optgroup label="Images">
+                                                    <option value="3">#image1</option>
+                                                    <option value="4">#image2</option>
+                                                </optgroup>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <select>
+                                                <option>Location 1</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <a href="search-results.html" class="button primary expanded"><i class="fa fa-search"></i> &nbsp;Search</a>
+                                        </li>
+                                        <li>
+                                            <a data-toggle="searchFilters" class="button primary hollow expanded"><i class="fa fa-filter"></i> &nbsp;Filters</a>
+                                        </li>
+                                        <li class="btn-login">
+                                            <a href="#" class="primary"> <i class="fa fa-user" aria-hidden="true"></i> &nbsp;Login</a>
+                                        </li>  
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <div class="callout mt-1">
+                                <div class="row">
+                                    <div class="large-2 columns">
+                                        <div class="img-wrapper circle large img-fit">
+                                            <img src= "../img/pancho.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="large-10 columns">
+                                        <div class="flex-container">
+                                            <div class="media-object">
+                                                <div class="media-object-section middle">
+                                                    <div class="text-group">
+                                                        <h5>@jamesalexander <small class="subheader">- Barber</small></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="large-4 columns">
+                                                <div class="text-group">
+                                                    <h5 class="subheader"><small>Full Name</small></h5>
+                                                    <p>James Alexander</p>
+                                                </div>
+                                            </div>
+                                            <div class="large-4 columns">
+                                                <div class="text-group">
+                                                    <h5 class="subheader"><small>Gender</small></h5>
+                                                    <p>Male</p>
+                                                </div>
+                                            </div>
+                                            <div class="large-4 columns">
+                                                <div class="text-group">
+                                                    <h5 class="subheader"><small>Contact No.</small></h5>
+                                                    <p>1234567890</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="large-12 columns">
+                                                <div class="text-group">
+                                                    <h5 class="subheader"><small>Address</small></h5>
+                                                    <p>349 River Lane, Springfield, HI</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="large-12 columns">
+                                                <div class="text-group">
+                                                    <h5 class="subheader"><small>Short Description</small></h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, voluptatem voluptatum ab nobis architecto eaque nisi natus, ea adipisci asperiores inventore. Molestias, porro non animi dignissimos, aperiam vel voluptatem dicta!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="list-inline table justified">
+                                    <li class="text-center bl-1"><a data-open="followingModal"><b>20</b> Following</a></li>
+
+                                    <!-- Following Modal -->
+                                    <div id="followingModal" class="reveal" data-reveal>
+                                        <div class="reveal-heading">
+                                            <h5>20 Following</h5>
+                                            <button class="close-button" data-close aria-label="Close reveal" type="button">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <ul class="tabs expanded" data-tabs id="users">
+                                            <li class="tabs-title text-center is-active"><a href="#userpanel" aria-selected="true">Users</a></li>
+                                            <li class="tabs-title text-center"><a href="#shopspanel">Shops</a></li>
+                                        </ul>
+
+
+                                        <div class="tabs-content" data-tabs-content="users">
+                                            <!------ USERS PANEL -->
+                                            <div class="tabs-panel is-active" id="userpanel">
+                                        
+                                                <ul class="list-block flex-container">
+                                                    <li>
+                                                        <div class="media-object">
+                                                            <div class="media-object-section flushed middle">
+                                                                <div class="img-wrapper small circle">
+                                                                    <img src="../img/sample-pic.jpg">
+                                                                </div> 
+                                                            </div>
+                                                            <div class="media-object-section middle">
+                                                                <div class="text-group">
+                                                                    <p><b>@jamesalexander</b></p>
+                                                                    <small class="subheader">Hair Technician</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="button primary hollow pull-right"><i class="fa fa-plus"></i>&nbsp; Follow</a>
+                                                    </li>
+                                                    <li>
+                                                        <div class="media-object">
+                                                            <div class="media-object-section flushed middle">
+                                                                <div class="img-wrapper small circle">
+                                                                    <img src="../img/sample-pic.jpg">
+                                                                </div> 
+                                                            </div>
+                                                            <div class="media-object-section middle">
+                                                                <div class="text-group">
+                                                                    <p><b>@jamesalexander</b></p>
+                                                                    <small class="subheader">Hair Technician</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="button primary pull-right"><i class="fa fa-envelope-o"></i>&nbsp; Following</a>
+                                                    </li>
+                                                    <li>
+                                                        <div class="media-object">
+                                                            <div class="media-object-section flushed middle">
+                                                                <div class="img-wrapper small circle">
+                                                                    <img src="../img/sample-pic.jpg">
+                                                                </div> 
+                                                            </div>
+                                                            <div class="media-object-section middle">
+                                                                <div class="text-group">
+                                                                    <p><b>@jamesalexander</b></p>
+                                                                    <small class="subheader">Hair Technician</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="button primary hollow pull-right"><i class="fa fa-plus"></i>&nbsp; Follow</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <!------ SHOPS PANEL -->
+                                            <div class="tabs-panel pr-0" id="shopspanel">
+                                        
+                                                <ul class="list-block flex-container active-scroll">
+                                                    <li>
+                                                        <div class="media-object">
+                                                            <div class="media-object-section flushed middle">
+                                                                <div class="img-wrapper small circle">
+                                                                    <img src="../img/sample-pic.jpg">
+                                                                </div> 
+                                                            </div>
+                                                            <div class="media-object-section middle">
+                                                                <div class="text-group">
+                                                                    <p><b>@jamesalexander</b></p>
+                                                                    <small class="subheader">Hair Technician</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="button primary hollow pull-right"><i class="fa fa-plus"></i>&nbsp; Follow</a>
+                                                    </li>
+                                                    <li>
+                                                        <div class="media-object">
+                                                            <div class="media-object-section flushed middle">
+                                                                <div class="img-wrapper small circle">
+                                                                    <img src="../img/sample-pic.jpg">
+                                                                </div> 
+                                                            </div>
+                                                            <div class="media-object-section middle">
+                                                                <div class="text-group">
+                                                                    <p><b>@jamesalexander</b></p>
+                                                                    <small class="subheader">Hair Technician</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="button primary pull-right"><i class="fa fa-envelope-o"></i>&nbsp; Following</a>
+                                                    </li>
+                                                    <li>
+                                                        <div class="media-object">
+                                                            <div class="media-object-section flushed middle">
+                                                                <div class="img-wrapper small circle">
+                                                                    <img src="../img/sample-pic.jpg">
+                                                                </div> 
+                                                            </div>
+                                                            <div class="media-object-section middle">
+                                                                <div class="text-group">
+                                                                    <p><b>@jamesalexander</b></p>
+                                                                    <small class="subheader">Hair Technician</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="button primary hollow pull-right"><i class="fa fa-plus"></i>&nbsp; Follow</a>
+                                                    </li>
+                                                    <li>
+                                                        <div class="media-object">
+                                                            <div class="media-object-section flushed middle">
+                                                                <div class="img-wrapper small circle">
+                                                                    <img src="../img/sample-pic.jpg">
+                                                                </div> 
+                                                            </div>
+                                                            <div class="media-object-section middle">
+                                                                <div class="text-group">
+                                                                    <p><b>@jamesalexander</b></p>
+                                                                    <small class="subheader">Hair Technician</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="button primary hollow pull-right"><i class="fa fa-plus"></i>&nbsp; Follow</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <!-- Like Modal End -->
+
+                                    <li class="text-center"><a data-open="followersModal"><b>43</b> Followers</a></li>
+
+                                    <!-- Following Modal -->
+                                    <div id="followersModal" class="reveal" data-reveal>
+                                        <div class="reveal-heading">
+                                            <h5>43 Followers</h5>
+                                            <button class="close-button" data-close aria-label="Close reveal" type="button">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <ul class="list-block flex-container">
+                                            <li>
+                                                <div class="media-object">
+                                                    <div class="media-object-section flushed middle">
+                                                        <div class="img-wrapper small circle">
+                                                            <img src="../img/sample-pic.jpg">
+                                                        </div> 
+                                                    </div>
+                                                    <div class="media-object-section middle">
+                                                        <div class="text-group">
+                                                            <p><b>@jamesalexander</b></p>
+                                                            <small class="subheader">Hair Technician</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="button primary hollow pull-right"><i class="fa fa-plus"></i>&nbsp; Follow</a>
+                                            </li>
+                                            <li>
+                                                <div class="media-object">
+                                                    <div class="media-object-section flushed middle">
+                                                        <div class="img-wrapper small circle">
+                                                            <img src="../img/sample-pic.jpg">
+                                                        </div> 
+                                                    </div>
+                                                    <div class="media-object-section middle">
+                                                        <div class="text-group">
+                                                            <p><b>@jamesalexander</b></p>
+                                                            <small class="subheader">Hair Technician</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="button primary pull-right"><i class="fa fa-envelope-o"></i>&nbsp; Following</a>
+                                            </li>
+                                            <li>
+                                                <div class="media-object">
+                                                    <div class="media-object-section flushed middle">
+                                                        <div class="img-wrapper small circle">
+                                                            <img src="../img/sample-pic.jpg">
+                                                        </div> 
+                                                    </div>
+                                                    <div class="media-object-section middle">
+                                                        <div class="text-group">
+                                                            <p><b>@jamesalexander</b></p>
+                                                            <small class="subheader">Hair Technician</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="button primary hollow pull-right"><i class="fa fa-plus"></i>&nbsp; Follow</a>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                    <!-- Like Modal End -->
+
+                                </ul>
+                                <!-- --- Tab head -->
+                                <ul class="tabs expanded" data-tabs id="users">
+                                    <li class="tabs-title text-center is-active"><a href="#panel1" aria-selected="true">My Images</a></li>
+                                    <li class="tabs-title text-center"><a href="#panel2">Liked Images</a></li>
+                                    <li class="tabs-title text-center"><a href="#panel3">Specials</a></li>
+                                </ul>
+                                <!-- -- -->
+                                <!-- -- Tab content -->
+                                <div class="tabs-content" data-tabs-content="users">
+                                    <!-- ---- MY IMAGES -->
+                                    <div class="tabs-panel is-active" id="panel1">
+                                        <div class="featured-image-block-grid">
+                                            <div class="row large-up-3 small-up-1">
+                                                <div class="featured-image-block column">
+                                                    <a href="image-view.html">
+                                                        <img src="https://unsplash.it/600/440?image=899" />
+                                                    </a>
+                                                    <p class="text-center featured-image-block-title"><i class="fa fa-heart-o"></i>&nbsp; 3 Likes</p>
+                                                </div>
+                                                
+                                                <div class="featured-image-block column">
+                                                    <a href="image-view.html">
+                                                        <img src="https://unsplash.it/600/440?image=693" />
+                                                    </a>
+                                                    <p class="text-center featured-image-block-title"><i class="fa fa-heart-o"></i>&nbsp; 3 Likes</p>
+                                                </div>
+                                                
+                                                <div class="featured-image-block column">
+                                                    <a href="image-view.html">
+                                                        <img src="https://unsplash.it/600/440?image=452" />
+                                                    </a>
+                                                    <p class="text-center featured-image-block-title"><i class="fa fa-heart-o"></i>&nbsp; 3 Likes</p>
+                                                </div>
+
+                                                <div class="featured-image-block column">
+                                                    <a href="image-view.html">
+                                                        <img src="https://unsplash.it/600/440?image=452" />
+                                                    </a>
+                                                    <p class="text-center featured-image-block-title"><i class="fa fa-heart-o"></i>&nbsp; 3 Likes</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ---- -->
+                                    
+                                    <!-- ---- LIKED IMAGES -->
+                                    <div class="tabs-panel" id="panel2">
+
+                                        <div class="featured-image-block-grid">
+                                            <div class="row large-up-3 small-up-1">
+                                                <div class="featured-image-block column">
+                                                    <a href="image-view.html">
+                                                        <img src="https://unsplash.it/600/440?image=899" />
+                                                    </a>
+                                                    <p class="text-center featured-image-block-title"><i class="fa fa-heart-o"></i>&nbsp; 3 Likes</p>
+                                                </div>
+                                                
+                                                <div class="featured-image-block column">
+                                                    <a href="image-view.html">
+                                                        <img src="https://unsplash.it/600/440?image=693" />
+                                                    </a>
+                                                    <p class="text-center featured-image-block-title"><i class="fa fa-heart-o"></i>&nbsp; 3 Likes</p>
+                                                </div>
+                                                
+                                                <div class="featured-image-block column">
+                                                    <a href="image-view.html">
+                                                        <img src="https://unsplash.it/600/440?image=452" />
+                                                    </a>
+                                                    <p class="text-center featured-image-block-title"><i class="fa fa-heart-o"></i>&nbsp; 3 Likes</p>
+                                                </div>
+
+                                                <div class="featured-image-block column">
+                                                    <a href="image-view.html">
+                                                        <img src="https://unsplash.it/600/440?image=452" />
+                                                    </a>
+                                                    <p class="text-center featured-image-block-title"><i class="fa fa-heart-o"></i>&nbsp; 3 Likes</p>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <!-- ---- SPECIALS -->
+                                    <div class="tabs-panel" id="panel3">
+
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Special Title</th>
+                                                    <th>Expiration Date</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <b>50% Discount on All haircut</b>
+                                                    <td>Ends On July 11, 2017</td>
+                                                    <td>
+                                                        <i class="fa fa-heart"></i>&nbsp; 3 Likes
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <b>50% Discount on All haircut</b>
+                                                    <td>Ends On July 11, 2017</td>
+                                                    <td>
+                                                        <i class="fa fa-heart"></i>&nbsp; 3 Likes
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <b>50% Discount on All haircut</b>
+                                                    <td>Ends On July 11, 2017</td>
+                                                    <td>
+                                                        <i class="fa fa-heart"></i>&nbsp; 3 Likes
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        
+                                    </div>
+
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- close wrapper, no more content after this -->
+
+            </div>
+        </div>
+
+        <!-- STICKY DOWNLOAD -->
+        <div class="row panel">
+            <div class="large-12 medium-12 columns">
+                <div class="stick-download p1 text-center">
+                    <img src="../img/styleteq-logo-white.png" class="inline ml-1 mr-1 v-align-center"><br class="breaking br1 disable" />
+                    <h5 class="mb-0 text-white inline v-align-center">Download Styleteq. The Modern Fashion Trends in 2017</h5> <br class="breaking br2 disable" />
+                    <a href="">
+                        <img src="../img/icon-appleplay.png" class="inline mr-1 ml-1 store">
+                    </a>
+                    <a href="">
+                        <img src="../img/icon-googleplay.png" class="inline store">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+        <script src="../js/owl-carousel/owl.carousel.js"></script>
+        
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/what-input/what-input.js"></script>
+        <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+        <script src="../bower_components/foundation-sites/js/foundation.toggler.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+        <script src="../js/app.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                var timer;
+
+                $(window).resize(function() {
+                    clearTimeout(timer);
+                    timer = setTimeout(function() {
+                      $('.dashboard-menu').css("height", $(window).height());
+                    }, 40); 
+                }).resize();
+            });
+
+            $('select').select2();
+
+        </script>
+    </body>
+</html>

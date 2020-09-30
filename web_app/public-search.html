@@ -1,0 +1,461 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>StyleTeq - Dashboard</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../css/app.css">
+    </head>
+    <body>
+        <div class="off-canvas-wrapper public-view">
+            <div id="mainDashboard" class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+                <!-- original content goes in this container -->
+                <div class="off-canvas-content dashboard-main" data-off-canvas-content>
+
+                    <!-- "wider" top-bar menu for 'medium' and up -->
+                    <div class="row">
+                        <div class="large-12 medium-12">
+                            <div id="widemenu" class="top-bar">
+                                <div class="top-bar-left">
+                                    <ul class="search menu">
+                                        <li>
+                                            <select>
+                                                <optgroup label="Users">
+                                                    <option value="1">James Alexander</option>
+                                                    <option value="2">Heidi Armstedt</option>
+                                                </optgroup>
+                                                <optgroup label="Images">
+                                                    <option value="3">#image1</option>
+                                                    <option value="4">#image2</option>
+                                                </optgroup>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <select>
+                                                <option>Location 1</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <a href="search-results.html" class="button primary expanded"><i class="fa fa-search"></i> &nbsp;Search</a>
+                                        </li>
+                                        <li>
+                                            <a data-toggle="searchFilters" class="button primary hollow expanded"><i class="fa fa-filter"></i> &nbsp;Filters</a>
+                                        </li>
+                                        <li class="btn-login">
+                                            <a href="#" class="primary"> <i class="fa fa-user" aria-hidden="true"></i> &nbsp;Login</a>
+                                        </li>                                      
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Filters -->
+                    <div id="searchFilters" class="row" data-toggler data-animate="fade-in fade-out">
+                        <fieldset class="large-6 columns">
+                            <legend>Filter Your Search</legend>
+                            <input type="radio" name="filter" value="images" id="images" required><label for="images">Images</label>
+                            <input type="radio" name="filter" value="shops" id="shops"><label for="shops">Shops</label>
+                            <input type="radio" name="filter" value="Users" id="Users"><label for="Users">Users</label>
+                            <input type="radio" name="filter" value="booths" id="booths"><label for="booths">Booths For Rent</label>
+                            <input type="radio" name="filter" value="Specials" id="Specials"><label for="Specials">Specials</label>
+                        </fieldset>
+                        <fieldset class="large-6 columns">
+                            <legend>Check these out</legend>
+                            <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                            <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+                            <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+                        </fieldset>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <h6 class="page-lead">Popular Images</h6>
+                            <div class="featured-image-block-grid p1">
+                                <div class="row large-up-3 medium-up-2 small-up-1">
+                                    <div class="featured-image-block column">
+                                        <a href="image-view.html">
+                                            <img src="https://s-media-cache-ak0.pinimg.com/736x/5e/09/8f/5e098f6c71e47cb8cea2c1c7ee473c30.jpg" />
+                                        </a>
+                                        <p class="text-center featured-image-block-title"><i class="fa fa-heart-o"></i>&nbsp; 3 Likes</p>
+                                    </div>
+                                    
+                                    <div class="featured-image-block column">
+                                        <a href="image-view.html">
+                                            <img src="https://s-media-cache-ak0.pinimg.com/736x/4f/03/2e/4f032ec0c820b75054dbbb79ec4b4cd5.jpg" />
+                                        </a>
+                                        <p class="text-center featured-image-block-title"><i class="fa fa-heart-o"></i>&nbsp; 3 Likes</p>
+                                    </div>
+                                    
+                                    <div class="featured-image-block column">
+                                        <a href="image-view.html">
+                                            <img src="http://www.lanlinglaurel.com/data/out/65/4481538-landscape-pics.png" />
+                                        </a>
+                                        <p class="text-center featured-image-block-title"><i class="fa fa-heart-o"></i>&nbsp; 3 Likes</p>
+                                    </div>
+
+                                    <div class="featured-image-block column">
+                                        <a href="image-view.html">
+                                            <img src="http://www.miraclefishmovie.com/wp-content/uploads/2016/08/1600.jpg" />
+                                        </a>
+                                        <p class="text-center featured-image-block-title"><i class="fa fa-heart-o"></i>&nbsp; 3 Likes</p>
+                                    </div>
+
+                                    <div class="featured-image-block column">
+                                        <a href="image-view.html">
+                                            <img src="https://unsplash.it/600/440?image=452" />
+                                        </a>
+                                        <p class="text-center featured-image-block-title"><i class="fa fa-heart-o"></i>&nbsp; 3 Likes</p>
+                                    </div>
+
+                                    <div class="featured-image-block column">
+                                        <a href="image-view.html">
+                                            <img src="https://s-media-cache-ak0.pinimg.com/736x/93/9e/eb/939eebe6dfe830c60acdb32c39302b1a--foto-portrait-portrait-photography-tips.jpg" />
+                                        </a>
+                                        <p class="text-center featured-image-block-title"><i class="fa fa-heart-o"></i>&nbsp; 3 Likes</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <h6 class="page-lead">Popular Users</h6>
+
+                            <ul class="list-block flex-container">
+                                <li>
+                                    <div class="media-object">
+                                        <div class="media-object-section flushed middle">
+                                            <div class="img-wrapper small circle">
+                                                <img src="../img/sample-pic.jpg">
+                                            </div> 
+                                        </div>
+                                        <div class="media-object-section middle">
+                                            <div class="text-group">
+                                                <p><b>@jamesalexander</b> <small class="ml-1">45.3 Miles</small></p>
+                                                <small class="subheader">Hair Technician</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="user_profile.html" class="button primary pull-right">View Profile</a>
+                                </li>
+                                <li>
+                                    <div class="media-object">
+                                        <div class="media-object-section flushed middle">
+                                            <div class="img-wrapper small circle">
+                                                <img src="../img/sample-pic.jpg">
+                                            </div> 
+                                        </div>
+                                        <div class="media-object-section middle">
+                                            <div class="text-group">
+                                                <p><b>@jamesalexander</b> <small class="ml-1">45.3 Miles</small></p>
+                                                <small class="subheader">Hair Technician</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="user_profile.html" class="button primary pull-right">View Profile</a>
+                                </li>
+                                <li>
+                                    <div class="media-object">
+                                        <div class="media-object-section flushed middle">
+                                            <div class="img-wrapper small circle">
+                                                <img src="../img/sample-pic.jpg">
+                                            </div> 
+                                        </div>
+                                        <div class="media-object-section middle">
+                                            <div class="text-group">
+                                                <p><b>@jamesalexander</b> <small class="ml-1">45.3 Miles</small></p>
+                                                <small class="subheader">Hair Technician</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="user_profile.html" class="button primary pull-right">View Profile</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <h6 class="page-lead">Popular Shops</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="medium-6 columns">
+                            
+                            <a href="shop-view.html">
+                                <div class="newsfeed-panel callout paddingless mb-half">
+                                    <div class="row">
+                                        <div class="large-12 columns">
+                                            <div class="post-img fixed-size v-align-center">
+                                                <img src="https://unsplash.it/600/440?image=693" alt="">
+                                                <div class="text-wrapper">
+                                                    <h5>The Belmont Barbershop Ltd</h5>
+                                                    <h6>25.1 Miles</h6>
+                                                    <h6 class="subheader">123 Chicago Ave., Chicago, IL 11111</h6>
+                                                    <h6 class="subheader">11 Booths For Rent - $30/week</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row p1 paddingless">
+                                        <div class="large-12 columns">
+                                            <ul class="list-inline marginless newsfeed-lgfont">
+                                                <li class="mr-2">
+                                                    <span data-open="likesModal">
+                                                        <i class="fa fa-heart-o fa-fw"></i> 35 Likes
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>   
+                            </a>
+                            
+                        </div>
+
+                        <div class="medium-6 columns">
+
+                            <a href="shop-view.html">
+                                <div class="newsfeed-panel callout paddingless mb-half">
+                                    <div class="row">
+                                        <div class="large-12 columns">
+                                            <div class="post-img fixed-size v-align-center">
+                                                <img src="http://digital-photography-school.com/wp-content/uploads/2008/07/portrait-smile.jpg" alt="">
+                                                <div class="text-wrapper">
+                                                    <h5>The Belmont Barbershop Ltd</h5>
+                                                    <h6>25.1 Miles</h6>
+                                                    <h6 class="subheader">123 Chicago Ave., Chicago, IL 11111</h6>
+                                                    <h6 class="subheader">11 Booths For Rent - $30/week</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row p1 paddingless">
+                                        <div class="large-12 columns">
+                                            <ul class="list-inline marginless newsfeed-lgfont">
+                                                <li class="mr-2">
+                                                    <span data-open="likesModal">
+                                                        <i class="fa fa-heart-o fa-fw"></i> 35 Likes
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>   
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="row disable">
+                        <div class="large-12 columns">
+                            <h6 class="page-lead">Popular Booths</h6>
+                        </div>
+                    </div>
+                    <div class="row disable">
+                        <div class="medium-6 columns">
+                            <a href="shop-view.html">
+                                <div class="newsfeed-panel callout paddingless mb-half">
+                                    <div class="row">
+                                        <div class="large-12 columns">
+                                            <div class="post-img v-align-center">
+                                                <a href="shop-view.html">
+                                                    <img src="https://unsplash.it/600/440?image=693" alt="">
+                                                </a>
+                                                <div class="text-wrapper">
+                                                    <h5>The Belmont Barbershop Ltd</h5>
+                                                    <h6 class="subheader">11 Booths For Rent - $30/week</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row p1">
+                                        <div class="large-12 columns">
+                                            <ul class="list-inline marginless newsfeed-lgfont">
+                                                <li class="mr-2">
+                                                    <span data-open="likesModal">
+                                                        <i class="fa fa-heart-o fa-fw"></i> 35 Likes
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </div>
+
+                        <div class="medium-6 columns">
+
+                            <a href="shop-view.html">
+                                <div class="newsfeed-panel callout paddingless mb-half">
+                                    <div class="row">
+                                        <div class="large-12 columns">
+                                            <div class="post-img v-align-center">
+                                                <a href="shop-view.html">
+                                                    <img src="https://unsplash.it/600/440?image=693" alt="">
+                                                </a>
+                                                <div class="text-wrapper">
+                                                    <h5>The Belmont Barbershop Ltd</h5>
+                                                    <h6 class="subheader">11 Booths For Rent - $30/week</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row p1">
+                                        <div class="large-12 columns">
+                                            <ul class="list-inline marginless newsfeed-lgfont">
+                                                <li class="mr-2">
+                                                    <span data-open="likesModal">
+                                                        <i class="fa fa-heart-o fa-fw"></i> 35 Likes
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <h6 class="page-lead">Popular Specials</h6>
+                        </div>
+                    </div>
+                    <div class="row p1">
+                        <div class="medium-12 columns">
+                            <a href="special-view.html">
+                                <div class="callout paddingless mb-1">
+                                    <div class="row pr-1 pl-1">
+                                        <div class="large-12 columns paddingless bb-1 p2 specials">
+                                            <div class="text-center">
+                                                <h3>
+                                                    SPECIAL TITLE
+                                                </h3>
+
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                                </p>
+
+                                                <small>
+                                                    Starts on Oct. 24, 2017 8:00 AM<br />
+                                                    Ends on DEC. 24, 2017 8:00 AM<br />
+                                                    <span class="subheader"> 68.0 Miles </span>
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row p1">
+                                        <div class="large-12 columns">
+                                            <ul class="list-inline marginless newsfeed-lgfont">
+                                                <li class="mr-2">
+                                                    <span data-open="likesModal">
+                                                        <i class="fa fa-heart-o fa-fw"></i> 35 Likes
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="medium-12 columns">
+                            <a href="special-view.html">
+                                <div class="callout paddingless mb-half">
+                                    <div class="row pr-1 pl-1">
+                                        <div class="large-12 columns paddingless bb-1 p2 specials">
+                                            <div class="text-center">
+                                                <h3>
+                                                    SPECIAL TITLE
+                                                </h3>
+
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                                </p>
+
+                                                <small>
+                                                    Starts on Oct. 24, 2017 8:00 AM<br />
+                                                    Ends on DEC. 24, 2017 8:00 AM<br />
+                                                    <span class="subheader"> 68.0 Miles </span>
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row p1">
+                                        <div class="large-12 columns">
+                                            <ul class="list-inline marginless newsfeed-lgfont">
+                                                <li class="mr-2">
+                                                    <span data-open="likesModal">
+                                                        <i class="fa fa-heart-o fa-fw"></i> 35 Likes
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- close wrapper, no more content after this -->
+
+            </div>
+        </div>
+
+        <!-- STICKY DOWNLOAD -->
+        <div class="row panel">
+            <div class="large-12 medium-12 columns">
+                <div class="stick-download p1 text-center">
+                    <p class="marginless">
+                        <h5 class="text-white inline v-align-center">Download the Styleteq App and gain access to the best Grooming Professionals near you & beyond.
+                        </h5> <br class="breaking br2" />
+                    </p>
+                    <a href="">
+                        <img src="../img/icon-appleplay.png" class="inline mr-1 ml-1 store">
+                    </a>
+                    <a href="">
+                        <img src="../img/icon-googleplay.png" class="inline store">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/what-input/what-input.js"></script>
+        <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+        <script src="../bower_components/foundation-sites/js/foundation.toggler.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
+        <script src="../js/app.js"></script>
+
+        <script type="text/javascript">
+            $(function () {
+                var timer;
+
+                $(window).resize(function() {
+                    clearTimeout(timer);
+                    timer = setTimeout(function() {
+                      $('.dashboard-menu').css("height", $(window).height());
+                    }, 40); 
+                }).resize();
+            });
+
+            $('select').select2();
+
+        </script>
+    </body>
+</html>
+
