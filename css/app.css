@@ -3808,6 +3808,8 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-animation-delay: 700ms !important;
           animation-delay: 700ms !important; }
 
+/*@include foundation-flex-classes;*/
+/*@include foundation-flex-grid;*/
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -7583,3 +7585,63 @@ ul.tags {
       margin-top: 0.5rem !important;
       width: 100% !important;
       text-align: center !important; } }
+
+.marginless {
+  margin: 0 !important; }
+
+.mt-1 {
+  margin-top: 1em !important; }
+
+.mb-0-5 {
+  margin-bottom: 0.5em !important; }
+
+.mb-1 {
+  margin-bottom: 1em !important; }
+
+.paddingless {
+  margin: 0 !important; }
+
+.p-1 {
+  padding: 1em !important; }
+
+.pt-1 {
+  padding-top: 1em !important; }
+
+.pb-0-5 {
+  padding-bottom: 0.5em !important; }
+
+.pb-1 {
+  padding-bottom: 1em !important; }
+
+.pl-1 {
+  padding-left: 1em !important; }
+
+.align-vertical-top {
+  vertical-align: text-top; }
+
+.align-vertical-bottom {
+  vertical-align: text-bottom; }
+
+.align-vertical-center {
+  vertical-align: middle; }
+
+.v-align-center {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.centered {
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+.float-none {
+  float: unset !important; }
+
+.borderless {
+  border: 0 !important; }
+
+.border-1 {
+  border: 1px solid rgba(42, 42, 42, 0.12) !important; }

@@ -16,11 +16,11 @@
                 <div class="off-canvas-content dashboard-main" data-off-canvas-content>
 
                     <!-- "wider" top-bar menu for 'medium' and up -->
-                    <div class="row">
+                    <div class="row expanded">
                         <div class="large-12 medium-12">
                             <div id="widemenu" class="top-bar">
-                                <div class="top-bar-left">
-                                    <ul class="search menu">
+                                <div class="top-bar-left float-none">
+                                    <ul class="search menu text-center">
                                         <li>
                                             <select>
                                                 <optgroup label="Users">
@@ -57,7 +57,7 @@
                         <div class="large-12 columns">
                             <div class="callout mt-1">
                                 <div class="row">
-                                    <div class="large-2 columns">
+                                    <div class="large-2 columns text-center">
                                         <div class="img-wrapper circle large img-fit">
                                             <img src= "../img/pancho.jpg">
                                         </div>
@@ -65,9 +65,9 @@
                                     <div class="large-10 columns">
                                         <div class="flex-container">
                                             <div class="media-object">
-                                                <div class="media-object-section middle">
+                                                <div class="media-object-section middle paddingless">
                                                     <div class="text-group">
-                                                        <h5>@jamesalexander <small class="subheader">- Barber</small></h5>
+                                                        <h4>@jamesalexander <small class="subheader">- Barber</small></h4>
                                                     </div>
                                                 </div>
                                             </div>
@@ -108,6 +108,17 @@
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <div class="row">
+                                          <div class="columns large-12 pt-1">
+                                            <a href="https://styleteq.com/v1/users/sign_in" class="button primary small">
+                                              <i class="fa fa-scissors fa-fw"></i>&nbsp; View Services</a>
+                                            <a href="https://styleteq.com/v1/users/sign_in" class="button hollow small">
+                                              <i class="fa fa-envelope-o fa-fw"></i>&nbsp; Message</a>
+                                            <a href="https://styleteq.com/v1/users/sign_in" class="button small hollow">
+                                              <i class="fa fa-plus fa-fw"></i>&nbsp; Follow</a>
+                                          </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <ul class="list-inline table justified">
@@ -128,7 +139,7 @@
                                         </ul>
 
 
-                                        <div class="tabs-content" data-tabs-content="users">
+                                        <div class="tabs-content borderless" data-tabs-content="users">
                                             <!------ USERS PANEL -->
                                             <div class="tabs-panel is-active" id="userpanel">
                                         
@@ -326,21 +337,21 @@
 
                                 </ul>
                                 <!-- --- Tab head -->
-                                <ul class="tabs expanded" data-tabs id="users">
+                                <ul class="tabs expanded borderless" data-tabs id="users">
                                     <li class="tabs-title text-center is-active"><a href="#panel1" aria-selected="true">My Images</a></li>
                                     <li class="tabs-title text-center"><a href="#panel2">Liked Images</a></li>
                                     <li class="tabs-title text-center"><a href="#panel3">Specials</a></li>
                                 </ul>
                                 <!-- -- -->
                                 <!-- -- Tab content -->
-                                <div class="tabs-content" data-tabs-content="users">
+                                <div class="tabs-content borderless" data-tabs-content="users">
                                     <!-- ---- MY IMAGES -->
                                     <div class="tabs-panel is-active" id="panel1">
                                         <div class="featured-image-block-grid">
                                             <div class="row large-up-3 small-up-1">
                                                 <div class="featured-image-block column">
                                                     <a href="image-view.html">
-                                                        <img src="https://unsplash.it/600/440?image=899" />
+                                                        <img src="https://unsplash.it/600/440?image=693" />
                                                     </a>
                                                     <p class="text-center featured-image-block-title"><i class="fa fa-heart-o"></i>&nbsp; 3 Likes</p>
                                                 </div>
@@ -412,17 +423,17 @@
                                     <!-- ---- SPECIALS -->
                                     <div class="tabs-panel" id="panel3">
 
-                                        <table>
+                                        <table class="border-1 table">
                                             <thead>
                                                 <tr>
-                                                    <th>Special Title</th>
+                                                    <th class="pl-1">Special Title</th>
                                                     <th>Expiration Date</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>
+                                                    <td class="pl-1">
                                                         <b>50% Discount on All haircut</b>
                                                     <td>Ends On July 11, 2017</td>
                                                     <td>
@@ -430,7 +441,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>
+                                                    <td class="pl-1">
                                                         <b>50% Discount on All haircut</b>
                                                     <td>Ends On July 11, 2017</td>
                                                     <td>
@@ -438,7 +449,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>
+                                                    <td class="pl-1">
                                                         <b>50% Discount on All haircut</b>
                                                     <td>Ends On July 11, 2017</td>
                                                     <td>
@@ -462,11 +473,11 @@
         </div>
 
         <!-- STICKY DOWNLOAD -->
-        <div class="row panel">
+        <div class="row panel pt-1">
             <div class="large-12 medium-12 columns">
                 <div class="stick-download p1 text-center">
-                    <img src="../img/styleteq-logo-white.png" class="inline ml-1 mr-1 v-align-center"><br class="breaking br1 disable" />
-                    <h5 class="mb-0 text-white inline v-align-center">Download Styleteq. The Modern Fashion Trends in 2017</h5> <br class="breaking br2 disable" />
+                    <h5 class="text-white text-center pb-0-5">Download the Styleteq App and gain access <br />to the best Grooming Professionals near you & beyond.</h5> 
+                    
                     <a href="">
                         <img src="../img/icon-appleplay.png" class="inline mr-1 ml-1 store">
                     </a>

@@ -1,0 +1,52 @@
+// Margin --------------------------------------------------------------------------------
+.marginless {
+  margin: 0 !important;
+}
+.mt-1 { margin-top: 1em !important; }
+.mb-0-5 { margin-bottom: 0.5em !important; }
+.mb-1 { margin-bottom: 1em !important; }
+
+
+
+
+
+// Padding --------------------------------------------------------------------------------
+.paddingless {
+  margin: 0 !important;
+}
+.p-1 { padding: 1em !important; }
+.pt-1 { padding-top: 1em !important; }
+.pb-0-5 { padding-bottom: 0.5em !important; }
+.pb-1 { padding-bottom: 1em !important; }
+.pl-1 { padding-left: 1em !important; }
+
+
+
+
+
+
+// Alignment --------------------------------------------------------------------------------
+.align-vertical-top { vertical-align: text-top; }
+.align-vertical-bottom { vertical-align: text-bottom; }
+.align-vertical-center { vertical-align: middle; }
+.v-align-center {
+  display: flex;
+  align-items: center;
+}
+.centered {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+
+
+// Miscellaneous --------------------------------------------------------------------------------
+.float-none { float: unset !important; }
+
+
+
+
+// Miscellaneous --------------------------------------------------------------------------------
+.borderless { border: 0 !important; }
+.border-1 {border: 1px solid rgba(42, 42, 42, 0.12) !important;}
