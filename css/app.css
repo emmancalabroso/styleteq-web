@@ -7393,6 +7393,8 @@ ul.tags {
       margin: 0; }
     .reveal .reveal-heading > * {
       color: #fefefe; }
+  .reveal .reveal-body.signup img {
+    width: 30% !important; }
 
 .newsfeed-modal {
   width: auto;
@@ -7592,6 +7594,9 @@ ul.tags {
 .mt-1 {
   margin-top: 1em !important; }
 
+.mt-5 {
+  margin-top: 5em !important; }
+
 .mb-0-5 {
   margin-bottom: 0.5em !important; }
 
@@ -7615,6 +7620,12 @@ ul.tags {
 
 .pl-1 {
   padding-left: 1em !important; }
+
+.pl-2 {
+  padding-left: 2em !important; }
+
+.pr-2 {
+  padding-right: 2em !important; }
 
 .align-vertical-top {
   vertical-align: text-top; }
@@ -7645,3 +7656,6 @@ ul.tags {
 
 .border-1 {
   border: 1px solid rgba(42, 42, 42, 0.12) !important; }
+
+.bt-0 {
+  border-top: 0px !important; }

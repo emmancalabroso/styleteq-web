@@ -1,3 +1,5 @@
+
+
 .reveal {
 	margin: 0 auto;
 	padding: 0;
@@ -28,6 +30,16 @@
 			color: $white;
 		}
 	}
+
+	.reveal-body {
+		&.signup {
+			img {
+				width: 30% !important;
+			}
+		}
+	}
+
+
 }
 
 .newsfeed-modal {
