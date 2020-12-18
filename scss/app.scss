@@ -4,6 +4,8 @@
 @import 'foundation';
 @import 'motion-ui';
 
+/*@include foundation-flex-classes;
+@include foundation-flex-grid;*/
 @include foundation-global-styles;
 @include foundation-grid;
 @include foundation-typography;
@@ -43,8 +45,6 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-/*@include foundation-flex-classes;*/
-/*@include foundation-flex-grid;*/
 
 // Vendors
 @import 'vendor/font-awesome/font-awesome.scss';
@@ -72,4 +72,5 @@
 @import 'components/_images';
 @import 'components/_select';
 @import 'components/_queries';
+@import 'components/_badge';
 @import 'components/_Utilities';

@@ -2,10 +2,13 @@
 .marginless {
   margin: 0 !important;
 }
+.m-1 { margin: 1em !important; }
 .mt-1 { margin-top: 1em !important; }
 .mt-5 { margin-top: 5em !important; }
 .mb-0-5 { margin-bottom: 0.5em !important; }
 .mb-1 { margin-bottom: 1em !important; }
+.mr-0-5 { margin-right: 0.5em; }
+.ml-0-5 { margin-left: 0.5em; }
 
 
 
@@ -16,7 +19,9 @@
   margin: 0 !important;
 }
 .p-1 { padding: 1em !important; }
+.p-0-5 { padding: 1em !important; }
 .pt-1 { padding-top: 1em !important; }
+.pt-0-5 { padding-top: 0.5em !important; }
 .pb-0-5 { padding-bottom: 0.5em !important; }
 .pb-1 { padding-bottom: 1em !important; }
 .pl-1 { padding-left: 1em !important; }
@@ -41,16 +46,33 @@
   margin-right: auto !important;
 }
 
+.disp-inline {
+	display: inline;
+}
+
+.disp-block {
+	display: block;
+}
+
+.disp-hidden {
+	display: none;
+}
+
+.fullwidth {
+	width: 100%;
+}
+
 
 
 
 // Miscellaneous --------------------------------------------------------------------------------
 .float-none { float: unset !important; }
+.list-style-none { list-style-type: none; }
 
 
 
 
-// Miscellaneous --------------------------------------------------------------------------------
+// Borders --------------------------------------------------------------------------------
 .borderless { border: 0 !important; }
 .border-1 {border: 1px solid rgba(42, 42, 42, 0.12) !important;}
 .bt-0 {border-top: 0px !important;}

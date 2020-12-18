@@ -1,0 +1,360 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>StyleTeq - Dashboard</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../css/app.css">
+    </head>
+    <body>
+        <div class="off-canvas-wrapper public-view">
+            <div id="mainDashboard" class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+                <!-- original content goes in this container -->
+                <div class="off-canvas-content dashboard-main" data-off-canvas-content>
+
+                    <!-- "wider" top-bar menu for 'medium' and up -->
+                    <div class="row expanded">
+                        <div class="large-12 medium-12">
+                            <div id="widemenu" class="top-bar">
+                                <div class="top-bar-left float-none">
+                                    <ul class="search menu text-center">
+                                        <li>
+                                            <select>
+                                                <optgroup label="Users">
+                                                    <option value="1">James Alexander</option>
+                                                    <option value="2">Heidi Armstedt</option>
+                                                </optgroup>
+                                                <optgroup label="Images">
+                                                    <option value="3">#image1</option>
+                                                    <option value="4">#image2</option>
+                                                </optgroup>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <select>
+                                                <option>Location 1</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <a href="search-results.html" class="button primary expanded"><i class="fa fa-search"></i> &nbsp;Search</a>
+                                        </li>
+                                        <li>
+                                            <a data-toggle="searchFilters" class="button primary hollow expanded"><i class="fa fa-filter"></i> &nbsp;Filters</a>
+                                        </li>
+                                        <li class="btn-login">
+                                            <a href="#" class="primary"> <i class="fa fa-user" aria-hidden="true"></i> &nbsp;Login</a>
+                                        </li>  
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                      <div class="columns medium-12 small-12">
+                        <nav aria-label="You are here:" role="navigation" class="mt-1">
+                          <ul class="breadcrumbs">
+                            <li><a href="#">James Alexander</a></li>
+                            <!-- <li><a href="#">Features</a></li>
+                            <li class="disabled">Gene Splicing</li> -->
+                            <li>
+                              <span class="show-for-sr">Current: </span> Services
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+
+                    
+                    <div class="row">
+                      <div class="large-12 small-12 columns">
+                        <div class="callout mt-1">
+                            <div class="row">
+
+                              <div class="columns medium-8 small-12">
+                                <div class="row v-align-center">
+                                  <div class="columns medium-2 small-1 text-center">
+                                    <div class="img-wrapper circle medium img-fit">
+                                      <img src= "../img/pancho.jpg">
+                                    </div>
+                                  </div>
+                                  <div class="columns medium-10 small-11">
+                                    <div class="flex-container ">
+                                      <div class="media-object paddingless">
+                                        <div class="media-object-section middle paddingless">
+                                          <div class="text-group">
+                                            <h4>@jamesalexander <small class="subheader">- Barber</small></h4>
+                                          </div>
+                                          <p class="paddingless disp-hidden">349 River Lane, Springfield, HI</p>
+                                        </div>
+                                      </div>
+                                      <div class="float-right mr-1 disp-hidden">
+                                        <a href="https://styleteq.com/v1/users/sign_in" class="button small hollow"><i class="fa fa-plus fa-fw"></i>&nbsp; Follow</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="row mt-1">
+                                  <div class="large-12 columns v-align-center">
+                                    <!-- <h6 class="page-lead disp-inline pl-1">Services</h6> -->
+                                    <ul class="search menu mb-1 fullwidth">
+                                        <li>
+                                            <select>
+                                                <optgroup label="Service Categories">
+                                                    <option value="1">Boa Braided Hairstyle</option>
+                                                    <option value="2">Curved Undercut Funky Hairstyle</option>
+                                                </optgroup>
+                                            </select>
+                                        </li> 
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <div class="row">
+                                  <div class="medium-12 columns small-12">
+                                    <ul class="list-block flex-container border-1">
+                                      <li>
+                                          <div class="media-object">
+                                            <div class="media-object-section flushed">
+                                              <div class="img-wrapper medium">
+                                                <img src="../img/sample-pic.jpg">
+                                              </div>
+                                            </div>
+                                            <div class="media-object-section">
+                                              <div class="text-group">
+                                                <h5 class="disp-inline">Boa Braided Hairstyle</h5> 
+                                                <small class="ml-1 subheader disp-inline"><strong><i class="fa fa-clock-o"></i> 1.5 hours</strong></small>
+                                                <p class="small subheader marginless">Braids (also referred to as plaits) are a complex hairstyle formed by interlacing three or more strands of hair. Braiding has been used to style and ornament human and animal hair for thousands of years in many different cultures around the world.</p>
+                                              </div>
+                                              <a href="" class="hollow button tiny">More Info</a>
+                                            </div>
+                                          </div>
+
+                                          <a href="#" class="button primary pull-right">Book&nbsp;Now</a>
+                                      </li>
+                                      <li>
+                                        <div class="media-object">
+                                          <div class="media-object-section flushed">
+                                            <div class="img-wrapper medium">
+                                              <img src="../img/woman-hair-stylist.png">
+                                            </div>
+                                          </div>
+                                          <div class="media-object-section fullwidth">
+                                            <div class="text-group">
+                                              <h5 class="disp-inline">Beard and Long Hair</h5> 
+                                              <small class="ml-1 subheader disp-inline"><strong><i class="fa fa-clock-o"></i> 1.5 hours</strong></small>
+                                              <p class="small subheader marginless">Beard shaving ong hair cut.</p>
+                                            </div>
+                                            <a href="" class="hollow button tiny">More Info</a>
+                                          </div>
+                                        </div>
+                                         <a href="#" class="button primary pull-right">Book&nbsp;Now</a>
+                                      </li>
+                                      <li>
+                                        <div class="media-object">
+                                          <div class="media-object-section flushed">
+                                            <div class="img-wrapper medium">
+                                                <img src="../img/sample-pic.jpg">
+                                            </div>
+                                          </div>
+                                          <div class="media-object-section fullwidth">
+                                            <div class="text-group">
+                                              <h5 class="disp-inline">Curved Undercut Funky Hairstyle</h5> 
+                                              <small class="ml-1 subheader disp-inline"><strong><i class="fa fa-clock-o"></i> 1.5 hours</strong></small>
+                                              <p class="small subheader marginless">Beard shaving ong hair cut.</p>
+                                            </div>
+                                            <a href="" class="hollow button tiny">More Info</a>
+                                          </div>
+                                        </div>
+                                         <a href="#" class="button primary pull-right">Book&nbsp;Now</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+
+
+
+
+                              <div class="columns medium-4 small-12">    
+                                <div class="row">
+                                  <div class="columns medium-12 small-12">
+                                    <h5 class="marginless text-center pt-1">Contact and Location</h5>
+                                    <div class="pt-1">
+                                       <iframe class="fullwidth" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2866.7053690347952!2d-122.97756674894575!3d44.06879223337252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54c0e12202782f95%3A0x7e1281d1992f1ce9!2sRiver%20Heights%20Drive%2C%20Springfield%2C%20OR%2097477%2C%20USA!5e0!3m2!1sen!2sph!4v1608013102191!5m2!1sen!2sph" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                    </div>
+                                    <p class="text-center">
+                                      <i class="fa fa-map-marker"></i> 349 River Lane, Springfield, HI
+                                    </p>
+                                  </div>
+
+                                  <div class="columns medium-12 small-12 pb-1">
+                                    <ul class="accordion " data-accordion disabled>
+                                      <li class="accordion-item is-active" data-accordion-item>
+                                        <a href="#" class="accordion-title pt-0-5 pb-0-5">
+                                          <small>Monday</small>
+                                        </a>
+                                        <div class="accordion-content" data-tab-content>
+                                          <ul class="inline-list list-style-none marginless paddingless">
+                                            <li class="">
+                                              <small>8:00 am - 12:00 pm</small>
+                                            </li>
+                                            <li class="">
+                                              <small>1:00 pm - 5:00 pm</small>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </li>
+                                      <li class="accordion-item" data-accordion-item>
+                                        <a href="#" class="accordion-title pt-0-5 pb-0-5">
+                                          <small>Tuesday</small>
+                                        </a>
+                                        <div class="accordion-content" data-tab-content>
+                                          <ul class="inline-list list-style-none marginless paddingless">
+                                            <li class="">
+                                              <small>8:00 am - 12:00 pm</small>
+                                            </li>
+                                            <li class="">
+                                              <small>1:00 pm - 5:00 pm</small>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </li>
+                                      <li class="accordion-item" data-accordion-item>
+                                        <a href="#" class="accordion-title pt-0-5 pb-0-5">
+                                          <small>Wednesday</small>
+                                        </a>
+                                        <div class="accordion-content" data-tab-content>
+                                          <ul class="inline-list list-style-none marginless paddingless">
+                                            <li class="">
+                                              <small>8:00 am - 12:00 pm</small>
+                                            </li>
+                                            <li class="">
+                                              <small>1:00 pm - 5:00 pm</small>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </li>
+                                      <li class="accordion-item" data-accordion-item>
+                                        <a href="#" class="accordion-title pt-0-5 pb-0-5">
+                                          <small>Thursday</small>
+                                        </a>
+                                        <div class="accordion-content" data-tab-content>
+                                          <ul class="inline-list list-style-none marginless paddingless">
+                                            <li class="">
+                                              <small>8:00 am - 12:00 pm</small>
+                                            </li>
+                                            <li class="">
+                                              <small>1:00 pm - 5:00 pm</small>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </li>
+                                      <li class="accordion-item" data-accordion-item>
+                                        <a href="#" class="accordion-title pt-0-5 pb-0-5">
+                                          <small>Friday</small>
+                                        </a>
+                                        <div class="accordion-content" data-tab-content>
+                                          <ul class="inline-list list-style-none marginless paddingless">
+                                            <li class="">
+                                              <small>8:00 am - 12:00 pm</small>
+                                            </li>
+                                            <li class="">
+                                              <small>1:00 pm - 5:00 pm</small>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </li>
+                                      <li class="accordion-item" data-accordion-item>
+                                        <a href="#" class="accordion-title pt-0-5 pb-0-5">
+                                          <small>Saturday</small>
+                                        </a>
+                                        <div class="accordion-content" data-tab-content>
+                                          <ul class="inline-list list-style-none marginless paddingless">
+                                            <li class="">
+                                              <small>8:00 am - 12:00 pm</small>
+                                            </li>
+                                            <li class="">
+                                              <small>1:00 pm - 5:00 pm</small>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </li>
+                                      <li class="accordion-item" data-accordion-item>
+                                        <a href="#" class="accordion-title pt-0-5 pb-0-5">
+                                          <small>Sunday</small>
+                                        </a>
+                                        <div class="accordion-content" data-tab-content>
+                                          <ul class="inline-list list-style-none marginless paddingless">
+                                            <li class="">
+                                              <small>8:00 am - 12:00 pm</small>
+                                            </li>
+                                            <li class="">
+                                              <small>1:00 pm - 5:00 pm</small>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+                <!-- close wrapper, no more content after this -->
+
+            </div>
+        </div>
+
+        <!-- STICKY DOWNLOAD -->
+        <div class="row panel pt-1 borderless">
+            <div class="large-12 medium-12 columns">
+                <div class="stick-download p1 text-center">
+                    <h5 class="text-white text-center pb-0-5">Download the Styleteq App and gain access <br />to the best Grooming Professionals near you & beyond.</h5> 
+                    
+                    <a href="">
+                        <img src="../img/icon-appleplay.png" class="inline mr-1 ml-1 store">
+                    </a>
+                    <a href="">
+                        <img src="../img/icon-googleplay.png" class="inline store">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+        <script src="../js/owl-carousel/owl.carousel.js"></script>
+        
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/what-input/what-input.js"></script>
+        <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+        <script src="../bower_components/foundation-sites/js/foundation.toggler.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+        <script src="../js/app.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                var timer;
+
+                $(window).resize(function() {
+                    clearTimeout(timer);
+                    timer = setTimeout(function() {
+                      $('.dashboard-menu').css("height", $(window).height());
+                    }, 40); 
+                }).resize();
+            });
+
+            $('select').select2();
+
+        </script>
+    </body>
+</html>

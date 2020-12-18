@@ -11,6 +11,8 @@
   transition-duration: 500ms;
   transition-timing-function: linear; }
 
+/*@include foundation-flex-classes;
+@include foundation-flex-grid;*/
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
    * 1. Set default font family to sans-serif.
@@ -3808,8 +3810,6 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-animation-delay: 700ms !important;
           animation-delay: 700ms !important; }
 
-/*@include foundation-flex-classes;*/
-/*@include foundation-flex-grid;*/
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -7441,6 +7441,14 @@ ul.tags {
   .media-object .text-group h6,
   .media-object .text-group p {
     margin: 0; }
+    .media-object .text-group h1.subheader,
+    .media-object .text-group h2.subheader,
+    .media-object .text-group h3.subheader,
+    .media-object .text-group h4.subheader,
+    .media-object .text-group h5.subheader,
+    .media-object .text-group h6.subheader,
+    .media-object .text-group p.subheader {
+      width: 95%; }
   .media-object .media-object-section.flushed {
     padding-right: 0;
     padding-left: 0; }
@@ -7461,6 +7469,9 @@ ul.tags {
   .img-wrapper.small {
     width: 2.75rem;
     height: 2.75rem; }
+  .img-wrapper.medium {
+    width: 4.75rem;
+    height: 4.75rem; }
   .img-wrapper.large {
     width: 8.625rem;
     height: 8.625rem; }
@@ -7588,8 +7599,17 @@ ul.tags {
       width: 100% !important;
       text-align: center !important; } }
 
+.badge {
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em; }
+
 .marginless {
   margin: 0 !important; }
+
+.m-1 {
+  margin: 1em !important; }
 
 .mt-1 {
   margin-top: 1em !important; }
@@ -7603,14 +7623,26 @@ ul.tags {
 .mb-1 {
   margin-bottom: 1em !important; }
 
+.mr-0-5 {
+  margin-right: 0.5em; }
+
+.ml-0-5 {
+  margin-left: 0.5em; }
+
 .paddingless {
   margin: 0 !important; }
 
 .p-1 {
   padding: 1em !important; }
 
+.p-0-5 {
+  padding: 1em !important; }
+
 .pt-1 {
   padding-top: 1em !important; }
+
+.pt-0-5 {
+  padding-top: 0.5em !important; }
 
 .pb-0-5 {
   padding-bottom: 0.5em !important; }
@@ -7648,8 +7680,23 @@ ul.tags {
   margin-left: auto !important;
   margin-right: auto !important; }
 
+.disp-inline {
+  display: inline; }
+
+.disp-block {
+  display: block; }
+
+.disp-hidden {
+  display: none; }
+
+.fullwidth {
+  width: 100%; }
+
 .float-none {
   float: unset !important; }
+
+.list-style-none {
+  list-style-type: none; }
 
 .borderless {
   border: 0 !important; }

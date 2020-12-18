@@ -9,6 +9,9 @@
 		h6,
 		p {
 			margin: 0;
+			&.subheader {
+				width: 95%;
+			}
 		}
 	}
 	.media-object-section {
